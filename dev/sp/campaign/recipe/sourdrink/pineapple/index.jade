@@ -1,0 +1,119 @@
+extends ../jade/template
+block vars
+	-var title = "西友 – パイナップルのフルーツ酢 レシピページ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/recipe/sourdrink/"
+	-var og_description = "お酢とフルーツでお手軽に作れる、彩り豊かでさわやかなサワードリンクレシピをご紹介します。"
+	-var current = "recipe"
+	-var dir_root = "../"
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'sourpineapple')"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'sourpineapple')"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'sourpineapple')"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'sourpineapple')"
+	-var twitter_url = "%E3%82%B5%E3%83%AF%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B7%E3%83%94%E3%80%80%23SEIYU"
+block content
+	#contents-body.recipe3
+		.recipe-area
+			i.label サワードリンク with パイナップル
+			h1
+				span パイナップルのフルーツ酢
+			figure
+				img(src='../img/recipe_3_img.jpg', alt='パイナップルのフルーツ酢')
+			.recipe-inner
+				.info
+					| 調理時間：10分、エネルギー：110kcal、塩分：0.0g
+				.materials
+					h2.shingo_m 材料（8人分）
+					dl
+						dt パイナップル（生）
+						dd （果肉）100g
+					dl
+						dt 氷砂糖
+						dd 200g
+					dl
+						dt ミツカン　純リンゴ酢
+						dd 200ml
+					dl
+						dt.thin または
+						dd
+					dl
+						dt ミツカン　穀物酢
+						dd 200ml
+				// /materials
+				.howto
+					h2.shingo_m 作り方
+					dl
+						dt 1
+						dd パイナップルは皮と芯を除いて1〜2cmの厚さに切り、さらに4等分に切る。
+					dl
+						dt 2
+						dd 密封できる広口ビンにパイナップル、氷砂糖、リンゴ酢または穀物酢を入れ、ふたをして涼しいところにおく。
+					dl
+						dt 3
+						dd 1日1回、ふたをしたまま軽くふり混ぜ、1週間で出来上がり。漬け終わった果実は取り除く（お好みでお召し上がりください）。
+					dl
+						dt 4
+						dd 冷水または炭酸水で約５倍に薄めていただく。
+				// /howto
+			.subrecipe
+				.title
+					img(src='../img/recipe_3_subrecipe_title.png')
+				.productimage
+					img(src='../img/recipe_3_subrecipe_productimage.jpg')
+				p.subhead
+					span.circle
+						img(src='../img/recipe_3_subrecipe_circle.png')
+					|  材料(４人分)
+				.elements
+					p.element カットパイン
+					.border.border1
+						img(src='../img/recipe_3_subrecipe_border1.png')
+					p.quantity 50g
+				.elements
+					p.element パイナップルのサワードリンク
+					.border.border2
+						img(src='../img/recipe_3_subrecipe_border2.png')
+					p.quantity 1/2 カップ
+				.elements
+					p.element 牛乳
+					.border.border3
+						img(src='../img/recipe_3_subrecipe_border3.png')
+					p.quantity 2 カップ
+				p.subhead
+					span.circle
+						img(src='../img/recipe_3_subrecipe_circle.png')
+					|  作り方
+				.elements
+					p.num
+						span.number
+							img(src='../img/recipe_3_subrecipe_num1.png')
+						|  サワードリンクから取り出したカットパインは冷凍庫で凍らせておく。
+				.elements
+					p.num
+						span.number
+							img(src='../img/recipe_3_subrecipe_num2.png')
+						|  ①、牛乳、パイナップルのサワードリンクをミキサーに入れて混ぜる。
+				p.caution ※ミキサーの種類によっては、冷凍食材を使用すると、刃を傷つける場合があります。
+		// /recipe-area
+		.caution
+			p
+				| ※金属製のふたの使用は避けてください。
+				br
+				| ※出来上がったサワードリンクは冷蔵庫に保管し、一年以内をめどに早めにお召し上がりください。
+				br
+				| ※出来上がり量は約５倍に薄めて、約８杯分です。
+				br
+				| ※エネルギー、食塩相当量は1人分です。
+		.btn-prev
+			a(href='../', onclick="#{btn_prev};") トップに戻る
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/recipe/sourdrink/', onclick="#{facebook};", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/recipe/sourdrink/&related=Seiyu_Japan&hashtags='+'#{twitter_url}', onclick="#{twitter};", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?おうちで作れるさわやかサワードリンクレシピ | SEIYU http://www.seiyu.co.jp/campaign/recipe/sourdrink/', onclick="#{line};", target='_blank')
+						span LINE

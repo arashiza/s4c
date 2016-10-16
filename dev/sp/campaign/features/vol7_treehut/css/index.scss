@@ -1,0 +1,355 @@
+@import "../../../../../_scss/sato_mixin";
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333333;
+
+	//@include damii_sp("../img/damii.jpg",-20px);
+
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				@include indentwarp(100%);
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				@include indentwarp(100%);
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				@include indentwarp(100%);
+			}
+		}
+	}
+}
+
+//---------------------------
+//         Main
+//---------------------------
+
+$path:"vol7_treehut";
+$themeColor:#499750;
+
+#content-header {
+	padding: 13px 10px 7px 10px;
+	background-color: $themeColor;
+	line-height: 1.0;
+
+	.label {
+		width: 83.75%;
+		margin: 0 auto 10px;
+	}
+	h1 {
+		width: 100%;
+		font-size: 0;
+		img{
+			width: 92%;
+		}
+	}
+	.item {
+		margin: auto;
+		padding: 15px 0 5px;
+		font-size: 0;
+	}
+	.comment {
+		margin: auto;
+		font-size: 0;
+	}
+}
+
+#content-body {
+	#sec1 {
+		padding: 16px 10px;
+		h2 {
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec1_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 253px;
+			height: 65px;
+			background-size: 253px auto;
+			@include indentwarp(100%);
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 18px;
+		}
+		a.banner{
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	#sec2 {
+		padding: 16px 10px;
+		background-color: $themeColor;
+		h2 {
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec2_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 218px;
+			height: 45px;
+			background-size: 218px auto;
+			@include indentwarp(100%);
+		}
+		p {
+			margin-top: 15px;
+			color: #ffffff;
+			font-size: 12px;
+		}
+		figure {
+		}
+		figcaption {
+			margin-top: 5px;
+			color: #ffffff;
+			text-align: center;
+		}
+	}
+	#sec3 {
+		padding: 20px 10px;
+		h2 {
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec3_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 211px;
+			height: 45px;
+			background-size: 218px auto;
+			@include indentwarp(100%);
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+			color: #333333;
+			&.caution{
+				font-size: 11px;
+				color: #666;
+			}
+		}
+		figure {
+			margin-top: 15px;
+		}
+		figcaption {
+			line-height: 1.8;
+			text-align: center;
+			color: #333333;
+		}
+	}
+
+	#products {
+		//padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			margin: 0 auto 26px;
+			@include indentwarp(100%);
+		}
+		.products{
+			.title{
+				margin: 0 10px 25px;
+				h3{
+					width: 100%;
+					img{
+
+					}
+				}
+			}
+			.product1,.product2,.product3{
+				margin: 0 15px;
+				padding-bottom: 12px;
+				border-bottom: 1px solid #b5b5b5;
+				.items{
+					margin: 0px 25px 0;
+					img.item{
+						float: left;
+						width: 30%;
+						margin-top: 10px;
+					}
+					img.value{
+						float: right;
+						width: 55%;
+					}
+				}
+				p.description{
+					font-size: 1.2rem;
+					line-height: 1.7;
+					margin-top: 10px;
+				}
+				.button{
+					margin: 10px 0 0;
+					a{
+						display: block;
+					}
+				}
+			}
+			.product2{
+				.items{
+					margin: 13px 2px 0 40px;
+					img.item{
+						width: 15%;
+					}
+					img.value{
+						width: 64%;
+						margin-top: 16px;
+					}
+				}
+				p.description{
+					margin: 0;
+					letter-spacing: -0.4px;
+				}
+				.button{
+					margin-top: 12px;
+				}
+			}
+			.product3{
+				.items{
+					img.item{
+						width: 27%;
+						margin-top: 25px;
+					}
+					img.value{
+						width: 57%;
+						margin-top: 28px;
+					}
+				}
+				p.description{
+					letter-spacing: -0.5px;
+				}
+			}
+		}
+		.other{
+			margin: 0 10px;
+			h3{
+				margin-top: 30px;
+			}
+			.buttons{
+				margin: 0 5px;
+				.button{
+					margin-top: 8px;
+				}
+			}
+		}
+		.feature-block {
+			margin: 20px 10px 0;
+			.title {
+				margin: 0 auto;
+				display: block;
+				background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/features_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 299px;
+				height: 27px;
+				background-size: 299px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.btn {
+				margin-top: 15px;
+				a {
+					display: block;
+				}
+			}
+		}
+		.note-block {
+			margin: 10px 20px 0;
+			li {
+				text-indent: 0em;
+				color: #666;
+				font-size: 11px;
+				margin-left: 0em;
+				&.banner {
+					margin: 0;
+					text-indent: 0;
+					margin-bottom: 15px;
+					display: block;
+					padding: 0;
+					width: 100%;
+					position: relative;
+					a {
+						display: block;
+					}
+				}
+				span {
+					&.asterisk{
+						display: inline-block;
+						margin-left: -1em;
+					}
+					&.text{
+						//margin-left: 0em;
+					}
+				}
+			}
+		}
+	}
+}

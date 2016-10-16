@@ -1,0 +1,118 @@
+//-------------
+//   SEIYU用
+//-------------
+
+/*インデントワープ*/
+//webフォントの部分を  画像で再現するときに、
+//画像をバックグラウンドで敷いて  文字を表示させるという方法のときに
+//文字のインデントを飛ばしてoverflow hidden する事で
+//あたかも文字がないように見えるよ
+@mixin indentwarp($indentpersent){
+	overflow: hidden;
+	text-indent: $indentpersent;
+	white-space: nowrap;
+	outline: none;
+}
+/*ボタンホバーアニメーション for SEIYU*/
+//ボタンのクラスに @include すれば動くよ
+@mixin buttonhover_forseiyu(){
+	transition: opacity .25s ease-in-out 0s;
+	&:hover {
+		filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+		opacity: .75;
+	}
+}
+
+//-----------------
+//   IE対策
+//-----------------
+/*inlineBlockを使いたい*/
+//IE用対策  display: inline-block設定
+@mixin inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+//-----------------
+//   レスポンシブ用
+//-----------------
+/*切り替え*/
+//ウィンドウ幅が ~~~px以下の時用
+$num : 960;
+@mixin mq($num) {
+	@media screen and (max-width: $num + px){
+		@content;
+	}
+}
+
+//-----------
+//   汎用
+//-----------
+/*clearfix*/
+//floatを使うようです
+@mixin clearfix {
+	zoom: 1;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/*ボタンホバー用*/
+//画像をbackground-imageで指定してホバー時の画像と通常時の画像が
+//一枚画像になってるときに使えるよ
+@mixin buttonhover($imageheight){
+	&:hover{
+		background-position: 0 -#{$imageheight};
+	}
+}
+
+/*ダミー画像*/
+//ダミー画像がしけます　以上
+@mixin damii($imageurl,$top,$zi){
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 10000px;
+		background-image: url("#{$imageurl}");
+		background-position: top center;
+		background-repeat: no-repeat;
+		opacity: 0.5;
+		top: $top;
+		z-index: $zi;
+	}
+}
+@mixin damii_sp($imageurl,$top,$zi){
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 10000px;
+		background-image: url("#{$imageurl}");
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		opacity: 0.5;
+		top: $top;
+		z-index: $zi;
+	}
+}
+
+/*フォント指定用*/
+@mixin family($type) {
+	@if $type == en {
+		font-family: 'Yantramanav', sans-serif;
+		font-weight: normal;
+	} @else if $type == jp {
+		font-family: "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+		font-weight: normal;
+	} @else if $type == all {
+		font-family: 'Yantramanav Normal 400', "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+		font-weight: normal;
+	}
+}

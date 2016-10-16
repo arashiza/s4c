@@ -1,0 +1,27 @@
+//---------------------------
+//--	OSUSUME
+//---------------------------
+mixin toplist(count,newlabel,url,label,desc,btntext)
+	.item(id="item" + "#{count}")
+		a(href="#{url}",onclick="ga('send', 'event', 'Campaign', 'Link_vol" + "#{count}', 'features');")
+			-if(newlabel == true){
+				i.new
+			-}
+			figure
+				img(src="img/item_vol" + "#{count}" + "_img.jpg",alt='',width='310',height='176')
+			p.label #{label}
+			p.catch.shingo_m !{desc}
+			.btn #{btntext}
+			i.frame
+
+mixin toplist_sp(count,newlabel,url,label,desc,btntext)
+	.item(id="item" + "#{count}")
+		a(href="#{url}",onclick="ga('send', 'event', 'Campaign', 'Link_vol" + "#{count}', 'features');")
+			-if(newlabel == true){
+				i.new
+			-}
+			figure
+				img(src="img/item_vol" + "#{count}" + "_img.jpg",alt='')
+			p.label #{label}
+			p.catch.shingo_m !{desc}
+			.btn #{btntext}

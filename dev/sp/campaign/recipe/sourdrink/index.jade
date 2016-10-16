@@ -1,0 +1,42 @@
+extends jade/template
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'sourdrinkrecipe')"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'sourdrinkrecipe')"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'sourdrinkrecipe')"
+	-var twitter_url = "%E3%82%B5%E3%83%AF%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B7%E3%83%94%E3%80%80%23SEIYU"
+	-var recipe_1 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourfruits')"
+	-var recipe_2 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourkiwi')"
+	-var recipe_3 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourpineapple')"
+	-var recipe_4 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourorange')"
+	-var recipe_5 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourblueberry')"
+	-var recipe_6 = "ga('send', 'event', 'Campaign', 'recipeLink', 'sourlemon')"
+block content
+	#contents-body
+		p.shingo_m
+			| おうちで簡単  彩り豊かな
+			br
+			| サワードリンクレシピを紹介します。
+		ul.bnr-block
+			li.bnr1
+				a(href='fruits/', onclick="#{recipe_1};") フルーツビネガーウォーター
+			li.bnr2
+				a(href='kiwi/', onclick="#{recipe_2};") キウイのフルーツビネガーウォーター
+			li.bnr3
+				a(href='pineapple/', onclick="#{recipe_3};") パイナップルのフルーツ酢
+			li.bnr4
+				a(href='orange/', onclick="#{recipe_4};") オレンジのフルーツ酢
+			li.bnr5
+				a(href='blueberry/', onclick="#{recipe_5};") ブルーベリーのフルーツ酢
+			li.bnr6
+				a(href='lemon/', onclick="#{recipe_6};") レモンのフルーツ酢
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/recipe/'+'#{thisRecipe}'+'/', onclick="#{facebook};", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/recipe/'+'#{thisRecipe}'+'/&related=Seiyu_Japan&hashtags='+'#{twitter_url}', onclick="#{twitter};", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?おうちで作れるさわやかサワードリンクレシピ | SEIYU http://www.seiyu.co.jp/campaign/recipe/'+'#{thisRecipe}'+'/', onclick="#{line};", target='_blank')
+						span LINE

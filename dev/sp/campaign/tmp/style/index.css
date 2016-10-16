@@ -1,0 +1,188 @@
+/*============================
+#contents
+============================*/
+div#contents {
+  height: 1845px;
+  /*============================
+  #mv
+  ============================*/
+  /*============================
+  #download
+  ============================*/
+  /*============================
+  #stamp
+  ============================*/
+  /*============================
+  #attention
+  ============================*/ }
+  div#contents div#mv {
+    background-image: url("../images/SP_bg_1.jpg");
+    height: 270px; }
+    div#contents div#mv .box {
+      width: 300px;
+      margin: 0 auto; }
+      div#contents div#mv .box div.title img {
+        position: relative;
+        top: 20px; }
+      div#contents div#mv .box div.subhead {
+        width: 121px;
+        position: relative;
+        margin-top: 30px; }
+        div#contents div#mv .box div.subhead div.shingo_m {
+          font-weight: 900 !important;
+          font-size: 13px; }
+          div#contents div#mv .box div.subhead div.shingo_m p {
+            margin: 0; }
+      div#contents div#mv .box div.limitedOnair {
+        width: 125px;
+        margin-top: 5px;
+        border: 1px solid #FFF;
+        background-color: #FFF;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        padding: 10px 5px; }
+        div#contents div#mv .box div.limitedOnair div.shingo_b, div#contents div#mv .box div.limitedOnair div.shingo_m {
+          color: #1644ad;
+          text-align: center; }
+        div#contents div#mv .box div.limitedOnair div.shingo_b {
+          font-size: 15px;
+          font-weight: 900 !important;
+          padding-bottom: 5px; }
+          div#contents div#mv .box div.limitedOnair div.shingo_b:after {
+            content: '';
+            border-top: 1px solid #ced6e7;
+            width: 110px;
+            height: 1px;
+            display: block;
+            position: relative;
+            top: 5px;
+            left: 7px; }
+        div#contents div#mv .box div.limitedOnair div.shingo_m {
+          font-size: 8px;
+          padding-top: 5px;
+          color: #000; }
+      div#contents div#mv .box div.shunnosuke {
+        width: 174px;
+        height: 190px;
+        position: relative;
+        top: -175px;
+        left: 135px; }
+  div#contents div#download {
+    background-image: url("../images/SP_bg_2.jpg");
+    position: relative;
+    height: 710px; }
+    div#contents div#download div.subhead {
+      position: relative;
+      text-align: center;
+      padding: 1px 0;
+      background-color: #1644ad;
+      font-size: 14px;
+      color: #FFF; }
+      div#contents div#download div.subhead .shingo_b {
+        font-weight: 900 !important; }
+    div#contents div#download div.hint {
+      text-align: center;
+      position: relative;
+      margin-top: 10px; }
+      div#contents div#download div.hint .shingo_m p {
+        font-size: 14px;
+        font-weight: 900 !important;
+        margin: 0; }
+        div#contents div#download div.hint .shingo_m p font.shingo_b {
+          color: #c00000;
+          font-weight: 900 !important; }
+    div#contents div#download div.sukiyaki {
+      background-image: url("../images/sukiyaki.png");
+      -moz-background-size: 320px 303px;
+        -o-background-size: 320px 303px;
+           background-size: 320px 303px;
+      background-repeat: no-repeat;
+      position: relative;
+      width: 320px;
+      margin: 0 auto; }
+      div#contents div#download div.sukiyaki .qr {
+        width: 99px;
+        position: relative;
+        left: 200px;
+        top: 80px; }
+      div#contents div#download div.sukiyaki div.shingo_m {
+        width: 280px;
+        margin: 0 auto;
+        font-size: 13px;
+        position: relative;
+        top: 80px;
+        left: 10px;
+        top: 100px; }
+        div#contents div#download div.sukiyaki div.shingo_m font.textalignLeft p {
+          text-align: left;
+          margin: 0; }
+          div#contents div#download div.sukiyaki div.shingo_m font.textalignLeft p font.smallFont {
+            font-size: 12px;
+            margin-top: 15px;
+            margin-left: 1em;
+            display: block;
+            position: relative; }
+      div#contents div#download div.sukiyaki .price {
+        width: 103px;
+        position: relative;
+        left: 195px;
+        top: 75px; }
+      div#contents div#download div.sukiyaki .otherMark {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        top: 20px; }
+  div#contents div#stamp {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    margin: 0 auto; }
+    div#contents div#stamp .shingo_m .subhead {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 13px;
+      font-weight: 900 !important;
+      color: #093288; }
+      div#contents div#stamp .shingo_m .subhead font.shingo_b {
+        color: #c00000;
+        font-weight: 900 !important; }
+  div#contents div#attention {
+    background-image: url("../images/SP_bg_2.jpg");
+    padding-bottom: 30px; }
+    div#contents div#attention div.subhead {
+      text-align: center;
+      font-size: 12px;
+      padding: 1px 0;
+      background-color: #1644ad;
+      color: #fff; }
+    div#contents div#attention div.text {
+      width: 300px;
+      margin: 0 auto; }
+      div#contents div#attention div.text div.caution {
+        position: relative;
+        top: 10px;
+        font-weight: 900; }
+      div#contents div#attention div.text div.cautionList {
+        font-size: 12px;
+        border-top: 1px solid #829ab8; }
+        div#contents div#attention div.text div.cautionList p {
+          margin: 3px 0;
+          text-indent: -1em;
+          margin-left: 1em; }
+  div#contents div.sns {
+    height: 75px;
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px; }
+    div#contents div.sns .facebook {
+      float: left;
+      margin: 0 10px; }
+    div#contents div.sns .twitter {
+      float: left;
+      margin-right: 10px; }
+    div#contents div.sns .line {
+      float: left; }

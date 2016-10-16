@@ -1,0 +1,53 @@
+extends ../jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – ガーリック香るシーフードカレー レシピページ | SEIYU"
+	-var current = "recipe"
+	-var dir_root = "../"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+	-var recipenum = 4
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'curryseafood');"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'curryseafood');"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'curryseafood');"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'curryseafood');"
+block recipecontent
+	-var recipename = "ガーリック香るシーフードカレー"
+	.recipe-area
+		i.label カレー with ブラックタイガーえび
+		h1
+			span #{recipename}
+		figure
+			img(src='../img/recipe_'+'#{recipenum}'+'_img.jpg', alt='#{recipename}')
+		.recipe-inner
+			p.description.
+				有頭えびがない場合は、殻つきのえび10～12尾程度を使いましょう。えびの殻からも良い味が出るので、普段から剥いた殻を冷凍しておくと重宝します。
+			.info 調理時間･･･20分
+			+recipeList(4,"材料（6人分）",11)
+			.howto
+				h2.shingo_m 作り方
+				dl
+					dt 1
+					dd 玉ねぎはみじん切りにし、シーフードミックスは解凍しておく。
+				dl
+					dt 2
+					dd 鍋にサラダ油、おろしにんにく小さじ1を入れて熱し、玉ねぎをしんなりするまで炒め、水を加えて煮込む。
+				dl
+					dt 3
+					dd いったん火を止め、ルウを割り入れてよく溶かし、再び弱火でとろみがつくまで煮込む。 
+				dl
+					dt 4
+					dd フライパンにバター10gとおろしにんにく小さじ1/2を熱し、シーフードミックスをさっと炒め、③に加えて軽く煮込む。 
+				dl
+					dt 5
+					dd トッピング用のえびは尾を残して殻と背ワタを取り、塩少々をふって軽くもんだ後、流水で洗い、水気をペーパーでよくふく。 
+				dl
+					dt 6
+					dd フライパンにバター10gとおろしにんにく小さじ1/2を熱し、⑤のえびを焼いて、白ワイン、塩、こしょうをふる。
+	.btn-prev
+		a(href='../', onclick="#{btn_prev};") トップに戻る

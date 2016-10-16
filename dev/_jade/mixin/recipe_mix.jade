@@ -1,0 +1,120 @@
+//---------------------------
+//--	RECIPE
+//---------------------------
+//-　　レシピ番号　○人分　総数
+mixin recipeList(recipenum,amount,materialnum)
+	-var recipe1 = [];
+	-recipe1[0] = ["合いびき肉"];
+	-recipe1[1] = ["150g"];
+	-recipe1[2] = ["玉ねぎ"];
+	-recipe1[3] = ["1個"];
+	-recipe1[4] = ["パプリカ"];
+	-recipe1[5] = ["1/4個"];
+	-recipe1[6] = ["なす"];
+	-recipe1[7] = ["1本"];
+	-recipe1[8] = ["かぼちゃ"];
+	-recipe1[9] = ["100g"];
+	-recipe1[10] = ["オクラ"];
+	-recipe1[11] = ["8本"];
+	-recipe1[12] = ["サラダ油"];
+	-recipe1[13] = ["大さじ1"];
+	-recipe1[14] = ["水"];
+	-recipe1[15] = ["800ml"];
+	-recipe1[16] = ["固形コンソメ"];
+	-recipe1[17] = ["1個"];
+	-recipe1[18] = ["Ｓ＆Ｂゴールデンカレー"];
+	-recipe1[19] = ["1/4箱（約50g）"];
+	-recipe1[20] = ["塩"];
+	-recipe1[21] = ["適量"];
+	-var recipe2 = [];
+	-recipe2[0] = ["合いびき肉"];
+	-recipe2[1] = ["200g"];
+	-recipe2[2] = ["エリンギ"];
+	-recipe2[3] = ["1パック"];
+	-recipe2[4] = ["サラダ油"];
+	-recipe2[5] = ["大さじ1"];
+	-recipe2[6] = ["水"];
+	-recipe2[7] = ["750ml"];
+	-recipe2[8] = ["S＆Bゴールデンカレー"];
+	-recipe2[9] = ["1/2箱（99g）"];
+	-recipe2[10] = ["みなさまのお墨付き<br>とろけるミックスチーズ"];
+	-recipe2[11] = ["80g"];
+	//-  特殊なため
+	//-var recipe3 = [];
+	-var recipe4 = [];
+	-recipe4[0] = ["ブラックタイガーえび（大）"];
+	-recipe4[1] = ["10尾"];
+	-recipe4[2] = ["シーフードミックス"];
+	-recipe4[3] = ["300g"];
+	-recipe4[4] = ["玉ねぎ"];
+	-recipe4[5] = ["1個"];
+	-recipe4[6] = ["サラダ油"];
+	-recipe4[7] = ["大さじ1"];
+	-recipe4[8] = ["バター"];
+	-recipe4[9] = ["20g"];
+	-recipe4[10] = ["おろしにんにく"];
+	-recipe4[11] = ["小さじ2"];
+	-recipe4[12] = ["水"];
+	-recipe4[13] = ["750ml"];
+	-recipe4[14] = ["S＆Bゴールデンカレー"];
+	-recipe4[15] = ["1/2箱（99g）"];
+	-recipe4[16] = ["白ワイン"];
+	-recipe4[17] = ["大さじ1"];
+	-recipe4[18] = ["塩"];
+	-recipe4[19] = ["少々"];
+	-recipe4[20] = ["こしょう"];
+	-recipe4[21] = ["少々"];
+	-var recipe5 = [];
+	-recipe5[0] = ["玉ねぎ"];
+	-recipe5[1] = ["1個"];
+	-recipe5[2] = ["アボカド"];
+	-recipe5[3] = ["2個"];
+	-recipe5[4] = ["トマト"];
+	-recipe5[5] = ["小2個"];
+	-recipe5[6] = ["水"];
+	-recipe5[7] = ["650ml"];
+	-recipe5[8] = ["S＆Bゴールデンカレー"];
+	-recipe5[9] = ["1/2箱（99g）"];
+	-var recipe6 = [];
+	-recipe6[0] = ["シーフードミックス"];
+	-recipe6[1] = ["200g"];
+	-recipe6[2] = ["鶏ひき肉"];
+	-recipe6[3] = ["150g"];
+	-recipe6[4] = ["玉ねぎ"];
+	-recipe6[5] = ["1個"];
+	-recipe6[6] = ["なす"];
+	-recipe6[7] = ["2本"];
+	-recipe6[8] = ["オリーブ油"];
+	-recipe6[9] = ["大さじ4"];
+	-recipe6[10] = ["水"];
+	-recipe6[11] = ["650ml"];
+	-recipe6[12] = ["ヴァルフルッタ　カットトマト"];
+	-recipe6[13] = ["1/2缶（200g）"];
+	-recipe6[14] = ["Ｓ＆Ｂゴールデンカレー"];
+	-recipe6[15] = ["1/2箱（99g）"];
+	.materials
+		h2.shingo_m #{amount}
+		.inner
+			-for(var i = 0; i < materialnum; i++){
+				case recipenum
+					when 1
+						dl
+							dt !{recipe1[i * 2]}
+							dd !{recipe1[i * 2 + 1]}
+					when 2
+						dl
+							dt !{recipe2[i * 2]}
+							dd !{recipe2[i * 2 + 1]}
+					when 4
+						dl
+							dt !{recipe4[i * 2]}
+							dd !{recipe4[i * 2 + 1]}
+					when 5
+						dl
+							dt !{recipe5[i * 2]}
+							dd !{recipe5[i * 2 + 1]}
+					when 6
+						dl
+							dt !{recipe6[i * 2]}
+							dd !{recipe6[i * 2 + 1]}
+				-}

@@ -1,0 +1,90 @@
+//----------- jade に慣れてもらう用 --------------
+	scssの方は気にせず jade のみ いじってね
+//------------- ここから おまじない --------------
+extends ../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 – 夏のボディケアは「TREE HUT」におまかせ！｜SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html"
+	-var og_description = "アメリカで話題のボディケアブランド「TREE HUT」をSEIYUにてお手ごろ価格で販売中！人気のヒミツとおすすめの使い方をご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/campaign/features/vol7_treehut/img/sns.jpg"
+	-var og_sitename = "西友 | SEIYU"
+	-var description = "アメリカで話題のボディケアブランド「TREE HUT」をSEIYUにてお手ごろ価格で販売中！人気のヒミツとおすすめの使い方をご紹介します。"
+	-var keyword = "TREE HUT,トゥリーハット,ツリーハット,ボディケア,バスケア,オーガニック,シアバター, ブラジルナッツオイル,独占販売,直輸入,ボディウォッシュ,シュガースクラブ,ボディローション,ボディバター,ハンドクリーム,角質ケア,乾燥ケア,SEIYUドットコム,ネットショップ,通販,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー"
+	-var dir_root = "../"
+	-var current = ""
+	-var sp = false
+block osusume_content
+	-var facebook_ga = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol7_treehut');";
+	-var twitter_ga = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol7_treehut');";
+	#contents(class="#{current}")
+		header#content-header
+			.container
+				p.label SEIYUのオススメ商品発掘し隊！ Vol.7
+				h1 アメリカで話題のボディケアブランドを独占販売*！夏のボディケアは「TREE HUT」におまかせ！
+				p.comment バイヤー・阿部 : アメリカ発・高品質ナチュラルブランド「TREE HUT」をバイヤー・阿部がご紹介します。
+				figure
+					img(src='img/header_img.jpg', alt='')
+				ul.sns
+					li
+						a.facebook(href='//www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html', onclick="#{facebook_ga}", target='_blank')
+							span facebook
+					li
+						a.twitter(href='//twitter.com/share?url=http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html&related=Seiyu_Japan&hashtags=TREEHUT%E3%80%80%23SEIYU', onclick="#{twitter_ga}", target='_blank')
+							span twitter
+		//------------- ここまで おまじない --------------
+		#content-body
+			section#sec1
+				.container
+					.block.clearfix
+						figure
+							//-画像を入れてみよう
+						.txt-block
+							h2 並行輸入でしか手に入らなかったバス＆ボディケアブランドがついに日本上陸！
+							p.shingo_m.
+							p.shingo_m.
+			section#sec2
+				.container
+					.block.clearfix
+						.txt-block
+							h2 心地よい香りが10種類♪好みの香りがきっとみつかる！
+							p.shingo_m.
+							p.shingo_m.
+						figure
+							//-画像を入れてみよう
+							figcaption.shingo_m.
+			section#sec3
+				.container
+					.block.clearfix
+						figure
+							//-画像を入れてみよう
+							figcaption.shingo_m.
+						.txt-block
+							h2 天然由来成分配合で高品質。なのに、お手ごろ価格
+							p.shingo_m.
+							p.shingo_m.
+							p.shingo_m.
+							p.shingo_m.caution.
+			section#products
+				.container
+					h2 商品情報
+					.products
+						h3 この夏、特にオススメの「TREE HUT」 ボディケア商品をご紹介！
+						.product_items.clearfix
+							.product1
+							.product2
+							.product3
+					ul.btn-block
+						h3 その他、「TREE HUT」ボディケア商品を種類豊富に取り揃えています。
+						li.btn1
+							a(href='https://www.the-seiyu.com/front/app/catalog/list/init?searchCategoryCode=E201146&nsFlg=false&wrt=y&parent1Code=E200500&parent2Code=E201141/&aff_id=syotot0003', target='_blank', onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu04', 'vol7_treehut');") ネットで買う
+						li.btn2
+							a(href='/shoplist/770', target='_blank') お近くの取扱店舗を探す
+					.feature-block
+						h4.title SEIYUのオススメ商品発掘し隊！では他にも話題の商品、隠れた人気商品をご紹介しています！
+						p.btn
+							a(href='../index.html', onclick="ga('send', 'event', 'Campaign', 'COJPLink_features', 'vol7_treehut');") SEIYUのオススメ商品発掘し隊！シリーズはこちら
+					ul.note-block.shingo_m
+						li ※このページに記載の内容は、2016年7月28日現在の情報です。
+						li ※掲載の商品は、店舗によりお取扱いがない場合がございます。

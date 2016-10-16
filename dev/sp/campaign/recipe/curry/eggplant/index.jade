@@ -1,0 +1,51 @@
+extends ../jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – なすとシーフードのカレー レシピページ | SEIYU"
+	-var current = "recipe"
+	-var dir_root = "../"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+	-var recipenum = 6
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'curryeggplant');"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'curryeggplant');"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'curryeggplant');"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'curryeggplant');"
+block recipecontent
+	-var recipename = "なすとシーフードのカレー"
+	.recipe-area
+		i.label カレー with なす
+		h1
+			span #{recipename}
+		figure
+			img(src='../img/recipe_' + '#{recipenum}' + '_img.jpg', alt='#{recipename}')
+		.recipe-inner
+			p.description.
+				トマトの程よい酸味が、シーフードとよくあいます。
+				シーフードミックスはかたくならないよう、さっと炒め、煮込み時間も長くならないようにしましょう。
+			.info 調理時間･･･30分
+			+recipeList(6,"材料（5人分）",8)
+			.howto
+				h2.shingo_m 作り方
+				dl
+					dt 1
+					dd 玉ねぎはみじん切り、なすは乱切りにし、シーフードミックスは解凍しておく。
+				dl
+					dt 2
+					dd 鍋にオリーブ油 大さじ1を熱し、玉ねぎ、ひき肉の順に炒め、水、カットトマトを加えて沸騰後5分ほど煮込む。
+				dl
+					dt 3
+					dd いったん火を止め､ルウを割り入れてよく溶かし､再び弱火でとろみがつくまで煮込む。
+				dl
+					dt 4
+					dd フライパンにオリーブ油 大さじ2を熱してなすを炒め、③のカレーに加える。
+				dl
+					dt 5
+					dd 空いたフライパンにオリーブ油 大さじ1を熱してシーフードミックスをさっと炒めてカレーに加え、軽く煮込む。
+	.btn-prev
+		a(href='../', onclick="#{btn_prev};") トップに戻る

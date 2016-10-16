@@ -1,0 +1,47 @@
+extends ./template
+include ../mixin/bgm_mix
+
+block project
+	-var project = ""
+block vars
+	-var title = ""
+	-var og_url = ""
+	-var og_description = ""
+	-var og_image = ""
+	-var description = ""
+	-var keyword = ""
+	-var dir_root = ""
+	-var current = ""
+	-var og_sitename = ""
+	-var sp = false
+	-var thisRecipe = ""
+	-var recipenum = ""
+block project_meta
+	-if(sp == true){
+		!='\n\t<!--#include virtual="/include/campaign/sp_styles_contemporary.html" -->'
+	-}else{
+		!='\n\t<!--#include virtual="/include/campaign/styles_contemporary.html" -->'
+	-}
+	link(rel="stylesheet",href="css/index.css")
+block content
+	-if(project == "bgm"){
+		-if(sp == true){
+			!='\n\t<!--#include virtual="/include/campaign/sp_header_contemporary.html" -->'
+		-}else{
+			!='\n\t<!--#include virtual="/include/campaign/header_contemporary.html" -->'
+		-}
+	-}else{
+		!='\n\t<!--#include virtual="/include/header.html" -->'
+	-}
+	#contents(class="#{current}")
+		//- Main
+		block bgmcontent
+	-if(project == "bgm"){
+		-if(sp == true){
+			!='\n\t<!--#include virtual="/include/campaign/sp_footer_contemporary.html" -->'
+		-}else{
+			!='\n\t<!--#include virtual="/include/campaign/footer_contemporary.html" -->'
+		-}
+	-}else{
+		!='\n\t<!--#include virtual="/include/footer.html" -->'
+	-}

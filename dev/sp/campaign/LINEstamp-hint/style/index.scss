@@ -1,0 +1,373 @@
+@import "mixin";
+/*============================
+#contents
+============================*/
+div#contents {
+    //&:before {
+		//content: "";
+		//display: block;
+		//width: 100%;
+		//height: 2500px;
+		//background-image: url(../images/damii.jpg);
+		//background-position: center -70px;
+		//background-size: 320px auto;
+		//background-repeat: no-repeat;
+		//position: absolute;
+		//opacity: 0.5;
+		//z-index: 1;
+    //}
+
+	a{
+		color: #093288;
+	}
+
+	/*============================
+	  #mv
+	  ============================*/
+	div#mv {
+		//background: linear-gradient(#bdd4ef, #e4f1fd);
+		background-image: url("../images/SP_bg_1.jpg");
+		background-size: 200px auto;
+	  	.box {
+			width: 300px;
+			height: 100%;
+			margin: 0 auto;
+			position: relative;
+			div.title {
+				text-align: center;
+			  	padding-top: 12px;
+			}
+			p.subhead {
+				margin: 7px 0 0 6px;
+				line-height: 19px;
+				font-size: 13px;
+			}
+			div.limitedOnair {
+				display: inline-block;
+				margin-top: 11px;
+				margin-left: 5px;
+			  	margin-bottom: 26px;
+				background-color: #FFF;
+				border-radius: 5px;
+				padding: 3px 9px;
+				text-align: center;
+				.text, .date {
+					//color: #1644ad;
+					text-align: center;
+				}
+				.text {
+					font-size: 12px;
+					font-weight: 900 !important;
+				  	color: #f20004;
+					border-bottom: 1px solid #ced6e7;
+					margin: 0;
+					line-height: 30px;
+				}
+				.date {
+					font-size: 10px;
+					color: #000;
+					margin: 0;
+					line-height: 24px;
+				}
+			}
+			div.shunnosuke {
+				width: 174px;
+				height: 190px;
+				position: absolute;
+				bottom: 0;
+				right: -10px;
+			}
+		}
+	}
+
+	/*============================
+	  #download
+	  ============================*/
+	div#download {
+		//background: linear-gradient(#e4f1fd, #bdd4ef);
+		background-image: url("../images/SP_bg_2.jpg");
+		background-size: 200px auto;
+		position: relative;
+		//height: 712px;
+		p.subhead {
+			text-align: center;
+			background-color: #1644ad;
+			font-size: 14px;
+			color: #FFF;
+			margin: 0;
+			line-height: 40px;
+			letter-spacing: 1px;
+		}
+		div.hint {
+			margin-top: 16px;
+			p {
+				font-size: 14px;
+				margin: 0;
+				line-height: 21px;
+				text-align: center;
+				span {
+					color: #c00000;
+				}
+			}
+		}
+		//div.sukiyaki {
+		//	background-image: url("../images/sukiyaki.png");
+		//	background-size: 320px 303px;
+		//	background-repeat: no-repeat;
+		//	position: relative;
+		//	width: 320px;
+		//	height: 303px;
+		//	margin: 2px auto 0;
+		//	.qr {
+		//		position: absolute;
+		//		right: 18px;
+		//		top: 84px;
+		//	}
+		//	div.text {
+		//		width: 280px;
+		//		margin: 0 auto;
+		//		position: absolute;
+		//		left: 25px;
+		//		top: 206px;
+		//		p {
+		//			text-align: left;
+		//			margin: 0;
+		//			font-size: 13px;
+		//			line-height: 18px;
+		//			&.smallFont {
+		//				font-size: 12px;
+		//				margin-top: 21px;
+		//				margin-left: 13px;
+		//				color: #666;
+		//			}
+		//		}
+		//		.price {
+		//			position: absolute;
+		//			right: 5px;
+		//			top: 48px;
+		//		}
+		//	}
+        //
+		//}
+		.otherMark {
+			width: 300px;
+			text-align: center;
+			position: relative;
+			margin: 15px auto 0;
+		  	ul.marks{
+			  	@include clearfix();
+			  	list-style: none;
+                //スタンプの数によって変えることで中央によります
+			  	width: 300px;
+			  	padding: 0;
+			  	margin: 0 auto;
+                margin-top: 10px;
+                //li:first-child{
+                //    float: left;
+                //    margin-left: 25px;
+                //    margin-top: 10px;
+                //}
+			  	li{
+				  	margin-top: 14px;
+				}
+                //li:last-child{
+                //    float: right;
+                //    margin-right: 25px;
+                //}
+			}
+			p.subhead {
+				color: #FFF;
+				border-radius: 50px;
+				background-color: #1644ad;
+				font-size: 13px;
+				width: 210px;
+				margin: 0 auto;
+				line-height: 30px;
+			}
+			.hint{
+				border-radius: 5px;
+				width: 240px;
+				margin: 18px auto 0;
+				background-color: #fff;
+				position: relative;
+			  	padding: 10px 0;
+				.hintBalloon{
+					background-image: url("../images/balloon.png");
+					width: 53px;
+					height: 51px;
+					background-size: contain;
+					background-repeat: no-repeat;
+					position: absolute;
+					left: -16px;
+					top: -18px;
+					z-index: 2;
+					color: #fff;
+					font-size: 11px;
+					line-height: 55px;
+					text-indent: 8px;
+				}
+			  	div.box{
+					.balloonText {
+						font-size: 11px;
+						margin-left: 7px;
+						//margin-top: 18px;
+						line-height: 17px;
+						span {
+						  	color: #c00000;
+						}
+					}
+				}
+
+			}
+
+			p.caution {
+				font-size: 12px;
+				text-align: left;
+				width: 287px;
+			  	padding: 14px 0;
+			  	margin: 0 auto;
+			}
+
+			.lookformark{
+				width: 300px;
+				margin: 0 auto;
+				.lookformarkSubhead{
+					font-size: 14px;
+					margin-top: 5px;
+				}
+				a.lookformarkButton{
+					display: block;
+					width: 290px;
+					height: 50px;
+					background-color: #1644ad;
+					margin: 0 auto;
+					border-radius: 5px;
+				  	text-decoration: none;
+					p{
+						font-size: 15px;
+						padding: 14px 0;
+						color: #FFF;
+					}
+					img{
+						position: absolute;
+						bottom: 76px;
+					  	right: 20px;
+					}
+				  	&:visited{
+					  	color: #fff;
+					}
+				}
+				p.caution{
+				  	font-size: 12px;
+				  	padding-bottom: 25px;
+				}
+			}
+		}
+	}
+
+	/*============================
+	  #stamp
+	  ============================*/
+	div#stamp {
+		position: relative;
+		padding-top: 15px;
+		box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.15);
+		.inner{
+			width: 300px;
+			height: 238px;
+			text-align: center;
+			margin: 0 auto;
+			.subhead {
+				text-align: center;
+				font-size: 13px;
+				color: #093288;
+				margin: 0;
+				margin-bottom: 7px;
+				span {
+					color: #c00000;
+				}
+				img {
+				}
+			}
+		}
+	  	.date{
+			text-align: center;
+			background-color: #1644ad;
+			margin: 0;
+			line-height: 34px;
+		  	.box{
+			  	@include clearfix();
+			  	min-width: 320px;
+			  	width: 300px;
+			  	margin: 0 auto;
+				.left{
+				  font-size: 13px;
+				  color: #ec1b1b;
+				  float: left;
+				  width: 133px;
+				  margin-left: 10px;
+				  border-radius: 4px;
+				  background-color: #FFF;
+				}
+				.right{
+				  color: #fff;
+				  font-size: 11px;
+				  float: right;
+				  margin-right: 10px;
+				  margin-top: 15px;
+				}
+			}
+		}
+	}
+
+	/*============================
+	  #attention
+	  ============================*/
+	div#attention {
+		//background: linear-gradient(#bdd4ef, #e4f1fd);
+		background-image: url("../images/SP_bg_2.jpg");
+		padding-bottom: 30px;
+		background-size: 200px auto;
+
+		div.text {
+			width: 300px;
+			margin: 0 auto;
+			padding-top: 20px;
+			p.caution {
+				margin: 0;
+			}
+			div.cautionList {
+				font-size: 12px;
+				border-top: 1px solid #829ab8;
+				margin-top: 5px;
+				padding-top: 10px;
+				p {
+					margin: 0;
+					text-indent: -1em;
+					margin-left: 1em;
+					line-height: 19px;
+					a {
+					}
+				}
+			}
+		}
+	}
+	div.sns {
+		position: relative;
+		width: 300px;
+	  	margin: 0 auto;
+	  	padding: 15px 0;
+        padding-bottom: 55px;
+		.facebook {
+			float: left;
+			margin: 0 10px;
+		}
+		.twitter {
+			float: left;
+			margin-right: 10px;
+		}
+		.line {
+			float: left;
+		}
+	}
+}

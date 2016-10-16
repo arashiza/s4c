@@ -1,0 +1,135 @@
+extends ../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 – 豚骨付き肉「バックリブ」が新しい！ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/features/vol4_backrib/"
+	-var og_description = "BBQやパーティー、ちょっと豪華な夕食にも。アメリカで人気の豚骨付き肉「バックリブ」を、おすすめの簡単レシピとともにご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/campaign/features/vol4_backrib/img/sns.jpg"
+	-var description = "BBQやパーティー、ちょっと豪華な夕食にも。アメリカで人気の豚骨付き肉「バックリブ」を、おすすめの簡単レシピとともにご紹介します。"
+	-var keyword = "バックリブ,豚骨付き肉,豚肉,アメリカンポーク,ビール煮,料理,レシピ,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー"
+	-var dir_root = "../"
+	-var current = ""
+	-var sp = false
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			.container
+				p.label SEIYUのオススメ商品発掘し隊！ Vol.4
+				h1 BBQやパーティー、ちょっと豪華な夕食にも。豚骨付き肉「バックリブ」が新しい！
+				p.comment バイヤー / 村上 これからのアウトドアシーズンにおすすめの骨付き肉、「バックリブ」をバイヤー・村上がご紹介します。
+				figure
+					img(src='img/header_img.jpg', alt='', width='400', height='225')
+				ul.sns
+					li
+						a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/features/vol4_backrib/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol4_backrib');", target='_blank')
+							span facebook
+					li
+						a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/features/vol4_backrib/&related=Seiyu_Japan&hashtags=%e3%83%90%e3%83%83%e3%82%af%e3%83%aa%e3%83%96%20%23%e8%b1%9a%e9%aa%a8%e4%bb%98%e3%81%8d%e8%82%89%20%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol4_backrib');", target='_blank')
+							span twitter
+		#content-body
+			section#sec1
+				.container
+					h2 日本人好みの味わい。ロース側の豚骨付き肉「バックリブ」
+					p.shingo_m アメリカではよく食べられているという「バックリブ」。みなさんご存知でしょうか？
+					p.shingo_m
+						| 骨付きの豚肉として有名な「スペアリブ」は、あばらの前～脇のお肉のこと。今回ご紹介する「バックリブ」は、その背中・ロース側のお肉で、脂身が少なく、ロース肉ならではの柔らかさと骨付き肉の旨味が合わさっているのが特徴です。
+					p.shingo_m アメリカではBBQの定番で、そのおいしさや食べ応えに、人気が集まっています。
+					figure
+						img(src='img/sec1_img.jpg', alt='「バックリブ」ってどこの部位？', width='609', height='430')
+			section#sec2
+				.container
+					.txt-block
+						h2 毎日の献立にも！いつでも気軽に食卓へ。
+						p.shingo_m SEIYUの「バックリブ」は、バイヤーが骨付き肉文化の発祥であるアメリカに赴いて、試食を重ねた商品。味にも品質にも自信があります。
+						p.shingo_m
+							| 一般的なスーパーでは日々の取扱が少ないのですが、SEIYUではいつでも店舗でお求めいただけます。さらに、100gあたり127円(税抜)というお買い得価格だから、BBQやアウトドアといったイベントの時だけなく、毎日の献立にも使ってみてはいかがでしょうか？
+						p.shingo_m 骨付き肉にガブッとかぶりつく楽しさと美味しさで、いつもの夕食も一味違うものになりますよ。
+					figure
+						img(src='img/sec2_img.png', alt='村上バイヤー「店舗のお肉売場で販売中です！」', width='310', height='230')
+						figcaption.shingo_m 村上バイヤー「店舗のお肉売場で販売中です！」
+			section#sec3
+				.container
+					h2 グリルや煮込み、簡単調理でボリューム満点！
+					p.lead.shingo_b バイヤーオススメの、簡単・豪華なレシピをご紹介します。
+					section#recipe1.recipe
+						h3 漬け込んで焼くだけ 豚肉バックリブ
+						.row
+							figure
+								img(src='img/sec3_recipe1_img.jpg', alt='豚肉バックリブ', width='460', height='300')
+							.txt-block
+								h4.shingo_b 材料
+								.inner.shingo_m
+									ul
+										li 豚肉バックリブ　350g
+										li 水　50cc
+									h5 ＜特製ソース＞
+									.column-2
+										ul
+											li マーマレード　大さじ２
+											li ウスターソース　大さじ１
+											li ケチャップ　大さじ１
+											li しょうゆ　大さじ２
+										ul
+											li すりおろししょうが　１片分
+											li すりおろし玉ねぎ　1/4個分
+						.howto
+							h4.shingo_b 作り方
+							ul.shingo_m
+								li 1.バックリブは味がよく染み込むよう、フォークで穴をあける。食べやすくするため、骨についている薄皮を包丁で取る。
+								li 2.フライパンで焼く場合、サラダ油を熱し、まずはバックリブを強火で焼く。
+								li
+									| 3.肉全体に焼き色がついたら、特製ソースと水を加え、弱火で蒸し焼きにする。
+									br
+									| 何度か返しながら焼き、ソースが煮詰まってきたら完成。
+					section#recipe2.recipe
+						h3 ほろっとほぐれるお肉に舌鼓 バックリブのビール煮
+						.row
+							figure
+								img(src='img/sec3_recipe2_img.jpg', alt='バックリブのビール煮', width='460', height='300')
+							.txt-block
+								h4.shingo_b 材料
+								.inner.shingo_m
+									.column-2
+										ul
+											li 豚肉バックリブ　600g
+											li 塩・こしょう　各少々
+											li 薄力粉　適量
+											li 油　小さじ1
+											li 玉ねぎ(みじん切り)　1個
+											li にんじん(みじん切り)　1/2本
+											li セロリ(みじん切り)　1本
+										ul
+											li にんにく(みじん切り)　1片
+											li 油　適量
+											li ビール　350ml
+											li 水　適量
+											li ローリエ　1枚
+											li 塩・こしょう　各適量
+						.howto
+							h4.shingo_b 作り方
+							ul.shingo_m
+								li 1.バックリブに塩・こしょうをすり込み、薄力粉をまぶす。油を熱したフライパンに入れ、表面をカリッと焼く。
+								li 2.鍋に油とにんにくを入れ弱火にかけ、香りが立ったら玉ねぎ・にんじん・セロリを入れ色づくまで炒める。
+								li 3.2の鍋に1とビールを入れ、強火にかけてアルコールを飛ばす。
+								li 4.3に肉がかくれるくらいの水とローリエを入れ、塩・こしょうで味を調え30分ほど煮込む。
+								li ※圧力鍋を使うと、煮込み時間が10分ほどに短縮できます。
+								li ※ビールはサイダーやコーラでも代用が可能です。
+			section#products
+				.container
+					h2 商品情報
+					.item.item1
+						figure
+							img(src='img/products_item1_img.jpg', alt='アメリカ産 豚肉バックリブ', width='328', height='169')
+						.item-detail
+							h3.shingo_b
+								| アメリカ産
+								br
+								| 豚肉バックリブ
+							p.price 100gあたり ¥127（税抜）
+					ul.btn-block
+						li.btn2
+							a(href='/shoplist/700', target='_blank') お近くの取扱店舗を探す
+					ul.note-block.shingo_m
+						li ※このページに記載の情報は、2016年5月9日時点のものです。予告なく変更になる場合があります。
+						li ※掲載の商品は、店舗によりお取扱いがない場合がございます。

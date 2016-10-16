@@ -1,0 +1,85 @@
+extends ../jade/template
+block vars
+	-var title = "西友 – キウイのフルーツビネガーウォーター レシピページ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/recipe/sourdrink/"
+	-var og_description = "お酢とフルーツでお手軽に作れる、彩り豊かでさわやかなサワードリンクレシピをご紹介します。"
+	-var current = "recipe"
+	-var dir_root = "../"
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'sourkiwi')"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'sourkiwi')"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'sourkiwi')"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'sourkiwi')"
+	-var twitter_url = "%E3%82%B5%E3%83%AF%E3%83%BC%E3%83%89%E3%83%AA%E3%83%B3%E3%82%AF%E3%83%AC%E3%82%B7%E3%83%94%E3%80%80%23SEIYU"
+block content
+	#contents-body.recipe2
+		.recipe-area
+			i.label サワードリンク with キウイ
+			h1
+				span キウイのフルーツビネガーウォーター
+			figure
+				img(src='../img/recipe_2_img.jpg', alt='キウイのフルーツビネガーウォーター')
+			.recipe-inner
+				.info 調理時間：5分、エネルギー：98kcal、塩分：0.0g
+				p お好みのフルーツに変えても美味しく召し上がれます。
+				.materials
+					h2.shingo_m 材料（2人分）
+					dl
+						dt キウイフルーツ
+						dd 1個
+					dl
+						dt ブルーベリー
+						dd 20粒
+					dl
+						dt ミント
+						dd 適宜
+					dl
+						dt.space
+						dd
+					dl
+						dt ミツカン　純リンゴ酢
+						dd 大さじ２
+					dl
+						dt はちみつ
+						dd 大さじ２
+					dl
+						dt 水
+						dd 450ml
+				// /materials
+				.howto
+					h2.shingo_m 作り方
+					dl
+						dt 1
+						dd リンゴ酢、はちみつ、水を容器に入れて、よく溶かす。
+					dl
+						dt 2
+						dd
+							| 皮をむいて輪切りにしたキウイとブルーベリー、お好みでミントを①に入れて、3〜4時間冷蔵庫でつける。
+							br
+							| ※そのままお飲みください。ミントを入れていただくとよりさっぱりと召し上がれます。
+				// /howto
+		// /recipe-area
+		.caution
+			p
+				| ※お好みで漬け時間を調整して下さい。（１時間程度から美味しくお召し上がりいただけます。）
+				br
+				|                 ※漬け終わった果物はお好みでお召し上がりください。ヨーグルトに入れたり、スムージーにしていただくと美味しく召し上がれます。
+				br
+				|                 ※調理後は冷蔵庫にて保存し、当日中にお召し上がりください。
+				br
+				|                 ※金属製のふたの使用は避けてください。
+				br
+				|                 ※エネルギー、食塩相当量は1人分です。
+		.btn-prev
+			a(href='../', onclick="#{btn_prev};") トップに戻る
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/recipe/sourdrink/', onclick="#{facebook};", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/recipe/sourdrink/&related=Seiyu_Japan&hashtags='+'#{twitter_url}', onclick="#{twitter};", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?おうちで作れるさわやかサワードリンクレシピ | SEIYU http://www.seiyu.co.jp/campaign/recipe/sourdrink/', onclick="#{line};", target='_blank')
+						span LINE

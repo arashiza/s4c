@@ -1,0 +1,30 @@
+extends ./template
+include ../mixin/osusume_mix
+block project
+	-var project = ""
+block vars
+	-var title = ""
+	-var og_url = ""
+	-var og_description = ""
+	-var og_image = ""
+	-var description = ""
+	-var keyword = ""
+	-var dir_root = ""
+	-var current = ""
+	-var og_sitename = ""
+	-var sp = false
+	-var thisRecipe = ""
+	-var recipenum = ""
+block project_meta
+		meta(property="og:title" content="#{title}")
+		meta(property="og:url" content="#{og_url}")
+		meta(property="og:image" content="#{og_image}")
+		meta(property="og:site_name" content="#{og_sitename}")
+		meta(property="og:description" content="#{description}")
+		!='\n\t<!--#include virtual="/include/styles.html" -->'
+		script(type="text/javascript" src="//typesquare.com/accessor/script/typesquare.js?myX6PdQLJLo%3D" charset="utf-8")
+		link(rel="stylesheet" href="css/index.css")
+block content
+	!='\n\t<!--#include virtual="/include/header.html" -->'
+		block osusume_content
+	!='\n\t<!--#include virtual="/include/footer.html" -->'

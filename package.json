@@ -1,0 +1,31 @@
+{
+  "name": "template",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-jade": "^0.14.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-newer": "^1.1.0",
+    "grunt-typescript": "^0.7.0",
+    "iconv-lite": "^0.4.6"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}

@@ -1,0 +1,22 @@
+    Options +Includes
+    AddOutputFilter INCLUDES .htm .html
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !/$
+    RewriteCond %{REQUEST_URI} !/entry$
+    RewriteCond %{REQUEST_URI} !/show$
+    RewriteCond %{REQUEST_URI} !/create$
+    RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+    RewriteRule .* %{REQUEST_URI}/index.html [L,R]
+
+
+    RewriteCond %{REQUEST_URI} /$
+    RewriteCond %{REQUEST_URI} !/entry/$
+    RewriteCond %{REQUEST_URI} !/show/$
+    RewriteCond %{REQUEST_URI} !/create/$
+    RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+    RewriteRule .* %{REQUEST_URI}index.html [L,R]
+
+    Redirect permanent /sp/campaign/open/toyocho /shop/38
+
+    Redirect permanent /sp/campaign/unagi/LINE /sp/campaign/LINEstamp

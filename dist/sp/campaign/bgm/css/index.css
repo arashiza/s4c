@@ -1,0 +1,91 @@
+@import url(/common/css/sp/reset.css);
+html {
+  height: 100%; }
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  line-height: 1.5;
+  color: #333; }
+
+#contents {
+  padding: 0 0 50px 0;
+  background: url(../img/bg_contents_left.png) repeat-y left top;
+  -moz-background-size: 160px auto;
+    -o-background-size: 160px auto;
+       background-size: 160px auto;
+  overflow: hidden; }
+  #contents * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box; }
+    #contents *:before {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box; }
+    #contents *:after {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box; }
+
+.contents-wrap {
+  min-width: 320px;
+  margin: 0 auto; }
+
+#mv {
+  background: #004b93 url(../img/mv_01.png) no-repeat center top;
+  -moz-background-size: 708px auto;
+    -o-background-size: 708px auto;
+       background-size: 708px auto;
+  height: 220px;
+  border-bottom: 40px solid #0e3d56;
+  text-align: center; }
+  #mv .container {
+    padding: 25px 0 0; }
+  #mv h1 {
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 8px; }
+  #mv .bold {
+    font-weight: bold; }
+  #mv .txt {
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 120%; }
+  #mv .note {
+    font-size: 9px;
+    margin: 0 2px; }
+  #mv .noteTxt {
+    font-size: 10px;
+    color: #ffffff;
+    margin: 0 auto; }
+  #mv .selectedTxt {
+    margin: 20px auto 0;
+    font-size: 10px;
+    color: #ffffff;
+    vertical-align: middle; }
+  #mv .songTitle {
+    margin: 31px 0 0;
+    font-size: 12px;
+    color: #ffffff; }
+
+#contents-list .container {
+  width: 100%; }
+#contents-list h2 {
+  padding: 10px 10px 10px 20px;
+  min-height: 56px;
+  font-size: 16px; }
+#contents-list .name {
+  margin-top: 0;
+  font-size: 12px;
+  display: block;
+  font-weight: normal; }
+#contents-list #contents-list li {
+  font-size: 16px;
+  min-height: 56px; }
+#contents-list .even h2 {
+  background: #eee url(../img/bg_ttl.png) repeat-y left top; }
+#contents-list li:last-child {
+  border-bottom: 1px solid #e6e6e6; }

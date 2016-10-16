@@ -1,0 +1,387 @@
+@import "../../../../../_scss/common.scss";
+@include resetcss("sp");
+
+//-------------------------
+//    Main
+//-------------------------
+
+$recipeImgPath:"/sp/campaign/recipe/curry/img/";
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+
+}
+#contents {
+	* {
+		box-sizing: border-box;
+		&:before {
+			box-sizing: border-box;
+		}
+		&:after {
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+#sns-block {
+	margin-top: 10px;
+	padding: 15px 0;
+	ul {
+		font-size: 0;
+		text-align: center;
+		width: 300px;
+		margin: 0 auto;
+		li {
+			display: inline-block;
+			margin: 0;
+			.facebook,.twitter,.line{
+				display: block;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.facebook {
+				background-image: url("#{$recipeImgPath}"+"btn_facebook.png");
+			}
+			.twitter {
+				background-image: url("#{$recipeImgPath}"+"btn_twitter.png");
+			}
+			.line {
+				background-image: url("#{$recipeImgPath}"+"btn_line.png");
+			}
+		}
+	}
+}
+#contents-body {
+	padding-right: 10px;
+	padding-left: 10px;
+	background: url("#{$recipeImgPath}"+"contents_bg.png") 50% 0 repeat;
+	background-size: 320px;
+}
+#contents-header .title {
+	font-size: 0;
+}
+.top #contents-body {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	p {
+		font-size: 14px;
+		text-align: center;
+	}
+	.bnr-block {
+		li a {
+			margin: 15px auto 0;
+		}
+		@for $i from 1 through 6{
+			.bnr#{$i} a{
+				display: block;
+				background-image: url("#{$recipeImgPath}"+"top_bnr"+"#{$i}"+".png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 300px;
+				height: 252px;
+				background-size: 300px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+.recipe #contents-body {
+	padding-top: 14px;
+	.recipe-area {
+		width: 300px;
+		margin: 0 auto;
+		background-color: #fff;
+		position: relative;
+		h1 {
+			margin-top: 15px;
+			padding-top: 37px;
+			span {
+				margin-left: 15px;
+				display: block;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+		figure {
+			margin-top: 20px;
+			font-size: 0;
+		}
+		.recipe-inner {
+			padding: 15px 10px;
+			p {
+				margin-top: 10px;
+				font-size: 12px;
+			}
+			.materials {
+				dl {
+					&:nth-last-child(1) {
+						margin-bottom: 30px;
+					}
+					dt {
+						&.space {
+							margin-bottom: 18px;
+						}
+						&.thin {
+							font-weight: 100;
+						}
+					}
+				}
+				h2 {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.materials {
+			h2 {
+				line-height: 25px;
+				padding: 0 10px;
+				border-radius: 2px;
+				background-color: #f88600;
+				color: #fff;
+				font-size: 12px;
+			}
+			h3 {
+				padding: 15px 0 5px;
+				color: #e21423;
+				font-size: 12px;
+				font-weight: bold;
+				+ dl {
+					border-top: 1px solid #eee;
+				}
+			}
+			dl {
+				position: relative;
+				overflow: hidden;
+				*zoom: 1;
+				border-bottom: 1px solid #eee;
+				padding: 6px 0;
+				dt {
+					// float: left;
+					font-size: 12px;
+					font-weight: bold;
+					.red {
+						color: #e21423;
+					}
+					.thick {
+						font-weight: 100;
+					}
+				}
+				dd {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					margin-top: -6px;
+					// float: right;
+					font-size: 12px;
+					line-height: 1;
+				}
+				dd.modify {
+					top: 6px;
+					margin-top: 0px;
+				}
+				dd.sub {
+					padding: 14px 0 0 0;
+					position: relative;
+					text-align: right;
+				}
+			}
+		}
+		.howto {
+			margin-top: 15px;
+			h2 {
+				line-height: 25px;
+				padding: 0 10px;
+				border-radius: 2px;
+				background-color: #ffb64d;
+				font-size: 12px;
+			}
+			dl {
+				overflow: hidden;
+				*zoom: 1;
+				border-bottom: 1px solid #eee;
+				padding: 10px 0;
+				dt {
+					float: left;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					margin-right: 14px;
+					border-radius: 2px;
+					background-color: #ffb64d;
+					font-size: 12px;
+					text-align: center;
+				}
+				dd {
+					overflow: hidden;
+					line-height: 1.7;
+					font-size: 12px;
+					.red {
+						color: #e21423;
+						font-weight: bold;
+					}
+					em {
+						color: #e21423;
+						font-style: normal;
+						font-weight: bold;
+					}
+				}
+				&:nth-last-child(1) {
+					border-bottom: none;
+				}
+			}
+		}
+		.label {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 300px;
+			height: 47px;
+			background-size: 300px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			position: absolute;
+			top: -17px;
+		}
+		.info {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 280px;
+			height: 56px;
+			background-size: 280px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+	}
+	.caution {
+		width: 300px;
+		margin: 15px auto 0 auto;
+		p {
+			margin: 0 5px;
+			font-size: 11px;
+			text-align: left;
+		}
+	}
+	&.recipe3 .recipe-area {
+		padding-bottom: 20px;
+		.label {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_label.png");
+		}
+		.info {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_info.jpg");
+		}
+		.howto dl:nth-last-child(1) {
+			border-bottom: none;
+		}
+		h1 span {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_title.png");
+			width: 260px;
+			height: 25px;
+			background-size: 260px auto;
+		}
+	}
+	.btn-prev a {
+		margin: 20px auto 0;
+		display: block;
+		background-image: url("#{$recipeImgPath}"+"btn_prev.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 200px;
+		height: 40px;
+		background-size: 200px auto;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		outline: none;
+	}
+	@for $i from 1 through 6{
+		&.recipe#{$i} .recipe-area{
+			.label {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_label.png");
+			}
+			.info {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_cookingtime.png");
+				margin-top: 14px;
+				margin-bottom: 25px;
+				height: 22px;
+				@if $i == 1{
+					width: 116px;
+					background-size: 116px auto;
+				}@else if $i == 2{
+					width: 143px;
+					background-size: 143px auto;
+				}@else if $i == 3{
+					width: 139px;
+					background-size: 139px auto;
+				}@else if $i == 4{
+					width: 116px;
+					background-size: 116px auto;
+				}@else if $i == 5{
+					width: 116px;
+					background-size: 116px auto;
+				}@else if $i == 6{
+					width: 116px;
+					background-size: 116px auto;
+				}
+
+			}
+			h1 span {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_title.png");
+				@if $i == 1{
+					width: 152px;
+					height: 50px;
+					background-size: 152px auto;
+				}@else if $i == 2{
+					width: 210px;
+					height: 50px;
+					background-size: 210px auto;
+				}@else if $i == 3{
+					width: 194px;
+					height: 24px;
+					background-size: 194px auto;
+				}@else if $i == 4{
+					width: 157px;
+					height: 50px;
+					background-size: 157px auto;
+
+				}@else if $i == 5{
+					width: 260px;
+					height: 25px;
+					background-size: 260px auto;
+				}@else if $i == 6{
+					width: 249px;
+					height: 28px;
+					background-size: 249px auto;
+				}
+			}
+		}
+	}
+}

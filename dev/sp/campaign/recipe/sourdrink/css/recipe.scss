@@ -1,0 +1,1101 @@
+@import url(/common/css/sp/reset.css);
+.clearfix {
+	zoom: 1;
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+.clr {
+	content: " ";
+	clear: both;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: 0 -1px -1px 0;
+	border: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.f-left {
+	display: inline;
+	float: left;
+}
+.f-right {
+	display: inline;
+	float: right;
+}
+.t-left {
+	text-align: left !important;
+}
+.t-center {
+	text-align: center !important;
+}
+.t-right {
+	text-align: right !important;
+}
+.v-top {
+	vertical-align: top !important;
+}
+.v-middle {
+	vertical-align: middle !important;
+}
+.v-bottom {
+	vertical-align: bottom !important;
+}
+table {
+	&.t-left {
+		th {
+			text-align: left !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td {
+			text-align: left !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.t-center {
+		th {
+			text-align: center !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td {
+			text-align: center !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.t-right {
+		th {
+			text-align: right !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td {
+			text-align: right !important;
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.v-top {
+		th {
+			vertical-align: top !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td {
+			vertical-align: top !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	&.v-middle {
+		th {
+			vertical-align: middle !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td {
+			vertical-align: middle !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	&.v-bottom {
+		th {
+			vertical-align: bottom !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td {
+			vertical-align: bottom !important;
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	th {
+		&.w-auto {
+			width: auto !important;
+		}
+		@for $i from 0 through 38{
+			&.w#{($i * 5)+10}{
+				width: #{($i * 5)+10}px !important;
+			}
+		}
+	}
+	td {
+		&.w-auto {
+			width: auto !important;
+		}
+		@for $i from 0 through 38{
+			&.w#{($i * 5)+10}{
+				width: #{($i * 5)+10}px !important;
+			}
+		}
+	}
+	&.w-auto {
+		> tr {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+		> thead > tr {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+		> tbody > tr {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+	}
+	thead {
+		&.w-auto > tr {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+		@for $i from 0 through 38{
+			&.w#{($i * 5)+10} > tr{
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+		}
+	}
+	tbody {
+		&.w-auto > tr {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+		@for $i from 0 through 38{
+			&.w#{($i * 5)+10} > tr{
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+		}
+	}
+	tr {
+		&.w-auto {
+			> th {
+				width: auto;
+			}
+			> td {
+				width: auto;
+			}
+		}
+		@for $i from 0 through 38{
+			&.w#{($i * 5)+10} {
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+		}
+	}
+	@for $i from 0 through 38{
+		&.w#{($i * 5)+10} {
+			> tr{
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+			> thead >tr{
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+			>tbody > tr{
+				> th{
+					width: #{($i * 5)+10}px;
+				}
+				> td {
+					width: #{($i * 5)+10}px;
+				}
+			}
+		}
+	}
+}
+thead {
+	&.t-left tr,&.t-center tr,&.t-right tr{
+		th {
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td {
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.t-left tr{
+		th {
+			text-align: left !important;
+		}
+		td {
+			text-align: left !important;
+		}
+	}
+	&.t-center tr {
+		th {
+			text-align: center !important;
+		}
+		td {
+			text-align: center !important;
+		}
+	}
+	&.t-right tr {
+		th {
+			text-align: right !important;
+		}
+		td {
+			text-align: right !important;
+		}
+	}
+	&.v-top tr,&.v-middle tr,&.v-bottom tr{
+		th {
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td {
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	&.v-top tr {
+		th {
+			vertical-align: top !important;
+		}
+		td {
+			vertical-align: top !important;
+		}
+	}
+	&.v-middle tr {
+		th {
+			vertical-align: middle !important;
+		}
+		td {
+			vertical-align: middle !important;
+		}
+	}
+	&.v-bottom tr {
+		th {
+			vertical-align: bottom !important;
+		}
+		td {
+			vertical-align: bottom !important;
+		}
+	}
+}
+tbody {
+	&.t-left tr,&.t-center tr,&.t-right tr{
+		th{
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td{
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.t-left tr {
+		th ,td{
+			text-align: left !important;
+		}
+	}
+	&.t-center tr {
+		th,td {
+			text-align: center !important;
+		}
+	}
+	&.t-right tr {
+		th ,td{
+			text-align: right !important;
+		}
+	}
+	&.v-top tr ,&.v-middle tr ,&.v-bottom tr{
+		th{
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td {
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	&.v-top tr {
+		th {
+			vertical-align: top !important;
+		}
+		td {
+			vertical-align: top !important;
+		}
+	}
+	&.v-middle tr {
+		th {
+			vertical-align: middle !important;
+		}
+		td {
+			vertical-align: middle !important;
+		}
+	}
+	&.v-bottom tr {
+		th {
+			vertical-align: bottom !important;
+		}
+		td {
+			vertical-align: bottom !important;
+		}
+	}
+}
+tr {
+	&.t-left,&.t-center,&.t-right{
+		th{
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+		td{
+			&.t-left {
+				text-align: left !important;
+			}
+			&.t-center {
+				text-align: center !important;
+			}
+			&.t-right {
+				text-align: right !important;
+			}
+		}
+	}
+	&.t-left {
+		th {
+			text-align: left !important;
+		}
+		td {
+			text-align: left !important;
+		}
+	}
+	&.t-center {
+		th {
+			text-align: center !important;
+		}
+		td {
+			text-align: center !important;
+		}
+	}
+	&.t-right {
+		th {
+			text-align: right !important;
+		}
+		td {
+			text-align: right !important;
+		}
+	}
+	&.v-top,&.v-middle,&.v-bottom{
+		th {
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+		td{
+			&.v-top {
+				vertical-align: top !important;
+			}
+			&.v-middle {
+				vertical-align: middle !important;
+			}
+			&.v-bottom {
+				vertical-align: bottom !important;
+			}
+		}
+	}
+	&.v-top {
+		th {
+			vertical-align: top !important;
+		}
+		td {
+			vertical-align: top !important;
+		}
+	}
+	&.v-middle {
+		th {
+			vertical-align: middle !important;
+		}
+		td {
+			vertical-align: middle !important;
+		}
+	}
+	&.v-bottom {
+		th {
+			vertical-align: bottom !important;
+		}
+		td {
+			vertical-align: bottom !important;
+		}
+	}
+}
+$counter: "";
+@for $i from 0 through 85{
+	@if $i < 10{
+		$counter: "0"+"#{$i}";
+	}@else{
+		$counter: "#{$i}";
+	}
+	.mt#{$counter}{
+		margin-top: #{$i}px !important;
+	}
+	.mb#{$counter}{
+		margin-bottom: #{$i}px !important;
+	}
+	.pt#{$counter}{
+		padding-top: #{$i}px !important;
+	}
+	.pb#{$counter}{
+		padding-bottom: #{$i}px !important;
+	}
+}
+.bold {
+	font-weight: bold;
+}
+.italic {
+	font-style: italic;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.antialiased {
+}
+#skiplinkSec ,#headAnc,#naviAnc,#mainAnc,#endMainAnc{
+	display: none;
+}
+.show {
+	display: block;
+}
+.hide {
+	display: none;
+}
+.visible {
+	max-height: 99999px;
+	visibility: visible;
+	overflow: visible;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+}
+.hidden {
+	max-height: 0;
+	visibility: hidden;
+	overflow: hidden;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+}
+
+//-------------------------
+//    Main
+//-------------------------
+
+$recipeImgPath:"/sp/campaign/recipe/sourdrink/img/";
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		box-sizing: border-box;
+		&:before {
+			box-sizing: border-box;
+		}
+		&:after {
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+#sns-block {
+	margin-top: 10px;
+	padding: 15px 0;
+	ul {
+		font-size: 0;
+		text-align: center;
+		width: 300px;
+		margin: 0 auto;
+		li {
+			display: inline-block;
+			margin: 0;
+			.facebook,.twitter,.line{
+				display: block;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.facebook {
+				background-image: url("#{$recipeImgPath}"+"btn_facebook.png");
+			}
+			.twitter {
+				background-image: url("#{$recipeImgPath}"+"btn_twitter.png");
+			}
+			.line {
+				background-image: url("#{$recipeImgPath}"+"btn_line.png");
+			}
+		}
+	}
+}
+#contents-body {
+	padding-right: 10px;
+	padding-left: 10px;
+	background: url("#{$recipeImgPath}"+"contents_bg.png") 50% 0 repeat;
+	background-size: 320px;
+}
+#contents-header .title {
+	font-size: 0;
+}
+.top #contents-body {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	p {
+		font-size: 14px;
+		text-align: center;
+	}
+	.bnr-block {
+		li a {
+			margin: 15px auto 0;
+		}
+		@for $i from 1 through 6{
+			.bnr#{$i} a{
+				display: block;
+				background-image: url("#{$recipeImgPath}"+"top_bnr"+"#{$i}"+".png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 300px;
+				height: 252px;
+				background-size: 300px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+.recipe #contents-body {
+	padding-top: 14px;
+	.recipe-area {
+		width: 300px;
+		margin: 0 auto;
+		background-color: #fff;
+		position: relative;
+		h1 {
+			margin-top: 15px;
+			padding-top: 50px;
+			span {
+				margin: 0 auto;
+				display: block;
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+		figure {
+			margin-top: 20px;
+			font-size: 0;
+		}
+		.recipe-inner {
+			padding: 15px 10px;
+			p {
+				margin-top: 10px;
+				font-size: 12px;
+			}
+			.materials {
+				dl {
+					&:nth-last-child(1) {
+						margin-bottom: 30px;
+					}
+					dt {
+						&.space {
+							margin-bottom: 18px;
+						}
+						&.thin {
+							font-weight: 100;
+						}
+					}
+				}
+				h2 {
+					margin-bottom: 5px;
+				}
+			}
+		}
+		.materials {
+			margin-top: 20px;
+			h2 {
+				line-height: 25px;
+				padding: 0 10px;
+				border-radius: 2px;
+				background-color: #ffb700;
+				color: #fff;
+				font-size: 12px;
+			}
+			h3 {
+				padding: 15px 0 5px;
+				color: #e21423;
+				font-size: 12px;
+				font-weight: bold;
+				+ dl {
+					border-top: 1px solid #eee;
+				}
+			}
+			dl {
+				overflow: hidden;
+				*zoom: 1;
+				border-bottom: 1px solid #eee;
+				padding: 6px 0;
+				dt {
+					float: left;
+					font-size: 12px;
+					font-weight: bold;
+					.red {
+						color: #e21423;
+					}
+					.thick {
+						font-weight: 100;
+					}
+				}
+				dd {
+					float: right;
+					font-size: 12px;
+				}
+			}
+		}
+		.howto {
+			margin-top: 15px;
+			h2 {
+				line-height: 25px;
+				padding: 0 10px;
+				border-radius: 2px;
+				background-color: #feeabe;
+				font-size: 12px;
+			}
+			dl {
+				overflow: hidden;
+				*zoom: 1;
+				border-bottom: 1px solid #eee;
+				padding: 10px 0;
+				dt {
+					float: left;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					margin-right: 14px;
+					border-radius: 2px;
+					background-color: #feeabe;
+					font-size: 12px;
+					text-align: center;
+				}
+				dd {
+					overflow: hidden;
+					line-height: 1.7;
+					font-size: 12px;
+					.red {
+						color: #e21423;
+						font-weight: bold;
+					}
+					em {
+						color: #e21423;
+						font-style: normal;
+						font-weight: bold;
+					}
+				}
+				&:nth-last-child(1) {
+					border-bottom: none;
+				}
+			}
+		}
+		.label {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 300px;
+			height: 47px;
+			background-size: 300px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			position: absolute;
+			top: -17px;
+		}
+		.info {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 280px;
+			height: 56px;
+			background-size: 280px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+	}
+	.caution {
+		width: 300px;
+		margin: 15px auto 0 auto;
+		p {
+			margin: 0 5px;
+			font-size: 11px;
+			text-align: left;
+		}
+	}
+	&.recipe3 .recipe-area {
+		padding-bottom: 20px;
+		.label {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_label.png");
+		}
+		.info {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_info.jpg");
+		}
+		.subrecipe {
+			background-color: #fff1cc;
+			border-radius: 5px;
+			width: 270px;
+			margin: 0 auto;
+			padding-bottom: 16px;
+			.productimage {
+				text-align: center;
+				img {
+					width: 240px;
+					margin: 0 auto;
+				}
+			}
+			.elements {
+				margin: 0 15px 5px;
+				overflow: auto;
+				p {
+					&.element {
+						float: left;
+					}
+					&.quantity {
+						float: left;
+					}
+					&.num {
+						position: relative;
+						margin-left: 30px;
+						font-size: 11px;
+						span.number {
+							position: absolute;
+							left: -30px;
+							top: 2px;
+							width: 20px;
+							img {
+								width: 20px;
+							}
+						}
+					}
+				}
+				.border {
+					margin: -3px 5px 0;
+					float: left;
+				}
+				.border1 {
+					width: 134px;
+				}
+				.border2 {
+					margin: -3px 9px 0;
+					width: 16px;
+				}
+				.border3 {
+					width: 156px;
+				}
+			}
+			.subhead {
+				margin: 20px 15px 10px;
+				font-size: 12px;
+				font-weight: bold;
+				span.circle img {
+					width: 11px;
+				}
+			}
+			.title img {
+				width: 280px;
+				margin-left: -5px;
+				margin-bottom: 5px;
+			}
+			p.caution {
+				width: auto;
+				font-size: 10px;
+				margin-top: 13px;
+				margin-left: 15px;
+			}
+		}
+		.howto dl:nth-last-child(1) {
+			border-bottom: none;
+		}
+		h1 span {
+			background-image: url("#{$recipeImgPath}"+"recipe_3_title.png");
+			width: 260px;
+			height: 25px;
+			background-size: 260px auto;
+		}
+	}
+	.btn-prev a {
+		margin: 20px auto 0;
+		display: block;
+		background-image: url("#{$recipeImgPath}"+"btn_prev.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 200px;
+		height: 40px;
+		background-size: 200px auto;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		outline: none;
+	}
+	@for $i from 1 through 6{
+		&.recipe#{$i} .recipe-area{
+			.label {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_label.png");
+			}
+			.info {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_info.jpg");
+			}
+			h1 span {
+				background-image: url("#{$recipeImgPath}"+"recipe_"+"#{$i}"+"_title.png");
+				@if $i == 1{
+					width: 262px;
+					height: 24px;
+					background-size: 262px auto;
+				}@else if $i == 2{
+					width: 260px;
+					height: 50px;
+					background-size: 260px auto;
+				}@else if $i == 3{
+					width: 218px;
+					height: 24px;
+					background-size: 218px auto;
+				}@else if $i == 4{
+					width: 218px;
+					height: 24px;
+					background-size: 218px auto;
+				}@else if $i == 5{
+					width: 260px;
+					height: 25px;
+					background-size: 260px auto;
+				}@else if $i == 6{
+					width: 200px;
+					height: 28px;
+					background-size: 200px auto;
+				}
+			}
+		}
+	}
+}

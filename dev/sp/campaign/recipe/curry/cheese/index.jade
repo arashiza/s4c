@@ -1,0 +1,47 @@
+extends ../jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – ひき肉とエリンギのとろとろチーズカレー レシピページ | SEIYU"
+	-var current = "recipe"
+	-var dir_root = "../"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+	-var recipenum = 2
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'currycheese');"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'currycheese');"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'currycheese');"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'currycheese');"
+block recipecontent
+	-var recipename = "ひき肉とエリンギのとろとろチーズカレー"
+	.recipe-area
+		i.label カレー with アボカド　トマト
+		h1
+			span #{recipename}
+		figure
+			img(src='../img/recipe_'+'#{recipenum}'+'_img.jpg', alt='#{recipename}')
+		.recipe-inner
+			p.description.
+				エリンギの食感と、とろけるチーズが美味しいカレーです。
+			.info 調理時間･･･20分
+			+recipeList(2,"材料（5人分）",6)
+			.howto
+				h2.shingo_m 作り方
+				dl
+					dt 1
+					dd エリンギは2、3等分の長さに切り、薄切りにする。
+				dl
+					dt 2
+					dd 鍋にサラダ油を熱して合いびき肉を炒め、肉の色が変わったらエリンギを加えて油がまわるまで炒める。
+				dl
+					dt 3
+					dd 水を加えて沸騰したら中火にし、5分煮込む。
+				dl
+					dt 4
+					dd いったん火を止め、ルウを割り入れてよく溶かす。再び弱火でとろみがつくまで煮込み、仕上げにチーズを加える。
+	.btn-prev
+		a(href='../', onclick="#{btn_prev};") トップに戻る

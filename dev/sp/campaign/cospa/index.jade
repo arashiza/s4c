@@ -1,0 +1,44 @@
+extends ../../../_jade/template/template
+block project
+	-var project = "elp"
+block vars
+	-var sp = true
+	-var title = "西友 - やっぱコスパ | SEIYU"
+	-var description = "西友の「やっぱコスパ」広告をご紹介しています。CM、グラフィック広告をご覧いただけます。"
+	-var keyword = "コスパ,やっぱコスパ,スーパー,西友,SEIYU,リヴィン,LIVIN,サニー,SUNNY,スーパーマーケット"
+block css
+	link(rel="stylesheet" href="css/index.css")
+mixin youtube(id, title, action, isNew)
+	-isNew = isNew || false;
+	.youtube
+		<iframe width="300" height="169" src="https://www.youtube.com/embed/#{id}?rel=0" frameborder="0" allowfullscreen onclick="ga('send', 'event', 'Campaign', '#{action}', 'cospa');"></iframe>
+		.detail
+			p.shingo_b
+				if isNew
+					span 【NEW】TV CM<br>#{title}
+				else
+					span TV CM#{title}
+block content
+	.inner
+		.title
+			img(src="./img/title.png",alt="広告紹介",width=46,height=38)
+		+youtube("OOP9MxlQs5U", "「やっぱコスパ　週末まとめ買い」篇", "CMbtn03_matome", true)
+		+youtube("Ia3GkQrrLsk", "「やっぱコスパ　今晩の献立」 篇",  "CMbtn02_kondate")
+		+youtube("SL6q6hMDqAY","「やっぱコスパ　私の流儀」 篇", "CMbtn01_ryugi")
+		.ad
+			a(href="./img/ad_img_big.jpg")
+				img(src="./img/ad_img.jpg",alt="やっぱコスパ",width=300,height=215)
+			.detail
+				p.shingo_b
+					span グラフィック広告
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='//www.facebook.com/share.php?u=http://www.seiyu.co.jp/sp/campaign/cospa/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'cospa');", target='_blank')
+						span facebook
+				li
+					a.twitter(href='//twitter.com/share?url=http://www.seiyu.co.jp/sp/campaign/cospa/&related=Seiyu_Japan&hashtags=%E3%82%84%E3%81%A3%E3%81%B1%E3%82%B3%E3%82%B9%E3%83%91%E3%80%80%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'cospa');", target='_blank')
+						span twitter
+				li
+					a.line(href='//line.me/R/msg/text/?広告紹介：やっぱコスパ | SEIYU http://www.seiyu.co.jp/sp/campaign/cospa/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnLine', 'cospa');", target='_blank')
+						span LINE

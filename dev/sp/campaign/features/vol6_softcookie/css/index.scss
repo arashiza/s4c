@@ -1,0 +1,435 @@
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333333;
+
+	//&:before {
+	//	content: "";
+	//	position: absolute;
+	//	display: block;
+	//	width: 100%;
+	//	height: 10000px;
+	//	background-image: url("../img/damii.jpg");
+	//	background-position: top center;
+	//	background-repeat: no-repeat;
+	//	opacity: 0.5;
+	//	background-size: contain;
+	//	top: -20px;
+	//}
+
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+#content-header {
+	padding: 13px 20px 24px 20px;
+	background-color: #b99d66;
+	line-height: 1.0;
+
+	.label {
+		width: 83.75%;
+		margin: 0 auto 24px;
+	}
+	h1 {
+		width: 78%;
+		font-size: 0;
+	}
+	.item {
+		margin: auto;
+		padding: 15px 0 5px;
+		font-size: 0;
+	}
+	.comment {
+		margin: auto;
+		font-size: 0;
+	}
+}
+$path:"vol6_softcookie";
+#content-body {
+	#sec1 {
+		padding: 15px 20px;
+		h2 {
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec1_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 237px;
+			height: 40px;
+			background-size: 237px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 15px;
+		}
+		a.banner{
+			display: block;
+			margin-top: 30px;
+			margin-bottom: 15px;
+		}
+	}
+	#sec2 {
+		padding: 15px 20px;
+		background-color: #b99d66;
+		h2 {
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec2_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 252px;
+			height: 41px;
+			background-size: 252px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			color: #ffffff;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 15px;
+		}
+		figcaption {
+			margin-top: 5px;
+			color: #ffffff;
+			text-align: center;
+		}
+	}
+	#sec3 {
+		padding: 15px 20px;
+		h2 {
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+			color: #333333;
+		}
+		figure {
+			margin-top: 15px;
+		}
+		figcaption {
+			margin-top: 5px;
+			text-align: center;
+			color: #333333;
+		}
+		.recipes{
+			margin-top: 25px;
+			p.howto{
+				margin-top: 5px;
+				font-size: 12px;
+				margin-left: 1em;
+				span.num{
+					margin-left: -1em;
+				}
+			}
+			.subhead{
+				margin-bottom: 10px;
+				height: 25px;
+				background-color: #ef6827;
+				border-radius: 6px;
+				p{
+					color: #ffffff;
+					font-size: 12px;
+					margin: 0;
+					padding: 4px 0;
+					padding-left: 10px;
+				}
+			}
+			.recipe1{
+				margin-bottom: 30px;
+				img.title{
+					width: 101.2%;
+					margin-left: -1.2%;
+				}
+				img.visual{
+					margin-top: 10px;
+				}
+				.elements{
+					margin-top: 10px;
+					p.recipe{
+						margin-top: 5px;
+					}
+				}
+				.howto{
+					.subhead{
+						margin-top: 10px;
+					}
+					.comment{
+						position: relative;
+						img.text{
+							position: absolute;
+							bottom: 12%;
+							left: 4%;
+							width: 90%;
+						}
+					}
+				}
+
+			}
+			.recipe2{
+				img.visual{
+					margin-top: 10px;
+				}
+				img.title{
+					width: 101.2%;
+					margin-left: -1.2%;
+				}
+				.elements{
+					margin-top: 10px;
+				}
+				.group{
+					margin-top: 10px;
+					margin-bottom: 20px;
+					&.last{
+						margin-bottom: 10px;
+					}
+					p.group{
+						color: #ef6827;
+						font-size: 14px;
+						margin-left: -7px;
+						margin-bottom: 0px;
+					}
+					p.recipe{
+						margin-top: 0;
+					}
+				}
+				.howto{
+					img.caption{
+						margin: 5px 0;
+					}
+					p.caption.text{
+						font-size: 12px;
+						margin: 0 0 10px 0;
+					}
+					p.caution{
+						font-size: 11px;
+						margin-top: 0px;
+						text-align: right;
+					}
+					.comment{
+						position: relative;
+						img.text{
+							position: absolute;
+							bottom: 13%;
+							left: 4%;
+							width: 90%;
+						}
+					}
+				}
+			}
+		}
+	}
+	#products {
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto 20px;
+		}
+		.products1 {
+			h3 {
+				display: block;
+				width: 86%;
+				margin: 0 auto;
+				margin-top: 10px;
+			}
+			.grid {
+				.price {
+					display: block;
+					margin: 0 auto 5px;
+				}
+				.item {
+					margin: 0 auto;
+					padding: 0 20px;
+					text-align: center;
+					font-size: 0;
+					img {
+						margin: 2px 0;
+						&.num1 {
+							margin: 10px 0;
+						}
+						&.num3 {
+							margin-bottom: 15px;
+						}
+					}
+				}
+			}
+			.grid1 {
+				margin-top: 15px;
+				.price {
+					width: 87.5%;
+				}
+				.item {
+					figure img {
+						width: 76%;
+					}
+				}
+				.button {
+					padding: 0 10px;
+					margin: 10px 0;
+				}
+			}
+		}
+		.feature-block {
+			margin: 20px 10px 0;
+			.title {
+				margin: 0 auto;
+				display: block;
+				background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/features_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 299px;
+				height: 27px;
+				background-size: 299px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.btn {
+				margin-top: 15px;
+				a {
+					display: block;
+				}
+			}
+		}
+		.note-block {
+			margin: 10px 20px 0;
+			li {
+				text-indent: 0em;
+				color: #666;
+				font-size: 11px;
+				margin-left: 0em;
+				&.banner {
+					margin: 0;
+					text-indent: 0;
+					margin-bottom: 15px;
+					display: block;
+					padding: 0;
+					width: 100%;
+					position: relative;
+					a {
+						display: block;
+					}
+				}
+				span {
+					&.asterisk{
+						display: inline-block;
+						margin-left: -1em;
+					}
+					&.text{
+						//margin-left: 0em;
+					}
+				}
+
+				//&.small{
+				//	span {
+				//		&.text{
+				//			margin-left: 1em;
+				//		}
+				//	}
+				//}
+			}
+		}
+	}
+}

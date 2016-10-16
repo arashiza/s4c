@@ -1,0 +1,282 @@
+@import "../../../../_scss/common";
+@include resetcss("sp");
+
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+	.container {
+		margin: 0 10px;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+#content-header {
+	position: relative;
+	font-size: 0;
+	h1 {
+		position: absolute;
+		top: 10.45455%;
+		left: 0;
+		right: 0;
+		width: 85.9375%;
+		margin: auto;
+	}
+	.lead {
+		position: absolute;
+		top: 39.31818%;
+		left: 0;
+		right: 0;
+		width: 88.75%;
+		margin: auto;
+	}
+}
+#content-body {
+	background-color: #fcf8ef;
+	#sec1 {
+		padding-bottom: 18px;
+		h2 {
+			padding: 14px 0;
+			background-color: #e7e2d6;
+			span {
+				display: block;
+				background-image: url(/sp/campaign/features/img/list_title.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 196px;
+				height: 13px;
+				background-size: 196px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				margin: 0 auto;
+			}
+		}
+		.item {
+			a {
+				display: block;
+				position: relative;
+				margin-top: 10px;
+				padding-bottom: 20px;
+				background-color: $white;
+				//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+				box-shadow: 0 0 8px 2px $black_8;
+				text-decoration: none;
+				.new {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 68px;
+					height: 68px;
+					background: url(/sp/campaign/features/img/icon_new.png) 0 0 no-repeat;
+					background-size: 68px auto;
+					z-index: 10;
+				}
+				.label {
+					margin: 10px 0 0 20px;
+				}
+				.catch {
+					line-height: 1.4;
+					margin: 5px 20px 0;
+					color: #333;
+					font-size: 15px;
+					text-decoration: none;
+				}
+				.btn {
+					margin: 15px auto 0;
+				}
+			}
+			$items:8;
+			@for $i from 1 through $items{
+				&#item#{$i} a{
+					.label {
+						display: block;
+						background-image: url("/sp/campaign/features/img/item_vol"+"#{$i}"+"_label.png");
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						@if $i == 1{
+							width: 151px;
+							height: 20px;
+							background-size: 151px auto;
+						}@else if $i == 2{
+							width: 151px;
+							height: 20px;
+							background-size: 151px auto;
+						}@else if $i == 3{
+							width: 151px;
+							height: 20px;
+							background-size: 151px auto;
+						}@else if $i == 4{
+							width: 151px;
+							height: 20px;
+							background-size: 151px auto;
+						}@else if $i == 5{
+							width: 146px;
+							height: 20px;
+							background-size: 146px auto;
+						}@else if $i == 6{
+							width: 146px;
+							height: 20px;
+							background-size: 146px auto;
+						}@else if $i == 7{
+							width: 146px;
+							height: 20px;
+							background-size: 146px auto;
+						}@else if $i == 8{
+							width: 146px;
+							height: 20px;
+							background-size: 146px auto;
+						}
+						overflow: hidden;
+						text-indent: 100%;
+						white-space: nowrap;
+						outline: none;
+					}
+					.btn {
+						display: block;
+						background-image: url("/sp/campaign/features/img/item_vol"+"#{$i}"+"_btn.png");
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						@if $i == 1{
+							width: 260px;
+							height: 55px;
+						}@else if $i == 2{
+							width: 260px;
+							height: 55px;
+						}@else if $i == 3{
+							width: 260px;
+							height: 52px;
+						}@else if $i == 4{
+							width: 260px;
+							height: 60px;
+						}@else if $i == 5{
+							width: 260px;
+							height: 61px;
+						}@else if $i == 6{
+							width: 260px;
+							height: 61px;
+						}@else if $i == 7{
+							width: 260px;
+							height: 61px;
+						}@else if $i == 8{
+							width: 260px;
+							height: 60px;
+						}
+						background-size: 260px auto;
+						overflow: hidden;
+						text-indent: 100%;
+						white-space: nowrap;
+						outline: none;
+					}
+				}
+			}
+			&#itemsp1 a {
+				.label {
+					display: block;
+					background-image: url(/sp/campaign/features/img/item_volsp1_label.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 195px;
+					height: 20px;
+					background-size: 195px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+				.btn {
+					display: block;
+					background-image: url(/sp/campaign/features/img/item_volsp1_btn.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 260px;
+					height: 61px;
+					background-size: 260px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+		}
+	}
+}

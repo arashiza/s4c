@@ -1,0 +1,328 @@
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+#content-header {
+	position: relative;
+	line-height: 1.0;
+	.label {
+		position: absolute;
+		top: 3.33333%;
+		left: 0;
+		right: 0;
+		width: 75%;
+		margin: auto;
+	}
+	h1 {
+		position: absolute;
+		top: 14.32099%;
+		left: 0;
+		right: 0;
+		width: 93.125%;
+		margin: auto;
+		font-size: 0;
+	}
+	.item {
+		position: absolute;
+		top: 36.04938%;
+		left: 0;
+		right: 0;
+		width: 93.75%;
+		margin: auto;
+		font-size: 0;
+	}
+	.comment {
+		position: absolute;
+		top: 75.18519%;
+		left: 0;
+		right: 0;
+		width: 95%;
+		margin: auto;
+		font-size: 0;
+	}
+}
+#content-body {
+	#sec1 {
+		padding: 15px 10px;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/sec1_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 254px;
+			height: 41px;
+			background-size: 254px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 10px;
+			font-size: 0;
+		}
+	}
+	#sec2 {
+		padding: 15px 10px;
+		background-color: #efc868;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/sec2_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 202px;
+			height: 42px;
+			background-size: 202px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin-bottom: 10px;
+		}
+		figcaption {
+			margin-top: 5px;
+			text-align: center;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+	}
+	#sec3 {
+		padding: 15px 10px;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/sec3_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 200px;
+			height: 18px;
+			background-size: 200px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin-bottom: 10px;
+		}
+		figcaption {
+			margin-top: 5px;
+			text-align: center;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+	}
+	#products {
+		padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto 20px;
+		}
+		.item {
+			overflow: hidden;
+			*zoom: 1;
+			margin: 0 10px 15px;
+			padding: 0 10px 15px;
+			border-bottom: 1px solid #b5b5b5;
+			figure {
+				float: left;
+				width: 42.85714%;
+				text-align: center;
+			}
+			.item-detail {
+				overflow: hidden;
+				h3 {
+					font-size: 14px;
+				}
+				.price {
+					margin-top: 7px;
+					text-align: right;
+					span {
+						display: inline-block !important;
+					}
+				}
+				p {
+					margin-top: 7px;
+					font-size: 12px;
+				}
+			}
+		}
+		.item4 {
+			margin-bottom: 0;
+			padding-bottom: 0;
+			border-bottom: none;
+			.price span {
+				display: block;
+				background-image: url(/sp/campaign/features/vol2_bridor/img/products_item4_price.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 136px;
+				height: 28px;
+				background-size: 136px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+		.btn-block {
+			margin: 23px 10px 0;
+			li {
+				line-height: 1.0;
+				&:first-child {
+					margin-bottom: 10px;
+				}
+				a {
+					display: block;
+				}
+			}
+		}
+		.note-block {
+			margin: 10px 10px 0;
+			li {
+				padding-left: 1em;
+				text-indent: -1em;
+				color: #666;
+				font-size: 11px;
+			}
+		}
+		.item1 .price span {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/products_item1_price.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 135px;
+			height: 27px;
+			background-size: 135px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		.item2 .price span {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/products_item2_price.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 136px;
+			height: 27px;
+			background-size: 136px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		.item3 .price span {
+			display: block;
+			background-image: url(/sp/campaign/features/vol2_bridor/img/products_item3_price.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 137px;
+			height: 27px;
+			background-size: 137px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+	}
+}

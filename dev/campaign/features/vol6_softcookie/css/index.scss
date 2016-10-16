@@ -1,0 +1,761 @@
+@import "../../../../_scss/common";
+@include resetcss("pc");
+
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+
+	//damii
+	//&:before {
+	//	content: "";
+	//	position: absolute;
+	//	display: block;
+	//	width: 100%;
+	//	height: 10000px;
+	//	background-image: url("../img/damii.jpg");
+	//	background-position: top center;
+	//	background-repeat: no-repeat;
+	//	opacity: 0.5;
+	//}
+}
+#contents {
+	padding-top: 0;
+	padding-bottom: 0;
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	.container {
+		position: relative;
+		width: 940px;
+		margin: 0 auto;
+		zoom: 1;
+		&:before {
+			content: "";
+			display: table;
+		}
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+	.row {
+		zoom: 1;
+		&:before {
+			content: "";
+			display: table;
+		}
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+	}
+}
+.sns {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	zoom: 1;
+	&:before {
+		content: "";
+		display: table;
+	}
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	li {
+		float: left;
+		margin-left: 8px;
+		a {
+			span {
+				font-size: 0;
+			}
+			&.facebook {
+				display: block;
+				background-image: url(/campaign/features/common/img/btn_facebook_o.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 54px;
+				height: 28px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				span {
+					display: block;
+					background-image: url(/campaign/features/common/img/btn_facebook.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 54px;
+					height: 28px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+			&.twitter {
+				display: block;
+				background-image: url(/campaign/features/common/img/btn_twitter_o.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 54px;
+				height: 28px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				span {
+					display: block;
+					background-image: url(/campaign/features/common/img/btn_twitter.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 54px;
+					height: 28px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+			&.line {
+				display: block;
+				background-image: url(/campaign/features/common/img/btn_line_o.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 54px;
+				height: 28px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				span {
+					display: block;
+					background-image: url(/campaign/features/common/img/btn_line.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 54px;
+					height: 28px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+			&:hover span {
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+				opacity: 0;
+			}
+		}
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+$path:"vol6_softcookie";
+#content-header {
+	background: #b99d66 url("/campaign/features/"+"#{$path}"+"/img/header_bg.png") 50% 0 no-repeat;
+	.container {
+		width: 980px;
+		height: 300px;
+		padding-top: 40px;
+	}
+	.label {
+		display: block;
+		background-image: url("/campaign/features/"+"#{$path}"+"/img/header_label.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 360px;
+		height: 41px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		outline: none;
+	}
+	h1 {
+		display: block;
+		background-image: url("/campaign/features/"+"#{$path}"+"/img/header_title.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 540px;
+		height: 67px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		outline: none;
+		margin: 20px 0 0 0px;
+	}
+
+	.comment {
+		display: block;
+		background-image: url("/campaign/features/"+"#{$path}"+"/img/header_comment.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		width: 554px;
+		height: 90px;
+		overflow: hidden;
+		text-indent: 100%;
+		white-space: nowrap;
+		outline: none;
+		margin: 4px 0 0 -3px;
+	}
+	figure {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}
+#content-body {
+	#sec1 {
+		padding: 30px 0;
+		.txt-block {
+			float: right;
+			width: 480px;
+			h2 {
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/sec1_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 350px;
+				height: 57px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				margin-top: 10px;
+			}
+			p {
+				line-height: 1.8;
+				margin-top: 25px;
+				font-size: 1.4em;
+			}
+		}
+		figure {
+			float: left;
+			width: 379px;
+			margin-left: 10px;
+		}
+		.banner{
+			margin-top: 30px;
+			margin-bottom: 20px;
+			a{
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/sec2_baner.jpg");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 940px;
+				height: 189px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+	#sec2 {
+		padding: 40px 0 25px 0;
+		background-color: #b99d66;
+		.txt-block {
+			float: left;
+			width: 480px;
+			h2 {
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/sec2_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 350px;
+				height: 58px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			p {
+				line-height: 1.8;
+				margin-top: 28px;
+				color: $white;
+				font-size: 1.4em;
+			}
+		}
+		figure {
+			float: right;
+			width: 420px;
+			figcaption {
+				display: block;
+				margin-top: 5px;
+				color: $white;
+				font-size: 1.2em;
+				text-align: center;
+			}
+		}
+	}
+	#sec3 {
+		padding: 40px 0;
+		.txt-block {
+			h2 {
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 941px;
+				height: 101px;
+				overflow: hidden;
+				text-indent: 200%;
+				white-space: nowrap;
+				outline: none;
+				margin-top: 10px;
+			}
+			p {
+				text-align: center;
+				line-height: 1.8;
+				font-size: 1.4em;
+				margin-top: 30px;
+			}
+		}
+		.recipes{
+			.recipe1{
+				h3{
+					display: block;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe1_title.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 947px;
+					height: 77px;
+					overflow: hidden;
+					text-indent: 200%;
+					white-space: nowrap;
+					outline: none;
+					margin: 35px 0 0 -7px;
+				}
+				.block1{
+					.leftpain{
+						float: left;
+						img{
+							margin-top: 20px;
+						}
+					}
+					.rightpain{
+						float: right;
+						width: 460px;
+						.elements{
+							.subhead{
+								margin-top: 20px;
+								background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_subheadbg.png");
+								background-repeat: no-repeat;
+								p.text{
+									color: #ffffff;
+									font-size: 14px;
+									padding: 3px 0;
+									margin-left: 5px;
+								}
+							}
+							p.recipe{
+								font-size: 14px;
+								margin: 6px 0;
+							}
+						}
+						.howto{
+							.subhead{
+								margin-top: 25px;
+								background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_subheadbg.png");
+								background-repeat: no-repeat;
+								p.text{
+									color: #ffffff;
+									font-size: 14px;
+									padding: 3px 0;
+									margin-left: 5px;
+								}
+							}
+							p.howto{
+								margin: 5px 0;
+								font-size: 14px;
+								line-height: 1.8;
+								margin-left: 1em;
+								span.num{
+									margin-left: -1em;
+								}
+							}
+						}
+					}
+				}
+				.comment{
+					margin-top: 15px;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_comment.png");
+					width: 940px;
+					height: 76px;
+					color: #ffffff;
+					font-size: 14px;
+					background-repeat: no-repeat;
+					position: relative;
+					overflow: hidden;
+					text-indent: 200%;
+					white-space: nowrap;
+					outline: none;
+					p.text
+					{
+						position: absolute;
+						top: 19px;
+						left: 146px;
+						width: 770px;
+						overflow: visible;
+						text-indent: 0;
+						white-space: normal;
+						outline: none;
+					}
+				}
+			}
+			.recipe2{
+				h3{
+					display: block;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe2_title.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 947px;
+					height: 77px;
+					overflow: hidden;
+					text-indent: 200%;
+					white-space: nowrap;
+					outline: none;
+					margin-top: 37px;
+					margin-left: -7px;
+				}
+				.block1{
+					.leftpain{
+						float: left;
+						img{
+							margin-top: 20px;
+						}
+					}
+					.rightpain{
+						float: right;
+						width: 460px;
+						.elements{
+							.subhead{
+								margin-top: 20px;
+								background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_subheadbg.png");
+								background-repeat: no-repeat;
+								p.text{
+									color: #ffffff;
+									font-size: 14px;
+									padding: 3px 0;
+									margin-left: 5px;
+								}
+							}
+							.group{
+								margin-top: 10px;
+								p.group{
+									color: #ef6827;
+									font-size: 14px;
+									margin-left: -7px;
+								}
+								p.recipe{
+									font-size: 14px;
+									margin: 6px 0;
+									span.trireader{
+										position: relative;
+										top: -4px;
+									}
+								}
+							}
+						}
+						.howto{
+							.subhead{
+								margin-top: 25px;
+								background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_subheadbg.png");
+								background-repeat: no-repeat;
+								p.text{
+									color: #ffffff;
+									font-size: 14px;
+									padding: 3px 0;
+									margin-left: 5px;
+								}
+							}
+						}
+					}
+				}
+				.block2{
+					.subhead{
+						background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_howto_subheadbg.png");
+						background-repeat: no-repeat;
+						margin-top: 15px;
+						p.text{
+							color: #ffffff;
+							font-size: 14px;
+							padding: 3px 0;
+							margin-left: 5px;
+						}
+					}
+					.leftpain{
+						float: left;
+						width: 460px;
+						p.howto{
+							margin: 10px 0;
+							font-size: 14px;
+							line-height: 1.8;
+							margin-left: 1em;
+							span.num{
+								margin-left: -1em;
+							}
+						}
+						.point1{
+							background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_point1.jpg");
+							background-repeat: no-repeat;
+							overflow: hidden;
+							text-indent: 200%;
+							white-space: nowrap;
+							outline: none;
+							width: 460px;
+							height: 56px;
+							margin-top: 16px;
+						}
+						.point2{
+							background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_point2.jpg");
+							background-repeat: no-repeat;
+							overflow: hidden;
+							text-indent: 200%;
+							white-space: nowrap;
+							outline: none;
+							width: 460px;
+							height: 97px;
+							margin-top: 22px;
+						}
+					}
+					.rightpain{
+						float: right;
+						.cookvisual{
+							.br1{
+								margin-top: 10px;
+							}
+							.br2{
+								margin-top: 32px;
+							}
+						}
+					}
+				}
+				.comment{
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/sec3_recipe_comment.png");
+					width: 940px;
+					height: 96px;
+					color: #ffffff;
+					font-size: 14px;
+					background-repeat: no-repeat;
+					position: relative;
+					overflow: hidden;
+					text-indent: 200%;
+					white-space: nowrap;
+					outline: none;
+					p.text
+					{
+						position: absolute;
+						left: 156px;
+						top: 15px;
+						width: 770px;
+						overflow: visible;
+						text-indent: 0;
+						white-space: normal;
+						outline: none;
+					}
+					p.caution{
+						color: #000;
+						font-size: 12px;
+						position: absolute;
+						right: 0px;
+						top: 80px;
+						overflow: visible;
+						text-indent: 0;
+						white-space: normal;
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+	#products {
+		padding-bottom: 35px;
+		border-top: 5px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 180px;
+			height: 35px;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto;
+		}
+		.products1 {
+			padding-top: 30px;
+			.left{
+				float: left;
+				margin-left: 46px;
+			}
+			.right{
+				float: right;
+				margin-top: 15px;
+				margin-right: 37px;
+				p.name{
+					display: block;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/products1_name.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 494px;
+					height: 165px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+
+			.grid {
+				width: 460px;
+				zoom: 1;
+				&:before {
+					content: "";
+					display: table;
+				}
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+			}
+			.grid1 {
+				float: left;
+				.price {
+					display: block;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/products1_item_price1.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 226px;
+					height: 35px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					margin: 0 auto 42px;
+				}
+			}
+		}
+		.btn-block {
+			margin-top: 20px;
+			line-height: 1;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 8px;
+				a {
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: opacity .25s ease-in-out 0s;
+					&:hover {
+						filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+						opacity: .75;
+					}
+				}
+			}
+			.btn1 a {
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/products_netbuy_button.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 341px;
+				height: 62px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.btn2 a {
+				display: block;
+				background-image: url(/campaign/features/common/img/btn2.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 340px;
+				height: 62px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+		.catch {
+			display: block;
+			background-image: url("/campaign/features/"+"#{$path}"+"/img/products_catch.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 939px;
+			height: 28px;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 50px auto 0;
+		}
+		.feature-block {
+			margin-top: 53px;
+			.title {
+				margin: 0 auto;
+				display: block;
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/features_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 564px;
+				height: 52px;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.btn {
+				margin-top: 25px;
+				a {
+					margin: 0 auto;
+					display: block;
+					background-image: url("/campaign/features/"+"#{$path}"+"/img/btn_feature.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 569px;
+					height: 60px;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: opacity .25s ease-in-out 0s;
+					&:hover {
+						filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+						opacity: .75;
+					}
+				}
+			}
+		}
+		.note-block {
+			margin-top: 40px;
+			color: #666;
+			font-size: 1.2em;
+		}
+	}
+}

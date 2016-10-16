@@ -1,0 +1,114 @@
+extends ../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 - オススメ商品発掘し隊！ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/features/"
+	-var og_description = "SEIYU、LIVIN、サニーで販売中の商品の中から、話題の商品などを、実際に仕入れ、商品を熟知した担当バイヤーのコメントとともにご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/campaign/features/img/sns.jpg"
+	-var og_sitename = "西友 | SEIYU"
+	-var description = "SEIYU、LIVIN、サニーで販売中の商品の中から、話題の商品などを、実際に仕入れ、商品を熟知した担当バイヤーのコメントとともにご紹介します。"
+	-var keyword = "商品発掘,流行商品,人気商品,Old Spice,オールドスパイス,Bridor,ブリドール,鮮度の一滴,バックリブ,チリワイン,チリ産ワイン,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,SEIYUドットコム,ネットスーパー,通販,Walmart,ウォルマート"
+	-var dir_root = "./"
+	-var current = ""
+	-var sp = false
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			.container
+				h1 SEIYUのオススメ商品発掘し隊！
+				p.lead SEIYU、LIVIN、サニーで販売中の商品の中から、話題の商品、隠れた人気商品を、実際に仕入れ、商品を熟知した担当バイヤーのコメントとともにご紹介します。
+				ul.sns
+					li
+						a.facebook(href='//www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/features/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'features');", target='_blank')
+							span facebook
+					li
+						a.twitter(href='//twitter.com/share?url=http://www.seiyu.co.jp/campaign/features/&related=Seiyu_Japan&hashtags=%e3%82%aa%e3%82%b9%e3%82%b9%e3%83%a1%e5%95%86%e5%93%81%e7%99%ba%e6%8e%98%e3%81%97%e9%9a%8a%ef%bc%81%20%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'features');", target='_blank')
+							span twitter
+		#content-body
+			section#sec1
+				h2
+					span これまでにご紹介した商品はこちら！
+				.container
+					.special#summergift
+						a.clearfix(href="/campaign/features/summergift_ham/",onclick="ga('send', 'event', 'Campaign', 'Link_vol'+'#{count}', 'features');")
+							.image
+								i
+								figure
+									img(src="img/item_volsp1_img.jpg",alt='',width='446',height='269')
+							.description
+								p.label 夏ギフト特別編 2016/06/24up
+								p.catch.shingo_m.
+									夏のお中元にピッタリな、<br/>
+									『黒五けんこう豚』ハムギフトのこだわりとは？
+								.btn バイヤー・大西がご紹介します！
+							i.frame
+					.item-wrap
+
+						//- n番目か？　newをつけるか？ url ラベル　説明文　ボタンテキスト
+						+toplist(
+						8,
+						true,
+						'vol8_shinmai/',
+						'Vol.8 2016/08/04 UP',
+						'夏から食べられる、穫れたての<br>おいしい「新米」をお届けします。',
+						'バイヤー・内野がご紹介します!'
+						)
+						+toplist(
+						7,
+						false,
+						'vol7_treehut/',
+						'Vol.7 2016/07/28 UP',
+						'アメリカ発のボディケア製品を<br>お手ごろ価格で販売中！',
+						'バイヤー・阿部がご紹介します!')
+
+						+toplist(
+						6,
+						false,
+						'vol6_softcookie/',
+						'Vol.6 2016/07/07 UP',
+						'アレンジしてもおいしい！<br>支持率95%超のソフトクッキー',
+						'商品開発担当・松尾がご紹介します！')
+
+						+toplist(
+						5,
+						false,
+						'vol5_chilewine/',
+						'Vol.5 2016/06/04 UP',
+						'高品質でお手ごろ価格<br>「チリワイン」の魅力に迫る',
+						'バイヤー・仲がご紹介します！')
+
+						+toplist(
+						4,
+						false,
+						'vol4_backrib/',
+						'Vol.4 2016/04/28 UP',
+						'BBQやパーティーに大人気な、<br>「バックリブ」ってどんなお肉?',
+						'バイヤー・村上がご紹介します！')
+
+						+toplist(
+						3,
+						false,
+						'vol3_sendo/',
+						'Vol.3 2016/04/20 UP',
+						'開封後にも鮮度を保つ、画期的なしょうゆのヒミツに迫る',
+						'バイヤー・御子柴がご紹介します！'
+						)
+
+						+toplist(
+						2,
+						false,
+						'vol2_bridor/',
+						'Vol.2 2016/02/29 UP',
+						'店舗で人気のインストアベーカリーのヒミツって?',
+						'バイヤー・板本がご紹介します！'
+						)
+
+						+toplist(
+						1,
+						false,
+						'vol1_oldspice/',
+						'Vol.1 2016/01/29 UP',
+						'大人気Old Spiceボディウォッシュに新商品追加 各698円で販売中',
+						'バイヤー・寺内がご紹介します！'
+						)

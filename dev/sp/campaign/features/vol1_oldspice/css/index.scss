@@ -1,0 +1,292 @@
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px rgba(0,0,0,0.08);
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+#content-header {
+	position: relative;
+	line-height: 1.0;
+	.label {
+		position: absolute;
+		top: 3.375%;
+		left: 0;
+		right: 0;
+		width: 75%;
+		margin: auto;
+	}
+	h1 {
+		position: absolute;
+		top: 14.25%;
+		left: 0;
+		right: 0;
+		width: 94.0625%;
+		margin: auto;
+		font-size: 0;
+	}
+	.item {
+		position: absolute;
+		top: 23.25%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		font-size: 0;
+	}
+	.comment {
+		position: absolute;
+		top: 77.25%;
+		left: 0;
+		right: 0;
+		width: 95%;
+		margin: auto;
+		font-size: 0;
+	}
+}
+#content-body {
+	#about {
+		padding: 15px 10px;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol1_oldspice/img/about_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 129px;
+			height: 20px;
+			background-size: 129px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 10px;
+			font-size: 12px;
+			a {
+				&:link {
+					color: #cb0600;
+					text-decoration: underline;
+				}
+				&:visited {
+					color: #cb0600;
+					text-decoration: underline;
+				}
+				&:hover {
+					color: #cb0600;
+					text-decoration: underline;
+					color: #cb0600;
+					text-decoration: none;
+				}
+				&:active {
+					color: #cb0600;
+					text-decoration: underline;
+				}
+			}
+		}
+		figure {
+			margin-top: 10px;
+		}
+	}
+	#recommend {
+		padding: 20px 10px 15px;
+		background-color: #00aece;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol1_oldspice/img/recommend_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 299px;
+			height: 41px;
+			background-size: 299px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto 15px;
+		}
+		figcaption {
+			margin-top: 5px;
+			color: $white;
+			text-align: center;
+		}
+		p {
+			margin-top: 12px;
+			color: $white;
+			font-size: 12px;
+		}
+	}
+	#products {
+		padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto;
+		}
+		.name {
+			display: block;
+			background-image: url(/sp/campaign/features/vol1_oldspice/img/products_name.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 296px;
+			height: 47px;
+			background-size: 296px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 15px auto 0;
+		}
+		.item {
+			overflow: hidden;
+			*zoom: 1;
+			margin: 25px 20px 0;
+			figure {
+				float: left;
+				width: 41.37931%;
+				text-align: center;
+			}
+			.item-detail {
+				overflow: hidden;
+				.category {
+					font-size: 10px;
+					&.flesh {
+						color: #008ca6;
+					}
+					&.wild {
+						color: #cb0600;
+					}
+				}
+				h3 {
+					margin-top: 5px;
+					font-size: 14px;
+					i {
+						position: relative;
+						top: -2px;
+						display: inline-block;
+						margin-left: 5px;
+						padding: 0 4px;
+						background-color: #cb0600;
+						color: $white;
+						font-size: 9px;
+						font-style: normal;
+					}
+				}
+				.lead {
+					margin-top: 5px;
+					font-size: 12px;
+				}
+			}
+		}
+		.btn-block {
+			margin: 50px 10px 0;
+			li {
+				line-height: 1.0;
+				&:first-child {
+					margin-bottom: 10px;
+				}
+				a {
+					display: block;
+				}
+			}
+		}
+		.note-block {
+			margin: 10px 10px 0;
+			li {
+				padding-left: 1em;
+				text-indent: -1em;
+				color: #666;
+				font-size: 11px;
+			}
+		}
+	}
+}

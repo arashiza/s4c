@@ -1,0 +1,103 @@
+extends ../../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 – こだわりのインストアベーカリーのヒミツに迫る！ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/sp/campaign/features/vol2_bridor/"
+	-var og_description = "フランスから直輸入！Bridor(ブリドール)のこだわり生地を使用したSEIYUのベーカリーをご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/sp/campaign/features/vol2_bridor/img/sns.jpg"
+	-var description = "フランスから直輸入！Bridor(ブリドール)のこだわり生地を使用したSEIYUのベーカリーをご紹介します。"
+	-var keyword = "Bridor,ブリドール,ベーカリー,パン,クロワッサン,パン・オ・ショコラ,アップルパイ,クリームパン,フランス,フレンチ,SEIYU,西友,SUNNY,サニー,Walmart,ウォルマート"
+	-var dir_root = "../"
+	-var current = ""
+	-var sp = true
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			p.label
+				img(src='img/header_label.png', alt='SEIYUのオススメ商品発掘し隊！ Vol.2')
+			h1
+				img(src='img/header_title.png', alt='美味しい！おてごろ！こだわりのインストアベーカリーのヒミツに迫る！')
+			figure.item
+				img(src='img/header_img.png', alt='')
+			p.comment
+				img(src='img/header_comment.png', alt='バイヤー / 板本 フランスから直輸入の生地をお店で焼き上げたおいしいミニ クロワッサンをバイヤー・板本がご紹介します。')
+			figure
+				img(src='img/header_bg.png', alt='')
+		#content-body
+			section#sec1
+				h2 直輸入のこだわり生地を使用してフランスの味をそのまま再現！
+				p.shingo_m
+					| 美味しそうな匂いに誘われて、SEIYU、サニーのお店のインストア・ベーカリーコーナーに引き寄せられたあなた・・・実はその匂い、フランスから直輸入の生地を使用して焼き上げたクロワッサンのものかも知れませんよ!?
+				p.shingo_m
+					| SEIYU、サニーのお店(一部を除きます)では、店内でパンを焼き上げています。なかでもおススメしたいイチオシ商品が、フランスの冷凍パン生地のトップメーカーBridor(ブリドール)社から直輸入の生地を使用した、ミニ クロワッサンシリーズです。
+				figure
+					img(src='img/sec1_img.jpg', alt='')
+			section#sec2
+				h2 お店で焼き上げているから食感まで美味しい！
+				figure
+					img(src='img/sec2_img.png', alt='お店で焼き立てだから、美味しい。')
+					figcaption.shingo_m お店で焼き立てだから、美味しい。
+				p.shingo_m 深いコクと豊かな香りが特徴のフランス産小麦とバターを使用したこだわりの生地を店内で焼き上げて いるから、外はサックリ、中はしっとりした食感を楽しめます。
+				p.shingo_m 香り豊かな生地そのものの味わいとチョコ、クリーム、アップルなどのフレーバーが相まって、ひと口 食べたらもうひと口・・・とまらない美味しさです。
+			section#sec3
+				h2 おてごろ食べきりサイズ♪
+				figure
+					img(src='img/sec3_img.png', alt='ベーカリーコーナーにずらっと並んだミニシリーズ(東陽町店)')
+					figcaption.shingo_m ベーカリーコーナーにずらっと並んだミニシリーズ(東陽町店)
+				p.shingo_m お手頃価格で、たくさんのこだわりと、焼き立ての味わいを楽しめるミニ クロワッサンシリーズ。
+				p.shingo_m
+					| 販売商品は、「クロワッサン」「パン・オ・ショコラ」「アップルパイ」「クリームパン」の4種類。食べきりサイズが5~6個入りで274円(税抜)と284円(税抜)のラインナップ。
+				p.shingo_m おやつや小腹が減った時など、お友達とシェアしてフレンチ・ティータイム気分を手軽に楽しんでみてはいかがですか?
+			section#products
+				h2 商品情報
+				.item.item1
+					figure
+						img(src='img/products_item1_img.jpg', alt='ミニ クロワッサン')
+					.item-detail
+						h3.shingo_b ミニ クロワッサン
+						p.price
+							span 6個入り ¥274（税抜）
+						p.shingo_m 伝統的製法で作った、ゆたかなバターの香りが特徴的。
+				.item.item2
+					figure
+						img(src='img/products_item2_img.jpg', alt='ミニ パン・オ・ショコラ')
+					.item-detail
+						h3.shingo_b ミニ パン・オ・ショコラ
+						p.price
+							span 6個入り ¥274（税抜）
+						p.shingo_m クロワッサン生地にビタースイートなチョコが相性抜群。
+				.item.item3
+					figure
+						img(src='img/products_item3_img.jpg', alt='ミニ アップルパイ')
+					.item-detail
+						h3.shingo_b ミニ アップルパイ
+						p.price
+							span 5個入り ¥284（税抜）
+						p.shingo_m 添加物不使用。フランス産りんごジャムの甘みがさわやか。
+				.item.item4
+					figure
+						img(src='img/products_item4_img.jpg', alt='ミニ クリームパン')
+					.item-detail
+						h3.shingo_b ミニ クリームパン
+						p.price
+							span 6個入り ¥284（税抜）
+						p.shingo_m 伝統の長時間発酵製法で作った生地に、甘さ控えめのクリーム入り。
+				ul.btn-block
+					li
+						a(href='/shoplist/581', target='_blank')
+							img(src='../common/img/btn2.png', alt='お近くの取扱店舗を探す')
+				ul.note-block.shingo_m
+					li ※このページに記載の情報は、2016年2月26日時点のものです。予告なく変更になる場合があります。
+					li ※掲載の商品は、店舗によりお取扱いがない場合がございます。
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/sp/campaign/features/vol2_bridor/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol2_bridor');", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/sp/campaign/features/vol2_bridor/&related=Seiyu_Japan&hashtags=Bridor%20%23%e3%83%96%e3%83%aa%e3%83%89%e3%83%bc%e3%83%ab%20%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol2_bridor');", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?こだわりのインストアベーカリーのヒミツに迫る！ | SEIYU http://www.seiyu.co.jp/sp/campaign/features/vol2_bridor/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnLine', 'vol2_bridor');", target='_blank')
+						span LINE

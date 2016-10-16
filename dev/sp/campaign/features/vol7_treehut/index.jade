@@ -1,0 +1,133 @@
+extends ../../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 – 夏のボディケアは「TREE HUT」におまかせ！｜SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html"
+	-var og_description = "アメリカで話題のボディケアブランド「TREE HUT」をSEIYUにてお手ごろ価格で販売中！人気のヒミツとおすすめの使い方をご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/sp/campaign/features/vol7_treehut/img/sns.jpg"
+	-var og_sitename = "西友 | SEIYU"
+	-var description = "アメリカで話題のボディケアブランド「TREE HUT」をSEIYUにてお手ごろ価格で販売中！人気のヒミツとおすすめの使い方をご紹介します。"
+	-var keyword = "TREE HUT,トゥリーハット,ツリーハット,ボディケア,バスケア,オーガニック,シアバター, ブラジルナッツオイル,独占販売,直輸入,ボディウォッシュ,シュガースクラブ,ボディローション,ボディバター,ハンドクリーム,角質ケア,乾燥ケア,SEIYUドットコム,ネットショップ,通販,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー"
+	-var dir_root = "../"
+	-var current = ""
+	-var sp = true
+
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			p.label
+				img(src='img/header_label.png', alt='SEIYUのオススメ商品発掘し隊！ Vol.7')
+			h1
+				img(src='img/header_title.png', alt='アメリカで話題のボディケアブランドを独占販売*！夏のボディケアは「TREE HUT」におまかせ！')
+			figure.item
+				img(src='img/header_img.png', alt='')
+			p.comment
+				img(src='img/header_comment.png', alt='バイヤー ・ 阿部 : アメリカ発・高品質ナチュラルブランド「TREE HUT」をバイヤー・阿部がご紹介します。')
+		// /content-header
+		#content-body
+			section#sec1
+				h2 並行輸入でしか手に入らなかったバス＆ボディケアブランドがついに日本上陸！
+				p.shingo_m.
+					夏本番、暑い日差しの元では、素肌の露出が多くなりますね。スキンケアに気を使っている方も、ボディケアは後回しにしがちなのではないでしょうか？
+				p.shingo_m.
+					今回ご紹介する「TREE HUT(トゥリーハット)」は、高品質の自然派バス＆ボディケアブランド。<br>
+					オーガニックシアバターをベースにしたラインナップで、アメリカでは2008年からウォルマートで販売されていて、シュガースクラブとボディバターはアメリカマーケットシェアNO.1を獲得するほど大人気！<br>
+					日本でも知名度、人気共に急上昇中です！
+				figure
+					img(src='img/sec1_img.jpg', alt='')
+			// /sec1
+			section#sec2
+				h2 心地よい香りが10種類&#9834;好みの香りがきっとみつかる！
+				p.shingo_m.
+					ボディウォッシュ、シュガースクラブ、ボディローション、ボディバター、ハンドクリームとラインナップも豊富に揃っています。<br>
+					特に肌の露出が多い時期のわたしのお気に入りの使い方は、週に1〜2度のスペシャルケアとして角質ケアやシュガースクラブ、日焼け後の乾燥ケアにボディローションやボディバターを使うことです！
+				p.shingo_m.
+					夏におすすめの香りはココナッツ＆ライム！さわやかで夏にぴったりです♪その他にも、商品ごとに3～6種類の香りが選べるので、お好みや季節に合わせて香りを使い分けてみてくださいね。
+				figure
+					img(src='img/sec2_img.png', alt='「TREE HUT」]')
+					figcaption.shingo_m お好みの香りが選べます
+			// /sec2
+			section#sec3
+				h2 天然由来成分配合で高品質。なのに、お手ごろ価格。
+				p.shingo_m.
+					「TREE HUT」は、オーガニック先進国アメリカで生まれ、USDA（米農務省）認証の100％ピュアオーガニックシアバターのほか、ブラジルナッツオイルなど天然由来成分を配合した高品質な商品。<br>
+					日本では、2015年10月からSEIYUで独占販売*をスタートし、多くのお客さまからご好評をいただいています！
+				p.shingo_m.
+					独占販売*・直輸入だから実現できた、￥1000以下というお手ごろな価格設定も人気の理由ですね。
+				p.shingo_m.
+					まだまだ日本国内では知る人ぞ知るブランド、「TREE HUT」を手に入れて、ボディケアを始めましょう&#9834;
+				p.caution.shingo_m.
+					*SEIYU独占販売での取扱いは2016年９月末日で終了となります。
+				figure
+					img(src='img/sec3_img.png', alt='「TREE HUT」]')
+					figcaption.shingo_m.
+						店舗に並べられた「トゥリーハット」。<br>高級感があって目に留まります！
+
+			// /sec3
+			section#products
+				h2 商品情報
+				.products
+					.title
+						h3
+							img(src="img/product_title.png",alt="この夏、特にオススメの「TREE HUT」 ボディケア商品をご紹介！")
+					.product1
+						.items.clearfix
+							img.item(src="img/product1_item.png",alt="アマゾンパイキーボディバター")
+							img.value(src="img/product1_value.png",alt="アマゾンパイキーボディバター 198g ¥（税抜）977")
+						p.description.shingo_m.
+							アマゾンパイキーの甘い香り。<brs>
+							ビタミンA、C、Eを含み、傷んだお肌やお手入れを怠ったお肌に水分を与え、修復します。まったりしたボディバターで、水分を深く浸透させてしっかり保湿し、お肌の自然なうるおいを維持できるようにします。
+						.button
+							a(href="//www.the-seiyu.com/front/commodity/00000000/75371005541/?aff_id=syotot0003", target='_blank', onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu01_amazon', 'vol7_treehut');")
+								img(src="img/product_netbuy_button.jpg",alt="ネットで買う")
+					.product2
+						.items.clearfix
+							img.item(src="img/product2_item.png",alt="パッションフルーツ&グアバ ボティローション")
+							img.value(src="img/product2_value.png",alt="パッションフルーツ&グアバ ボティローション 255g ¥(税抜)677")
+						p.description.shingo_m.
+							パッションフルーツとグアバの甘い香り。ビタミンA、C、Eが豊富なエキスで、傷んだお肌に栄養分を補給し、引き締めます。さらっとしてべたつかず、お肌に日々水分を補給し、なめらかで健康なお肌を保ちます。
+						.button
+							a(href="//www.the-seiyu.com/front/commodity/00000000/9975371006708/?aff_id=syotot0003", target='_blank', onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu02_passion', 'vol7_treehut');")
+								img(src="img/product_netbuy_button.jpg",alt="ネットで買う")
+					.product3
+						.items.clearfix
+							img.item(src="img/product3_item.png",alt="アイランドキウイシュガースクラブ")
+							img.value(src="img/product3_value.png",alt="アイランドキウイシュガースクラブ 510g ¥（税抜）977")
+						p.description.shingo_m.
+							アイランドキウイのトロピカルな香り。<br>
+							水分補給効果があるオメガ3とαリノレン酸が豊富に含まれているキーウィ果実エキスは、お肌に栄養を与えしっとりさせます。顆粒状のシュガーが乾燥し傷んだ皮膚を除去し、しっとりとなめらかなお肌にします。
+						.button
+							a(href="//www.the-seiyu.com/front/commodity/00000000/9975371003172/?aff_id=syotot0003", target='_blank', onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu03_island', 'vol7_treehut');")
+								img(src="img/product_netbuy_button.jpg",alt="ネットで買う")
+				.other
+					h3
+						img(src="img/other_title.png",alt="その他、「TREE HUT」ボディケア商品を種類豊富に取り揃えています。")
+					.buttons
+						.netbuy.button
+							a(href="//www.the-seiyu.com/front/app/catalog/list/init?searchCategoryCode=E201146&nsFlg=false&wrt=y&parent1Code=E200500&parent2Code=E201141/&aff_id=syotot0003",target='_blank', onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu04', 'vol7_treehut');")
+								img(src="img/product_netbuy_button.jpg", target='_blank',alt="ネットで買う")
+						.nearshop.button
+							a(href="/shoplist/770", target="_blank")
+								img(src="img/product_shop_button.jpg",alt="お近くの取扱店舗を探す")
+				.feature-block
+					h4.title SEIYUのオススメ商品発掘し隊！では他にも話題の商品、隠れた人気商品をご紹介しています！
+					p.btn
+						a(href='../index.html', onclick="ga('send', 'event', 'Campaign', 'COJPLink_features', 'vol7_treehut');")
+							img(src='img/btn_feature.png', alt='SEIYUのオススメ商品発掘し隊！シリーズはこちら')
+				ul.note-block.shingo_m
+					li.
+						<span class="asterisk">※</span><span class="text">このページに記載の内容は、2016年7月28日現在の情報です。</span>
+					li.
+						<span class="asterisk">※</span><span class="text">掲載の商品は、店舗によりお取扱いがない場合がございます。</span>
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='//www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol7_treehut');", target='_blank')
+						span facebook
+				li
+					a.twitter(href='//twitter.com/share?url=http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html&related=Seiyu_Japan&hashtags=TREEHUT%E3%80%80%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol7_treehut');", target='_blank')
+						span twitter
+				li
+					a.line(href='//line.me/R/msg/text/?夏のボディケアは「TREE HUT」におまかせ！｜SEIYU　http://www.seiyu.co.jp/campaign/features/vol7_treehut/index.html', onclick="ga('send', 'event', 'Campaign', 'SNSbtnLine', 'vol7_treehut');", target='_blank')
+						span LINE

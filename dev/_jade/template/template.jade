@@ -1,0 +1,83 @@
+block project
+	-var project = ""
+block vars
+	-var title = ""
+	-var og_url = ""
+	-var og_description = ""
+	-var og_image = ""
+	-var description = ""
+	-var keyword = ""
+	-var dir_root = ""
+	-var current = ""
+	-var og_sitename = ""
+	-var sp = false
+	-var thisRecipe = ""
+	-var recipenum = ""
+block ga_click
+	-var facebook = ""
+	-var twitter = ""
+	-var line = ""
+
+doctype html
+-if(sp == false){
+	!='\n<!--[if lt IE 7]><html lang="ja" class="no-js oldie lt-ie9 lt-ie8 lt-ie7"><![endif]-->'
+	!='\n<!--[if IE 7]><html lang="ja" class="no-js oldie lt-ie9 lt-ie8"><![endif]-->'
+	!='\n<!--[if IE 8]><html lang="ja" class="no-js oldie lt-ie9"><![endif]-->'
+	!='\n<!--[if gt IE 8]><!-->'
+-}
+-var nojs = "";
+-if(sp == false){
+	-nojs = "no-js";
+-}else{
+	-nojs = "";
+-}
+html(lang='ja',class="#{nojs}")
+	-if(sp == false){
+		<!--<![endif]-->
+	-}
+	head
+		-if(sp == false){
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		-}
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0')
+		meta(name='format-detection', content='telephone=no')
+		title #{title}
+		//-例外
+		case project
+			when "nyannosuke"
+				!='\n\t<!--#include virtual="/include/styles.html" -->'
+				block nyannosuke_style
+			when "elp"
+				!='\n\t<!--#include virtual="/include/styles.html" -->'
+				meta(name='description' content="#{description}")
+				meta(name='keywords' content="#{keyword}")
+				meta(property='og:title', content="#{title}")
+				meta(property='og:url', content='http://www.seiyu.co.jp/campaign/cospa/')
+				meta(property='og:description', content='#{description}')
+				meta(property="og:site_name" content="#{title}")
+				-if(sp == true){
+					meta(property='og:image', content='http://www.seiyu.co.jp/sp/campaign/cospa/img/sns.jpg')
+				-}else{
+					meta(property='og:image', content='http://www.seiyu.co.jp/campaign/cospa/img/sns.jpg')
+				-}
+				block css
+			default
+				meta(name='description' content="#{description}")
+				meta(name='keywords' content="#{keyword}")
+		block project_meta
+	body
+		//-例外
+		case project
+			when "nyannosuke"
+				!='\n\t<!--#include virtual="/include/header.html" -->'
+				#content
+					block content
+				!='\n\t<!--#include virtual="/include/footer.html" -->'
+			when "elp"
+				!='\n\t<!--#include virtual="/include/header.html" -->'
+				#content
+					block content
+				!='\n\t<!--#include virtual="/include/footer.html" -->'
+			default
+				block content

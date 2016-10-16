@@ -1,0 +1,40 @@
+<!-- include file START -->
+<link rel="shortcut icon" href="/common/img/c/favicon.ico">
+<link rel="icon" type="image/gif" href="/common/img/c/favicon.gif">
+<link rel="stylesheet" type="text/css" href="/include/css/common.css" />
+<script type="text/javascript" src="/include/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/include/js/common.min.js"></script>
+<script type="text/javascript" src="/include/js/trackclick.js"></script>
+<!-- include file END -->
+
+<script type="text/javascript">
+	//ƒXƒ}ƒzU‚è•ª‚¯
+	var isPad=false;
+	var agent = navigator.userAgent;
+	if(agent.indexOf("iPhone") != -1 || agent.indexOf("iPod") != -1 || (agent.indexOf("Android") != -1 && agent.indexOf("Mobile")!=-1)){
+		var url =location.href;
+		if(url.indexOf("/sp/")< 0){
+		window.stop()
+		var rep =url.replace("/campaign","/sp/campaign");
+		location.href = rep;
+		}
+	}else if(agent.indexOf("iPad") != -1||(agent.indexOf("Android") != -1 && agent.indexOf("Mobile") ==-1)){
+		isPad=true;
+		var url =location.href;
+		if(0< url.indexOf("/sp/")){
+		window.stop()
+		var rep =url.replace("/sp/campaign","/campaign");
+		location.href = rep;
+		}
+	}else{
+		var url =location.href;
+		if(0< url.indexOf("/sp/")){
+		window.stop()
+		var rep =url.replace("/sp/campaign","/campaign");
+		location.href = rep;
+		}
+	}
+</script>
+<!--[if lt IE 9]>
+<script src="/include/js/html5shiv-printshiv.min.js"></script>
+<![endif]-->

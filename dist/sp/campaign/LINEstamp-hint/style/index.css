@@ -1,0 +1,268 @@
+/*============================
+#contents
+============================*/
+div#contents {
+  /*============================
+    #mv
+    ============================*/
+  /*============================
+    #download
+    ============================*/
+  /*============================
+    #stamp
+    ============================*/
+  /*============================
+    #attention
+    ============================*/ }
+  div#contents a {
+    color: #093288; }
+  div#contents div#mv {
+    background-image: url("../images/SP_bg_1.jpg");
+    -moz-background-size: 200px auto;
+      -o-background-size: 200px auto;
+         background-size: 200px auto; }
+    div#contents div#mv .box {
+      width: 300px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      div#contents div#mv .box div.title {
+        text-align: center;
+        padding-top: 12px; }
+      div#contents div#mv .box p.subhead {
+        margin: 7px 0 0 6px;
+        line-height: 19px;
+        font-size: 13px; }
+      div#contents div#mv .box div.limitedOnair {
+        display: inline-block;
+        margin-top: 11px;
+        margin-left: 5px;
+        margin-bottom: 26px;
+        background-color: #FFF;
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        padding: 3px 9px;
+        text-align: center; }
+        div#contents div#mv .box div.limitedOnair .text, div#contents div#mv .box div.limitedOnair .date {
+          text-align: center; }
+        div#contents div#mv .box div.limitedOnair .text {
+          font-size: 12px;
+          font-weight: 900 !important;
+          color: #f20004;
+          border-bottom: 1px solid #ced6e7;
+          margin: 0;
+          line-height: 30px; }
+        div#contents div#mv .box div.limitedOnair .date {
+          font-size: 10px;
+          color: #000;
+          margin: 0;
+          line-height: 24px; }
+      div#contents div#mv .box div.shunnosuke {
+        width: 174px;
+        height: 190px;
+        position: absolute;
+        bottom: 0;
+        right: -10px; }
+  div#contents div#download {
+    background-image: url("../images/SP_bg_2.jpg");
+    -moz-background-size: 200px auto;
+      -o-background-size: 200px auto;
+         background-size: 200px auto;
+    position: relative; }
+    div#contents div#download p.subhead {
+      text-align: center;
+      background-color: #1644ad;
+      font-size: 14px;
+      color: #FFF;
+      margin: 0;
+      line-height: 40px;
+      letter-spacing: 1px; }
+    div#contents div#download div.hint {
+      margin-top: 16px; }
+      div#contents div#download div.hint p {
+        font-size: 14px;
+        margin: 0;
+        line-height: 21px;
+        text-align: center; }
+        div#contents div#download div.hint p span {
+          color: #c00000; }
+    div#contents div#download .otherMark {
+      width: 300px;
+      text-align: center;
+      position: relative;
+      margin: 15px auto 0; }
+      div#contents div#download .otherMark ul.marks {
+        zoom: 1;
+        list-style: none;
+        width: 300px;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 10px; }
+        div#contents div#download .otherMark ul.marks:after {
+          content: "";
+          display: block;
+          clear: both; }
+        div#contents div#download .otherMark ul.marks li {
+          margin-top: 14px; }
+      div#contents div#download .otherMark p.subhead {
+        color: #FFF;
+        -webkit-border-radius: 50px;
+           -moz-border-radius: 50px;
+                border-radius: 50px;
+        background-color: #1644ad;
+        font-size: 13px;
+        width: 210px;
+        margin: 0 auto;
+        line-height: 30px; }
+      div#contents div#download .otherMark .hint {
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+                border-radius: 5px;
+        width: 240px;
+        margin: 18px auto 0;
+        background-color: #fff;
+        position: relative;
+        padding: 10px 0; }
+        div#contents div#download .otherMark .hint .hintBalloon {
+          background-image: url("../images/balloon.png");
+          width: 53px;
+          height: 51px;
+          -moz-background-size: contain;
+            -o-background-size: contain;
+               background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          left: -16px;
+          top: -18px;
+          z-index: 2;
+          color: #fff;
+          font-size: 11px;
+          line-height: 55px;
+          text-indent: 8px; }
+        div#contents div#download .otherMark .hint div.box .balloonText {
+          font-size: 11px;
+          margin-left: 7px;
+          line-height: 17px; }
+          div#contents div#download .otherMark .hint div.box .balloonText span {
+            color: #c00000; }
+      div#contents div#download .otherMark p.caution {
+        font-size: 12px;
+        text-align: left;
+        width: 287px;
+        padding: 14px 0;
+        margin: 0 auto; }
+      div#contents div#download .otherMark .lookformark {
+        width: 300px;
+        margin: 0 auto; }
+        div#contents div#download .otherMark .lookformark .lookformarkSubhead {
+          font-size: 14px;
+          margin-top: 5px; }
+        div#contents div#download .otherMark .lookformark a.lookformarkButton {
+          display: block;
+          width: 290px;
+          height: 50px;
+          background-color: #1644ad;
+          margin: 0 auto;
+          -webkit-border-radius: 5px;
+             -moz-border-radius: 5px;
+                  border-radius: 5px;
+          text-decoration: none; }
+          div#contents div#download .otherMark .lookformark a.lookformarkButton p {
+            font-size: 15px;
+            padding: 14px 0;
+            color: #FFF; }
+          div#contents div#download .otherMark .lookformark a.lookformarkButton img {
+            position: absolute;
+            bottom: 76px;
+            right: 20px; }
+          div#contents div#download .otherMark .lookformark a.lookformarkButton:visited {
+            color: #fff; }
+        div#contents div#download .otherMark .lookformark p.caution {
+          font-size: 12px;
+          padding-bottom: 25px; }
+  div#contents div#stamp {
+    position: relative;
+    padding-top: 15px;
+    -webkit-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+       -moz-box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15); }
+    div#contents div#stamp .inner {
+      width: 300px;
+      height: 238px;
+      text-align: center;
+      margin: 0 auto; }
+      div#contents div#stamp .inner .subhead {
+        text-align: center;
+        font-size: 13px;
+        color: #093288;
+        margin: 0;
+        margin-bottom: 7px; }
+        div#contents div#stamp .inner .subhead span {
+          color: #c00000; }
+    div#contents div#stamp .date {
+      text-align: center;
+      background-color: #1644ad;
+      margin: 0;
+      line-height: 34px; }
+      div#contents div#stamp .date .box {
+        zoom: 1;
+        min-width: 320px;
+        width: 300px;
+        margin: 0 auto; }
+        div#contents div#stamp .date .box:after {
+          content: "";
+          display: block;
+          clear: both; }
+        div#contents div#stamp .date .box .left {
+          font-size: 13px;
+          color: #ec1b1b;
+          float: left;
+          width: 133px;
+          margin-left: 10px;
+          -webkit-border-radius: 4px;
+             -moz-border-radius: 4px;
+                  border-radius: 4px;
+          background-color: #FFF; }
+        div#contents div#stamp .date .box .right {
+          color: #fff;
+          font-size: 11px;
+          float: right;
+          margin-right: 10px;
+          margin-top: 15px; }
+  div#contents div#attention {
+    background-image: url("../images/SP_bg_2.jpg");
+    padding-bottom: 30px;
+    -moz-background-size: 200px auto;
+      -o-background-size: 200px auto;
+         background-size: 200px auto; }
+    div#contents div#attention div.text {
+      width: 300px;
+      margin: 0 auto;
+      padding-top: 20px; }
+      div#contents div#attention div.text p.caution {
+        margin: 0; }
+      div#contents div#attention div.text div.cautionList {
+        font-size: 12px;
+        border-top: 1px solid #829ab8;
+        margin-top: 5px;
+        padding-top: 10px; }
+        div#contents div#attention div.text div.cautionList p {
+          margin: 0;
+          text-indent: -1em;
+          margin-left: 1em;
+          line-height: 19px; }
+  div#contents div.sns {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+    padding: 15px 0;
+    padding-bottom: 55px; }
+    div#contents div.sns .facebook {
+      float: left;
+      margin: 0 10px; }
+    div#contents div.sns .twitter {
+      float: left;
+      margin-right: 10px; }
+    div#contents div.sns .line {
+      float: left; }

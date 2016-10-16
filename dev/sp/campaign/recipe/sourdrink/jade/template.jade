@@ -1,0 +1,41 @@
+block vars
+	-var thisRecipe = "sourdrink"
+
+	-var title = "西友 – おうちで作れるさわやかサワードリンクレシピ | SEIYU"
+	-var description = "お酢とフルーツでお手軽に作れる、彩り豊かでさわやかなサワードリンクレシピをご紹介します。"
+	-var og_title = "西友 – おうちで作れるさわやかサワードリンクレシピ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/campaign/recipe/"+thisRecipe+"/"
+	-var og_sitename = "西友 – おうちで作れるさわやかサワードリンクレシピ | SEIYU"
+	-var og_description = "お酢とフルーツでお手軽に作れる、彩り豊かでさわやかなサワードリンクレシピをご紹介します。"
+	-var dir_root = "./"
+	-var current = "top"
+block ga_click
+	-var facebook = ""
+	-var twitter = ""
+	-var line = ""
+	-var twitter_url = ""
+doctype html
+html(lang='ja')
+	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0')
+		meta(name='format-detection', content='telephone=no')
+		title #{title}
+		meta(name='description', content="お酢とフルーツでお手軽に作れる、彩り豊かでさわやかなサワードリンクレシピをご紹介します。")
+		meta(name='keywords', content="お酢,サワードリンク,ビネガー,フルーツ,フルーツ酢,ビネガーウォーター,スムージー,レシピ,料理,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート")
+		meta(property='og:title', content="西友 – おうちで作れるさわやかサワードリンクレシピ | SEIYU")
+		meta(property='og:url', content='#{og_url}')
+		meta(property='og:image', content='http://www.seiyu.co.jp/sp/campaign/recipe/'+'#{thisRecipe}'+'/img/sns.jpg')
+		meta(property='og:site_name', content="西友 – おうちで作れるさわやかサワードリンクレシピ | SEIYU")
+		meta(property='og:description', content='#{og_description}')
+		!='\n\t<!--#include virtual="/include/styles.html" -->'
+		script(type='text/javascript', src='//typesquare.com/accessor/script/typesquare.js?myX6PdQLJLo%3D', charset='utf-8')
+		link(rel='stylesheet', href='#{dir_root}css/recipe.css')
+	body
+		!='\n\t<!--#include virtual="/include/header.html" -->'
+		#contents(class="#{current}")
+			header#contents-header
+				h1.title
+					img(src='#{dir_root}img/common_title.png', alt='いつものフルーツがお酢でさわやかドリンクに！？サワードリンクレシピ')
+			block content
+		!='\n\t<!--#include virtual="/include/footer.html" -->'

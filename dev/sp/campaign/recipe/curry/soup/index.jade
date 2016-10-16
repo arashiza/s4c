@@ -1,0 +1,47 @@
+extends ../jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – 夏野菜たっぷりスープカレー レシピページ | SEIYU"
+	-var current = "recipe"
+	-var dir_root = "../"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+	-var recipenum = 1
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'currysoup');"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'currysoup');"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'currysoup');"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'currysoup');"
+block recipecontent
+	-var recipename = "夏野菜たっぷりスープカレー"
+	.recipe-area
+		i.label カレー with 夏野菜
+		h1
+			span #{recipename}
+		figure
+			img(src='../img/recipe_'+'#{recipenum}'+'_img.jpg', alt='#{recipename}')
+		.recipe-inner
+			p.description.
+				夏野菜たっぷりの彩り豊かなスープカレーです。野菜は電子レンジで軽く火を入れ、煮込み時間を短縮します。
+			.info 調理時間･･･25分
+			+recipeList(1,"材料（4人分）",11)
+			.howto
+				h2.shingo_m 作り方
+				dl
+					dt 1
+					dd 玉ねぎはみじん切り、パプリカは細切り、なすは斜め薄切り、かぼちゃは薄切りにする。オクラは塩（分量外）でうぶ毛を取って水で洗い、ヘタを切り斜め半分に。
+				dl
+					dt 2
+					dd 玉ねぎ以外の野菜を電子レンジ600Wで2分ほど加熱。
+				dl
+					dt 3
+					dd 鍋にサラダ油を熱して玉ねぎ、合いびき肉の順に加えて炒め、肉の色が変わったら②の野菜を入れてさっと炒める。
+				dl
+					dt 4
+					dd 水、コンソメを加え、アクを取りながら5分ほど煮込む。いったん火を止め、ルウを割り入れて溶かす。再び弱火で2～３分煮込む。
+	.btn-prev
+		a(href='../', onclick="#{btn_prev};") トップに戻る

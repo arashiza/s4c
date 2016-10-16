@@ -1,0 +1,420 @@
+@import "../../../../../_scss/sato_mixin";
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+
+//---------------------------
+//         Main
+//---------------------------
+
+$path:"vol8_shinmai";
+$themeColor:#ffbe10;
+
+#content-header {
+	padding: 1px 0 15px;
+	background: $themeColor;
+	position: relative;
+	line-height: 1.0;
+	.label {
+		width: 75%;
+		margin: 15px auto 0;
+	}
+	h1 {
+		width: 95.3125%;
+		margin: 15px auto 0;
+		font-size: 0;
+	}
+	.item {
+		margin: -15px auto 0;
+		font-size: 0;
+	}
+	.comment {
+		width: 95.3125%;
+		margin: -70px auto 0;
+		font-size: 0;
+	}
+}
+#content-body {
+	#sec1 {
+		padding: 15px 10px;
+		.title {
+			margin-top: 15px;
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec1_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 292.5px;
+			height: 18.5px;
+			background-size: 292.5px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		.sub-title {
+			margin-top: 15px;
+			font-size: 15px;
+		}
+		.text {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+	}
+	#sec2 {
+		padding: 15px 10px 0;
+		background-color: $themeColor;
+		.title {
+			margin: 0 auto;
+		}
+		.figure1 {
+			margin-top: 5px;
+			figcaption {
+				margin-top: 7px;
+				text-align: center;
+			}
+		}
+		.figure2 {
+			margin-top: 15px;
+		}
+	}
+	#sec3 {
+		padding: 15px 10px;
+		.title {
+			margin-top: 15px;
+			display: block;
+			background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec3_title.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 182px;
+			height: 19px;
+			background-size: 182px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		.text {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		.comment {
+			margin-top: 10px;
+			text-align: center;
+		}
+		.figure1 figcaption {
+			margin-top: 5px;
+			text-align: center;
+		}
+	}
+	#sec4 {
+		padding: 15px 10px;
+		background-color: $themeColor;
+		.block1 {
+			.title1 {
+				display: block;
+				background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec4_title.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 300px;
+				height: 45px;
+				background-size: 300px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.catch {
+				margin-top: 15px;
+				overflow: hidden;
+				*zoom: 1;
+				dt {
+					min-height: 40px;
+					float: left;
+					margin-bottom: 15px;
+				}
+				dd {
+					min-height: 40px;
+					margin-bottom: 15px;
+					margin-left: 50px;
+					font-size: 10px;
+				}
+				.catch1 {
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec4_icon_1.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 32px;
+					height: 39px;
+					background-size: 32px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+				.catch2 {
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec4_icon_2.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 41px;
+					height: 38px;
+					background-size: 41px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+				.catch3 {
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec4_icon_3.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 41px;
+					height: 38px;
+					background-size: 41px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+			}
+			.comment {
+				background: $white;
+				//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+				border-radius: 10px;
+				p {
+					padding: 10px;
+					font-size: 11px;
+				}
+			}
+			.figure1 {
+				margin-top: 10px;
+				.caption {
+					margin-top: 5px;
+					font-size: 10px;
+					text-align: center;
+				}
+			}
+		}
+		.block2 {
+			padding: 10px;
+			background: $white;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 10px;
+			margin-top: 20px;
+			.title2 {
+				display: block;
+				background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/sec4_title2.png");
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 279px;
+				height: 19px;
+				background-size: 279px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.text-box {
+				margin-top: 10px;
+				.text {
+					margin-top: 10px;
+					p {
+						margin-bottom: 10px;
+						font-size: 11px;
+					}
+				}
+			}
+		}
+	}
+	#products {
+		padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto 20px;
+		}
+		.products1 {
+			.row {
+				padding: 0 20px;
+				overflow: hidden;
+				*zoom: 1;
+				figure {
+					width: 108px;
+					margin-right: 2%;
+					float: left;
+				}
+				.name {
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/products_name.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 165px;
+					height: 40px;
+					background-size: 165px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					margin: 0;
+				}
+				.price {
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/products_price.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 125px;
+					height: 24px;
+					background-size: 125px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					margin: 9px 0;
+				}
+				.text {
+					margin-bottom: 10px;
+					font-size: 11px;
+				}
+			}
+			.btn-block {
+				margin: 20px 10px 0;
+				li {
+					line-height: 1.0;
+					&:first-child {
+						margin-bottom: 10px;
+					}
+					a {
+						display: block;
+					}
+				}
+			}
+			.feature-block {
+				margin: 20px 10px 0;
+				.title {
+					margin: 0 auto;
+					display: block;
+					background-image: url("/sp/campaign/features/"+"#{$path}"+"/img/features_title.png");
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 299px;
+					height: 27px;
+					background-size: 299px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+				}
+				.btn {
+					margin-top: 15px;
+					a {
+						display: block;
+					}
+				}
+			}
+		}
+		.note-block {
+			margin: 10px 10px 0;
+			li {
+				padding-left: 1em;
+				text-indent: -1em;
+				color: #666;
+				font-size: 11px;
+			}
+		}
+	}
+}

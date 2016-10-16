@@ -1,0 +1,59 @@
+extends template
+include ../mixin/recipe_mix
+block project
+	-var project = ""
+block vars
+	-var title = ""
+	-var og_url = ""
+	-var og_description = ""
+	-var og_image = ""
+	-var description = ""
+	-var keyword = ""
+	-var dir_root = ""
+	-var current = ""
+	-var og_sitename = ""
+	-var sp = false
+	-var thisRecipe = ""
+	-var recipenum = ""
+block ga_click
+	-var facebook = ""
+	-var twitter = ""
+	-var line = ""
+block project_meta
+	script(type='text/javascript', src='//typesquare.com/accessor/script/typesquare.js?myX6PdQLJLo%3D', charset='utf-8')
+	link(rel='stylesheet', href='#{dir_root}css/recipe.css')
+	meta(name='description', content="#{description}")
+	meta(name='keywords', content="#{keyword}")
+	meta(property='og:title', content="#{title}")
+	meta(property='og:url', content='http://www.seiyu.co.jp/campaign/recipe/' + '#{thisRecipe}' + '/')
+	-if(sp == true){
+		meta(property='og:image', content='http://www.seiyu.co.jp/sp/campaign/recipe/' + '#{thisRecipe}' + '/img/sns.jpg')
+	-}else{
+		meta(property='og:image', content='http://www.seiyu.co.jp/campaign/recipe/' + '#{thisRecipe}' + '/img/sns.jpg')
+	-}
+	meta(property='og:site_name', content="#{title}")
+	meta(property='og:description', content='#{description}')
+	!='\n\t<!--#include virtual="/include/styles.html" -->'
+	script(type='text/javascript', src='//typesquare.com/accessor/script/typesquare.js?myX6PdQLJLo%3D', charset='utf-8')
+	link(rel='stylesheet', href='#{dir_root}css/recipe.css')
+block content
+	!='\n\t<!--#include virtual="/include/header.html" -->'
+	#contents(class="#{current}")
+		#common-header
+			-if(sp == true){
+				header#contents-header
+					h1.title
+						img(src='#{dir_root}img/common_title.png', alt='いつものカレーにワンアクセントでもっとおいしく豪華に！？カレーレシピ')
+			-}else{
+				.container
+					p.shingo_m おうちで簡単 ひと味違った豪華なカレーレシピを紹介します。
+					ul.sns
+						li
+							a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/recipe/' + '#{thisRecipe}/', onclick="#{facebook}", target='_blank')
+								span facebook
+						li
+							a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/recipe/' + '#{thisRecipe}' + '/&related=Seiyu_Japan&hashtags=%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%AC%E3%82%B7%E3%83%94%E3%80%80%23SEIYU', onclick="#{twitter}", target='_blank')
+								span twitter
+			-}
+		block recipemain
+	!='\n\t<!--#include virtual="/include/footer.html" -->'

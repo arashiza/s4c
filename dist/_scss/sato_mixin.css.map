@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAIA,YAAY;AAWZ,2BAA2B;AAa3B,oBAAoB;AAWpB,QAAQ;AAYR,YAAY;AAWZ,WAAW;AASX,SAAS;AAkCT,WAAW",
+"sources": ["../../dev/_scss/sato_mixin.scss"],
+"names": [],
+"file": "sato_mixin.css"
+}

@@ -1,0 +1,171 @@
+extends ../../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 - レシピも公開中! 支持率95%超のソフトクッキー | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/features/vol6_softcookie/"
+	-var og_description = "たっぷり入ってお買い得! 外はサクサク、中はしっとり。冷やしても温めてもおいしい「みなさまのお墨付き」ソフトクッキー。消費者テスト支持率95%を超える、その食感の秘密とは? 手軽で華やかな、デザートへのアレンジレシピも公開中! "
+	-var og_image = "http://www.seiyu.co.jp/campaign/features/vol6_softcookie/img/sns.jpg"
+	-var og_sitename = "西友 | SEIYU"
+	-var description = "たっぷり入ってお買い得! 外はサクサク、中はしっとり。冷やしても温めてもおいしい「みなさまのお墨付き」ソフトクッキー。消費者テスト支持率95%を超える、その食感の秘密とは? 手軽で華やかな、デザートへのアレンジレシピも公開中! "
+	-var keyword = "ソフトクッキー,チョコチップ,バニラ,ココア,クッキー,みなさまのお墨付き,レシピ,デザート,ヨーグルトケーキ,西友,SEIYU,リヴィン,LIVIN,サニー,SUNNY"
+	-var dir_root = "../"
+	-var current = ""
+	-var sp = true
+
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			p.label
+				img(src='img/header_label.png', alt='SEIYUのオススメ商品発掘し隊！ Vol.6')
+			h1
+				img(src='img/header_title.png', alt='そのままでもアレンジでもおいしい！ こだわり食感のソフトクッキーはこうして出来た。')
+			figure.item
+				img(src='img/header_img.png', alt='')
+			p.comment
+				img(src='img/header_comment.png', alt='商品開発担当・松尾 : たっぷり入ってお買い得！ みなさまのお墨付き「ソフトクッキー」を商品開発担当・松尾がご紹介します。')
+		// /content-header
+		#content-body
+			section#sec1
+				h2 外はサクサク、中はしっとり。そのうえチョコチップたっぷり！
+				p.shingo_m.
+					SEIYU のオリジナル商品「みなさまのお墨付き」。その中から今回は、昨年の夏に登場したソフトクッキーをご紹介します。<br>
+					この商品の特徴は、なんといっても食感！ 2 種類の生地を使って、外はサクサク、中はしっとりに仕上げました。<br>
+				p.shingo_m お子様でも食べやすく、大人の方にはちょうどいい、ひと口サイズのクッキーは、口に入れるとたっぷりのチョコチップの風味や甘みが広がって、贅沢な気分になれるんです&#9834;
+				figure
+					img(src='img/sec1_img.jpg', alt='')
+				a.banner(href="/pb/about.html")
+					img(src="img/sec1_banner.jpg",alt="みなさまのお墨付き : みなさまのお墨付きとは？ 全国での消費者テストで支持率 70% 以上のものだけを合格として商品化。発売後も 1.5 〜 2 年に 1 度再テストを実施、不合格のものは際合格するまで改良するか販売終了します。")
+			// /sec1
+			section#sec2
+				h2 試行錯誤の末に生まれた自信作！支持率は95％超え！
+				p.shingo_m.
+					商品化まで約半年〜 1 年ほどのものが多いなか、実はこのソフトクッキーは開発に 3 年もかかっているんです。
+				p.shingo_m.
+					一番大変だったのは、この食感を出すこと。<br>
+					焼きすぎると固くなってしまうし、生地が柔らかすぎると固まらない。また、チョコチップの量を多くすると生地を機械に通す際に詰まる問題もあり、何種類もの生地の配合を考えたりチョコチップの大きさを変えたりし、ひとつひとつ問題をクリアしてきました。
+				p.shingo_m.
+					そんな努力と思いが詰まっているだけあって、消費者テストでは 95.4％ の支持率を獲得！<br>
+					自信を持ってオススメできる商品になりました。
+				figure
+					img(src='img/sec2_img.png', alt='ソフトクッキー')
+					figcaption.shingo_m 様々な試行錯誤からこのソフトクッキーが完成しました！
+			// /sec2
+			section#sec3
+				h2
+					img(src="img/sec3_title.png",alt="商品開発担当・松尾オススメ！ みなさまのお墨付きソフトクッキーを使ったデザートレシピ")
+				p.shingo_m.
+					そのままでも十分おいしいソフトクッキーですが、実はデザートへのアレンジもしやすいんです。
+					冷蔵庫で冷やすとパキっとした食感に、電子レンジで軽く温めるとチョコチップが溶けてトロッと食感に。
+					夏は砕いてアイスクリームに混ぜて食べるのも、美味しいんです！
+				p.shingo_m.
+					ということで、ソフトクッキーを使った、オススメの簡単アレンジレシピをお教えします。<br>
+					おうちでぜひ試してみてくださいね。
+
+				.recipes
+					.recipe1
+						h3
+							img.title(src="img/sec3_recipe1_title.png",alt="材料を乗せるだけ！ パーティ仕様の華やかさ！ デザートクッキー")
+						img.visual(src="img/sec3_recipe1_visual.jpg",alt="デザートクッキー")
+						.elements
+							.subhead
+								p.shingo_m 材料（ 4 個分）
+							p.recipe.shingo_m.
+								ソフトクッキー &#8230; 4 枚
+							p.recipe.shingo_m.
+								クリームチーズ &#8230; 適量
+							p.recipe.shingo_m.
+								お好みのフルーツまたはジャム &#8230; 適量
+							p.recipe.shingo_m.
+								ナッツ &#8230; 適量
+							p.recipe.shingo_m.
+								はちみつ &#8230; 適量
+						.howto
+							.subhead
+								p.shingo_m 作り方
+							p.howto.shingo_m <span class="num">&#9312;</span>ソフトクッキーの上にティースプーン 1 杯分のクリームチーズを盛り、お好みのフルーツまたはジャムをのせる。
+							p.howto.shingo_m <span class="num">&#9313;</span>ナッツを散らし、はちみつをかける。
+							.comment
+								img(src="img/sec3_recipe_comment.png",alt="商品開発担当・松尾からのコメント")
+								img.text(src="img/sec3_recipe_comment_text.png",alt="ナッツの香りとクリームチーズのハーモニーに驚き！ バニラクッキーには甘みのあるフルーツ、ココアクッキーには酸味のあるフルーツが合います&#9834")
+					.recipe2
+						h3
+							img.title(src="img/sec3_recipe2_title.png",alt="本格派なのにカンタン！ 親子でつくれる 焼かないヨーグルトケーキ")
+						img.visual(src="img/sec3_recipe2_visual.jpg",alt="焼かないヨーグルトケーキ")
+						.elements
+							.subhead
+								p.shingo_m 材料（ 12cm のタルト型 1 台分）
+							.group
+								p.group.shingo_b 【タルト生地】
+								p.recipe.shingo_m ソフトクッキー &#8230; 8 枚（バニラ 4 枚、ココア 4 枚）
+								p.recipe.shingo_m バター（またはマーガリン） &#8230; 5g
+								p.recipe.shingo_m 牛乳 &#8230; 小さじ 1
+							.group
+								p.group.shingo_b 【ケーキ】
+								p.recipe.shingo_m ヨーグルト &#8230; 200g
+								p.recipe.shingo_m マシュマロ &#8230; 100g
+							.group.last
+								p.group.shingo_b 【飾り】
+								p.recipe.shingo_m ブルーベリー &#8230; お好みで
+								p.recipe.shingo_m ブルーベリージャム &#8230; お好みで
+								p.recipe.shingo_m ミント &#8230; お好みで
+						.howto
+							.subhead
+								p.shingo_m 作り方
+							p.howto.shingo_m.
+								<span class="num">&#9312;</span>ソフトクッキーを耐熱のビニール袋に入れ、麺棒等で砕いたら、バター、牛乳を加え、電子レンジ (500W) で 30 秒温める。
+							p.howto.shingo_m.
+								<span class="num">&#9313;</span> 1 をビニール袋の中でしっかり練ってひとまとめにし、ビニール袋から出してタルト型の底にすき間なく敷きこむ。
+							img.caption.caption1(src="img/sec3_recipe2_caption1.jpg",alt="")
+							p.caption.text.shingo_m ソフトクッキーを砕いて練って、タルト生地を作ります。
+							img.point.point1(src="img/sec3_recipe2_point1.jpg",alt="ポイント : しっかり押さえると崩れにくいタルトになります")
+							p.howto.shingo_m.
+								<span class="num">&#9314;</span>耐熱ボウルにヨーグルトとマシュマロを入れ、レンジ 500W で 2 分温め、ヘラで混ぜてマシュマロを溶かす。
+							img.caption.caption1(src="img/sec3_recipe2_caption2.jpg",alt="")
+							p.caption.text.shingo_m マシュマロをしっかり溶かすと、なめらかな口当たりに&#9834
+							img.point.point2(src="img/sec3_recipe2_point2.jpg",alt="ポイント : マシュマロが大きい場合はちぎって細かくしてから温めると溶けやすく！ マシュマロが全て溶けるまで混ぜましょう！ 溶け残りがあるとしっかり固まりません。")
+							p.howto.shingo_m.
+								<span class="num">&#9315;</span> 2 の上に 3 を流し込み、冷蔵庫で 3 時間冷やす。
+							p.howto.shingo_m.
+								<span class="num">&#9316;</span>お好みでブルーベリーやブルーベリージャム、ミントなどで飾りつけを。
+							.comment
+								img(src="img/sec3_recipe_comment.png",alt="商品開発担当・松尾からのコメント")
+								img.text(src="img/sec3_recipe2_comment_text.png",alt="冷蔵庫に入れるまでにかかる時間はたった 20 分。見た目はレアチーズケーキのようですが、ヨーグルトを使っているからサッパリした味わいです！")
+							p.caution.shingo_m ※調理後は早めにお召し上がりください。
+			// /sec3
+			section#products
+				h2 商品情報
+				.products1
+					.grid.grid1
+						.item.item1
+							figure
+								img(src='img/products1_item1_img.png', alt='支持率 95.4% / みなさまのお墨付き チョコチップたっぷりソフトクッキー')
+						h3
+							img(src="img/products1_name.png",alt="みなさまのお墨付き チョコチップたっぷりソフトクッキー [バニラ＆ココア]  190g （個包装込み） ¥198 （税抜）")
+						.button
+							a(href="//www.the-seiyu.com/front/commodity/00000000/994973450118525/?aff_id=syotot0003", onclick="ga('send', 'event', 'Campaign', 'ExternalLink_theSeiyu', 'vol6_softcookie');")
+								img(src="img/product_netbuy_button.jpg",alt="ネットで買う")
+						.button
+							a(href="/shoplist/758", target="_blank")
+								img(src="img/product_shop_button.jpg",alt="お近くの取扱店舗を探す")
+				.feature-block
+					h4.title SEIYUのオススメ商品発掘し隊！では他にも話題の商品、隠れた人気商品をご紹介しています！
+					p.btn
+						a(href='../index.html', onclick="ga('send', 'event', 'Campaign', 'COJPLink_features', 'vol6_softcookie');")
+							img(src='img/btn_feature.png', alt='SEIYUのオススメ商品発掘し隊！シリーズはこちら')
+				ul.note-block.shingo_m
+					li.
+						<span class="asterisk">※</span><span class="text">このページに記載の情報は、 2016 年 7 月 7 日時点のものです。予告なく変更になる場合があります。</span>
+					li.
+						<span class="asterisk">※</span><span class="text">掲載の商品は、店舗によりお取扱いがない場合がございます。</span>
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='//www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/features/vol6_softcookie/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol6_softcookie');", target='_blank')
+						span facebook
+				li
+					a.twitter(href='//twitter.com/share?url=http://www.seiyu.co.jp/campaign/features/vol6_softcookie/&related=Seiyu_Japan&hashtags=%E3%82%BD%E3%83%95%E3%83%88%E3%82%AF%E3%83%83%E3%82%AD%E3%83%BC%20%23SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol6_softcookie');", target='_blank')
+						span twitter
+				li
+					a.line(href='//line.me/R/msg/text/?レシピも公開中! 支持率95%超のソフトクッキー | SEIYU　http://www.seiyu.co.jp/campaign/features/vol6_softcookie/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnLine', 'vol6_softcookie');", target='_blank')
+						span LINE

@@ -1,0 +1,16 @@
+extends ../../../../../_jade/template/recipe_temp
+block recipemain
+	-var twitter_url = "%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%AC%E3%82%B7%E3%83%94%E3%80%80%23SEIYU"
+	#contents-body(class="recipe"+"#{recipenum}")
+		block recipecontent
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/campaign/recipe/'+'#{thisRecipe}'+'/', onclick="#{facebook}", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/campaign/recipe/'+'#{thisRecipe}'+'/&related=Seiyu_Japan&hashtags='+'#{twitter_url}', onclick="#{twitter};", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?%E3%81%8A%E3%81%86%E3%81%A1%E3%81%A7%E3%81%A4%E3%81%8F%E3%82%8C%E3%82%8B%E6%9C%AC%E6%A0%BC%E3%82%AB%E3%83%AC%E3%83%BC%E3%83%AC%E3%82%B7%E3%83%94%20%7C%20SEIYU%20http%3A%2F%2Fwww.seiyu.co.jp%2Fcampaign%2Frecipe%2F'+'#{thisRecipe}'+'%2F', onclick="#{line}", target='_blank')
+						span LINE

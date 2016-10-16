@@ -1,0 +1,75 @@
+@import "../../../../_scss/common";
+@include resetcss("sp");
+@import "../../../../_scss/sato_mixin";
+
+#content {
+	//@include damii_sp("../img/damii.jpg", -20px, 1);
+	min-width: 320px;
+	.inner {
+		width: 300px;
+		margin: 27px auto 0 auto;
+		&.nomr{
+			margin: 0 0 0 0;
+			width: auto;
+			font-size: 0;
+		}
+	}
+	.title{
+		text-align: left;
+		font-size: 0;
+		margin-bottom: 13px;
+	}
+	.youtube{
+		margin-bottom: 10px;
+		font-size: 0;
+	}
+	.ad{
+		text-align: center;
+		margin-bottom: 5px;
+		font-size: 0;
+		a{
+			display: block;
+		}
+	}
+	.detail{
+		text-align: left;
+		background-color: #cb0700;
+		font-size: 14px;
+		.shingo_b{
+			padding: 10px;
+			color: #ffffff;
+		}
+	}
+	img.big{
+		width: 100%;
+		-webkit-user-select: none;
+		max-width: 3200px;
+	}
+	a.big__button{
+		margin: 20px 20px 0 20px;
+		background-color: #cb0700;
+		line-height: 50px;
+		display: block;
+		text-decoration: none;
+		&:visited{
+			color: #ffffff;
+		}
+		p{
+			-webkit-text-size-adjust: 100%;
+			color:#ffffff;
+			font-size: 14px;
+			text-align: center;
+		}
+	}
+}
+#sns-block {
+	.facebook {
+		background-image: url(../img/btn_facebook.png);
+	}
+	.twitter {
+		background-image: url(../img/btn_twitter.png);
+	}
+	.line {
+		background-image: url(../img/btn_line.png);
+	}
+}

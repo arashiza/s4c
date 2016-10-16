@@ -1,0 +1,88 @@
+extends ../jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – バターチキンカレー レシピページ | SEIYU"
+	-var current = "recipe"
+	-var dir_root = "../"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+	-var recipenum = 3
+block ga_click
+	-var facebook = "ga('send', 'event', 'Campaign', 'SNSbtnFb', 'currychicken');"
+	-var twitter = "ga('send', 'event', 'Campaign', 'SNSbtnTw', 'currychicken');"
+	-var line = "ga('send', 'event', 'Campaign', 'SNSbtnLine', 'currychicken');"
+	-var btn_prev = "ga('send', 'event', 'Campaign', 'backtoTop', 'currychicken');"
+block recipecontent
+	-var recipename = "バターチキンカレー"
+	.recipe-area
+		i.label カレー with チキン
+		h1
+			span #{recipename}
+		figure
+			img(src='../img/recipe_'+'#{recipenum}'+'_img.jpg', alt='#{recipename}')
+		.recipe-inner
+			p.description.
+				ホールトマトを使う場合は、③でつぶしながら加えましょう。トマトの酸味と甘みにバターのコクが加わった、北インドの定番カレーをルウでお手軽に！
+			.info 調理時間･･･25分以内
+			.materials
+				h2.shingo_m 材料（6人分）
+				dl
+					dt 鶏もも肉（唐揚げ用）
+					dd 300g
+				dl
+					dt 玉ねぎ
+					dd 1個
+				dl
+					dt プレーンヨーグルト
+					dd 1カップ（約200g）
+				dl
+					dt おろししょうが
+					dd 小さじ1/2
+				dl
+					dt おろしにんにく
+					dd 小さじ1/2
+				dl
+					dt ヴァルフルッタカットトマト
+					dd.modify 2缶
+					dd.sub （またはカットした生のトマト大4個）
+				dl
+					dt バター
+					dd 30g
+				dl
+					dt 水
+					dd 100ml
+				dl
+					dt S＆Bゴールデンカレー
+					dd 1/2箱（99g）
+				dl
+					dt 砂糖
+					dd 小さじ1・1/2
+				dl
+					dt 塩
+					dd 適量
+				dl
+					dt 生クリーム
+					dd 50ml
+			.howto
+				h2.shingo_m 作り方
+				dl
+					dt 1
+					dd ボウルに鶏肉、ヨーグルトを入れ、2分ほどしっかりと手でもみ込む。玉ねぎはみじん切りにし、カレールウは粗く刻む。
+				dl
+					dt 2
+					dd 鍋にバター20g、にんにく、しょうがを入れて火にかけ、香りがたってきたら玉ねぎを加えしんなりとするまで炒める。
+				dl
+					dt 3
+					dd カットトマト、水、①の鶏肉をヨーグルトごと加え、沸騰したら中火でフタをして10分ほど煮込む。
+				dl
+					dt 4
+					dd いったん火を止めてルウを入れてよく溶かす。再び弱火で煮込み、砂糖、塩を加えて味を調え、仕上げに残りのバターを加える。
+				dl
+					dt 5
+					dd 器に盛り付け、お好みで生クリームをかける。
+	.btn-prev
+		a(href='../', onclick="#{btn_prev};") トップに戻る

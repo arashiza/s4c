@@ -1,0 +1,24 @@
+    Options +Includes
+#AddType text/x-server-parsed-html .html    
+AddOutputFilter INCLUDES .htm .html 
+#AddOutputFilter INCLUDES *
+
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} !/$
+    RewriteCond %{REQUEST_URI} !/entry$
+    RewriteCond %{REQUEST_URI} !/show$
+    RewriteCond %{REQUEST_URI} !/create$
+    RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+    RewriteRule .* %{REQUEST_URI}/index.html [L,R]
+
+
+    RewriteCond %{REQUEST_URI} /$
+    RewriteCond %{REQUEST_URI} !/entry/$
+    RewriteCond %{REQUEST_URI} !/show/$
+    RewriteCond %{REQUEST_URI} !/create/$
+    RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+    RewriteRule .* %{REQUEST_URI}index.html [L,R]
+
+    Redirect permanent /campaign/open/toyocho /shop/38
+
+    Redirect permanent /campaign/unagi/LINE /campaign/LINEstamp

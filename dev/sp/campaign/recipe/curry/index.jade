@@ -1,0 +1,38 @@
+extends ./jade/recipe
+block project
+	-var project = "recipe"
+block vars
+	-var title = "西友 – おうちでつくれる本格カレーレシピ | SEIYU"
+	-var og_title = "西友 – おうちでつくれる本格カレーレシピ | SEIYU"
+	-var og_sitename = "西友 – おうちでつくれる本格カレーレシピ | SEIYU"
+	-var dir_root = "./"
+	-var current = "top"
+	-var description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var og_description = "豊かなスパイスが香り高いゴールデンカレーを使った本格カレーレシピをご紹介。野菜やシーフードをふんだんに使って、いつものカレーから夏にぴったりのカレーに大変身！"
+	-var keyword = "カレー,curry,ゴールデンカレー,スープカレー,チーズカレー,バターチキンカレー,シーフードカレー,おうちカレー,お家カレー,レシピ,料理,エスビー食品,S&B,sb,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var thisRecipe = "curry"
+	-var sp = true
+block ga_click
+	-var recipe_1 = "ga('send', 'event', 'Campaign', 'recipeLink1_soup', 'curryrecipe');"
+	-var recipe_2 = "ga('send', 'event', 'Campaign', 'recipeLink2_cheese', 'curryrecipe');"
+	-var recipe_3 = "ga('send', 'event', 'Campaign', 'recipeLink3_chicken', 'curryrecipe');"
+	-var recipe_4 = "ga('send', 'event', 'Campaign', 'recipeLink4_seafood', 'curryrecipe');"
+	-var recipe_5 = "ga('send', 'event', 'Campaign', 'recipeLink5_avocadotomato', 'curryrecipe');"
+	-var recipe_6 = "ga('send', 'event', 'Campaign', 'recipeLink6_eggplant', 'curryrecipe');"
+block recipecontent
+	p.shingo_m.
+		おうちで簡単 ひと味違った<br>
+		豪華なカレーレシピを紹介します。
+	ul.bnr-block
+		li.bnr1
+			a(href='soup/', onclick="#{recipe_1};") 夏野菜たっぷりスープカレー
+		li.bnr2
+			a(href='cheese/', onclick="#{recipe_2};") ひき肉とエリンギのとろとろチーズカレー
+		li.bnr3
+			a(href='chicken/', onclick="#{recipe_3};") バターチキンカレー
+		li.bnr4
+			a(href='seafood/', onclick="#{recipe_4};") ガーリック香るシーフードカレー
+		li.bnr5
+			a(href='avocadotomato/', onclick="#{recipe_5};") アボカドとトマトのカレー
+		li.bnr6
+			a(href='eggplant/', onclick="#{recipe_6};") なすとシーフードのカレー

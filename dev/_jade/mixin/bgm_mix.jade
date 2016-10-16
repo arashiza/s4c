@@ -1,0 +1,74 @@
+//---------------------------
+//--	BGM
+//---------------------------
+mixin bgmlist(sp)
+	-var musicname = [];
+	-musicname[1] = "MUSIC"
+	-musicname[2] = "SHE BANGS THE DRUMS"
+	-musicname[3] = "TO WHO KNOWS WHERE"
+	-musicname[4] = "ISLAND IN THE SUN"
+	-musicname[5] = "HELP ME"
+	-musicname[6] = "A SKY FULL OF STARS"
+	-musicname[7] = "STEAL MY KISSES"
+	-musicname[8] = "OUR LIPS ARE SEALED"
+	-musicname[9] = "WHAT YOU WANT"
+	-musicname[10] = "VAPOUR TRAIL"
+	-musicname[11] = "MOVING"
+	-musicname[12] = "IT'S A SHAME ABOUT RAY"
+	-musicname[13] = "FREE"
+	-musicname[14] = "RUNNIN' AROUND"
+	-musicname[15] = "SONNET"
+	-var autor = [];
+	-autor[1] = "THE BEAUTIFUL GIRLS"
+	-autor[2] = "THE STONE ROSES"
+	-autor[3] = "JAMES IHA"
+	-autor[4] = "WEEZER"
+	-autor[5] = "JONI MITCHELL"
+	-autor[6] = "COLDPLAY"
+	-autor[7] = "BEN HARPER AND THE INNOCENT CRIMINALS"
+	-autor[8] = "GO GO'S"
+	-autor[9] = "HAYLEY SALES"
+	-autor[10] = "RIDE"
+	-autor[11] = "SUPERGRASS"
+	-autor[12] = "LEMONHEADS"
+	-autor[13] = "DONAVON FRANKENTREITER feat. JACK JOHNSON"
+	-autor[14] = "COLBIE CAILLAT"
+	-autor[15] = "THE VERVE"
+	#mv
+		.container
+			h1
+				| 店内
+				span.bold BGM
+			-if(sp == "sp"){
+				p.txt.
+					現在、全国の店舗<sup class="note">※</sup>にて<br>ON AIR中のBGMをご紹介！
+			-}else{
+				p.txt.
+					現在、全国の店舗<span class="note">※</span>にてON AIR中のBGMをご紹介！
+			-}
+			p.noteTxt ※深沢店を除きます。
+			.selectedTxt
+				p
+					| MUSIC SELECTED by&nbsp;
+					-if(sp == "sp"){
+						img(src='img/logo_interfm.png', alt='INTERFM',width=29)
+					-}else{
+						img(src='img/logo_interfm.png', alt='INTERFM')
+					-}
+			p.songTitle 2016年8月4日からの放送曲名リスト
+	ul#contents-list
+		-var listnum = 15;
+		-var flag = "";
+		-for(var i = 1;i < listnum + 1;i++){
+			-if((i%2) == 0){
+				-flag = "even"
+			-}else{
+				-flag = ""
+			-}
+			li(class="#{flag}")
+				.container
+					h2
+						| #{musicname[i]}
+						span.name by #{autor[i]}
+		-}
+		

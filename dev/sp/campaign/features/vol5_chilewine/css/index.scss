@@ -1,0 +1,463 @@
+@import "../../../../../_scss/common";
+@include resetcss("sp");
+
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	line-height: 1.5;
+	color: #333;
+}
+#contents {
+	* {
+		//Instead of the line below you could use @include box-sizing($bs)
+		box-sizing: border-box;
+		&:before {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+		&:after {
+			//Instead of the line below you could use @include box-sizing($bs)
+			box-sizing: border-box;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	figure {
+		line-height: 1.0;
+	}
+}
+#sns-block {
+	padding: 15px 0;
+	ul {
+		overflow: hidden;
+		*zoom: 1;
+		width: 291px;
+		margin: 0 auto;
+		//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+		box-shadow: 0 0 8px 3px $black_8;
+		li {
+			float: left;
+			.facebook {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_facebook.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.twitter {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_twitter.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+			.line {
+				display: block;
+				background-image: url(/sp/campaign/features/common/img/btn_line.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 97px;
+				height: 45px;
+				background-size: 97px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+			}
+		}
+	}
+}
+#content-header {
+	position: relative;
+	line-height: 1.0;
+	.label {
+		position: absolute;
+		top: 3.0474%;
+		left: 0;
+		right: 0;
+		width: 75%;
+		margin: auto;
+	}
+	h1 {
+		position: absolute;
+		top: 12.75395%;
+		left: 0;
+		right: 0;
+		width: 95.3125%;
+		margin: auto;
+		font-size: 0;
+	}
+	.item {
+		position: absolute;
+		top: 25.73363%;
+		left: 0;
+		right: 0;
+		margin: auto;
+		font-size: 0;
+	}
+	.comment {
+		position: absolute;
+		top: 80.69977%;
+		left: 0;
+		right: 0;
+		width: 95%;
+		margin: auto;
+		font-size: 0;
+	}
+}
+#content-body {
+	#sec1 {
+		padding: 15px 10px;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol5_chilewine/img/sec1_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 254px;
+			height: 40px;
+			background-size: 254px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 15px;
+		}
+	}
+	#sec2 {
+		padding: 15px 10px;
+		background-color: #6e1248;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol5_chilewine/img/sec2_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 236px;
+			height: 65px;
+			background-size: 236px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			color: $white;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 15px;
+		}
+		figcaption {
+			margin-top: 5px;
+			color: $white;
+			text-align: center;
+		}
+	}
+	#sec3 {
+		padding: 15px 10px;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/vol5_chilewine/img/sec3_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 237px;
+			height: 64px;
+			background-size: 237px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+		}
+		p {
+			margin-top: 15px;
+			font-size: 12px;
+		}
+		figure {
+			margin-top: 15px;
+		}
+		figcaption {
+			margin-top: 5px;
+			text-align: center;
+		}
+	}
+	#products {
+		padding-bottom: 20px;
+		border-top: 4px solid #cb0600;
+		h2 {
+			display: block;
+			background-image: url(/sp/campaign/features/common/img/products_title.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 144px;
+			height: 32px;
+			background-size: 144px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 0 auto 20px;
+		}
+		.products1 {
+			h3 {
+				display: block;
+				background-image: url(/sp/campaign/features/vol5_chilewine/img/products1_name.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 77px;
+				height: 18px;
+				background-size: 77px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				margin: 0 auto;
+			}
+			.grid1 {
+				margin-top: 15px;
+				.price {
+					display: block;
+					background-image: url(/sp/campaign/features/vol5_chilewine/img/products1_item_price1.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 109px;
+					height: 19px;
+					background-size: 109px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					margin-bottom: 20px;
+				}
+			}
+			.grid2 {
+				margin-top: 33px;
+				.price {
+					display: block;
+					background-image: url(/sp/campaign/features/vol5_chilewine/img/products1_item_price2.png);
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					width: 132px;
+					height: 22px;
+					background-size: 132px auto;
+					overflow: hidden;
+					text-indent: 100%;
+					white-space: nowrap;
+					outline: none;
+					margin-bottom: 13px;
+				}
+			}
+			.item-wrap {
+				margin: 0 10px;
+				zoom: 1;
+				&:before {
+					content: "";
+					display: table;
+				}
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				.item {
+					width: 48.33333%;
+					figure {
+						font-size: 0;
+						text-align: center;
+					}
+					h4 {
+						margin-top: 6px;
+						font-size: 13px;
+						text-align: center;
+					}
+					p {
+						margin-top: 6px;
+						font-size: 11px;
+					}
+				}
+				.item1 {
+					float: left;
+					figure img {
+						width: 35.86207%;
+					}
+				}
+				.item2 {
+					float: right;
+					h4 {
+						margin-top: 25px;
+					}
+					figure img {
+						width: 35.86207%;
+					}
+				}
+			}
+			.item3 {
+				margin: 0 20px;
+				figure {
+					text-align: center;
+					img {
+						width: 65.71429%;
+					}
+				}
+			}
+			.grid .price {
+				margin: 0 auto;
+			}
+		}
+		.products2 {
+			margin-top: 40px;
+			h3 {
+				display: block;
+				background-image: url(/sp/campaign/features/vol5_chilewine/img/products2_name.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 237px;
+				height: 19.5px;
+				background-size: 237px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				margin: 0 auto;
+			}
+			.price {
+				display: block;
+				background-image: url(/sp/campaign/features/vol5_chilewine/img/products2_item_price.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				width: 261px;
+				height: 22px;
+				background-size: 261px auto;
+				overflow: hidden;
+				text-indent: 100%;
+				white-space: nowrap;
+				outline: none;
+				margin: 15px auto 20px;
+			}
+			.grid2 {
+				margin-top: 35px;
+			}
+			.item-wrap {
+				margin: 0 10px;
+				zoom: 1;
+				&:before {
+					content: "";
+					display: table;
+				}
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				.item {
+					width: 48.33333%;
+					figure {
+						font-size: 0;
+						text-align: center;
+					}
+					h4 {
+						margin-top: 6px;
+						font-size: 13px;
+						text-align: center;
+					}
+					p {
+						margin-top: 6px;
+						font-size: 11px;
+					}
+				}
+				.item1 {
+					float: left;
+					figure img {
+						width: 36.55172%;
+					}
+				}
+				.item2 {
+					float: right;
+					h4 {
+						margin-top: 25px;
+					}
+					figure img {
+						width: 36.55172%;
+					}
+				}
+				.item3 {
+					float: left;
+					h4 {
+						margin-top: 25px;
+					}
+					figure img {
+						width: 37.93103%;
+					}
+				}
+				.item4 {
+					float: right;
+					h4 {
+						margin-top: 25px;
+					}
+					figure img {
+						width: 37.93103%;
+					}
+				}
+			}
+		}
+		.btn-block {
+			margin: 20px 10px 0;
+			li {
+				line-height: 1.0;
+				&:first-child {
+					margin-bottom: 10px;
+				}
+				a {
+					display: block;
+				}
+			}
+		}
+		.catch {
+			display: block;
+			background-image: url(/sp/campaign/features/vol5_chilewine/img/products_catch.png);
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			width: 238px;
+			height: 67px;
+			background-size: 238px auto;
+			overflow: hidden;
+			text-indent: 100%;
+			white-space: nowrap;
+			outline: none;
+			margin: 34px auto 0;
+		}
+		.note-block {
+			margin: 10px 10px 0;
+			li {
+				padding-left: 1em;
+				text-indent: -1em;
+				color: #666;
+				font-size: 11px;
+			}
+		}
+	}
+}

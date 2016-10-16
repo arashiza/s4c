@@ -1,0 +1,442 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+
+#seiyu-global-header *,
+#seiyu-global-footer * {
+  margin: 0;
+  padding: 0;
+}
+
+#seiyu-global-header {
+  width: 100%;
+  min-width: 980px;
+  height: 70px;
+  background: url(../img/header_bg.png) 0 0 repeat-x;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  line-height: 0;
+}
+#seiyu-global-header .seiyu-global-header_inner {
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 980px;
+  height: 70px;
+}
+#seiyu-global-header .seiyu-global-header_logo {
+  display: block;
+  position: relative;
+  width: 115px;
+  height: 61px;
+  background: url(../img/header_logo.png) 0 -61px no-repeat;
+}
+#seiyu-global-header .seiyu-global-header_logo_span {
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header_logo.png) 0 0 no-repeat;
+  -webkit-transition: opacity .2s linear;
+  -moz-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+     transition: opacity .2s linear;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "alpha(opacity=100)";
+}
+#seiyu-global-header .seiyu-global-header_logo_span:hover {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+}
+#seiyu-global-header .seiyu-global-header_inputblock {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  width: 245px;
+}
+#seiyu-global-header .seiyu-global-header_inputblock * {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsib_a {
+  padding-top: 0;
+  padding-left: 7px;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input-box {
+  height: 22px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border: 1px solid #b4b4b4;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input-box-hover, #seiyu-global-header .seiyu-global-header_inputblock .gsc-input-box-focus {
+  border: 1px solid #6699ff;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input {
+  height: 25px !important;
+  font-size: 13px !important;
+  padding-right: 5px;
+  background: url(../img/search_txt.png) 0% 50% no-repeat !important;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input:focus {
+  background: none !important;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input.nodisp {
+  background: none !important;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-input-box-hover, #seiyu-global-header .seiyu-global-header_inputblock .gsc-input-box-focus {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -ms-box-shadow: none;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-search-button.gsc-search-button-v2 {
+  margin: 0 0 0 0;
+  width: 25px;
+  height: 13px;
+  padding: 5px 11px 4px 11px;
+  background: #e0e0e0;
+  border-color: #c7c7c7;
+  outline: 0px none black;
+}
+#seiyu-global-header .seiyu-global-header_inputblock .gsc-search-button.gsc-search-button-v2:hover {
+  background: #cccccc;
+  border-color: #cccccc;
+}
+#seiyu-global-header #seiyu-global-header_sp_search {
+  display: none;
+}
+
+.gssb_c * {
+  box-shadow: 0 0 0 0 !important;
+  -moz-box-shadow: 0 0 0 0 !important;
+  -webkit-box-shadow: 0 0 0 0 !important;
+  -ms-box-shadow: 0 0 0 0 !important;
+  color: #000;
+}
+
+#seiyu-global-footer {
+  padding: 30px 0 30px 0;
+  width: 100%;
+  min-width: 980px;
+  background-color: #242424;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  letter-spacing: normal !important;
+  text-align: left;
+}
+#seiyu-global-footer .seiyu-global-footer_inner {
+  position: relative;
+  margin: 0 auto 0 auto;
+  width: 980px;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_ul {
+  margin: 0 0 20px 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  border: 1px solid #727272;
+  list-style: none;
+  line-height: 1;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_li {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_li:first-child {
+  border-right: 1px solid #727272;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_a {
+  padding: 12px 20px 12px 20px;
+  display: block;
+  text-decoration: none;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_a:hover .seiyu-global-footer_reduction_btn {
+  background: #fff;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_a .seiyu-global-footer_reduction_title {
+  margin: 0 10px 0 0;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #fff;
+  font-size: 17px;
+  vertical-align: middle;
+}
+#seiyu-global-footer .seiyu-global-footer_reduction_a .seiyu-global-footer_reduction_btn {
+  padding: 8px 22px 7px 22px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  color: #000;
+  background: #ffd811;
+  font-size: 11px;
+  vertical-align: middle;
+  -webkit-border-radius: 14px;
+     -moz-border-radius: 14px;
+          border-radius: 14px;
+  -webkit-transition: background-color .2s linear;
+     -moz-transition: background-color .2s linear;
+       -o-transition: background-color .2s linear;
+          transition: background-color .2s linear;
+}
+#seiyu-global-footer .seiyu-global-footer_toindex {
+  width: 210px;
+}
+#seiyu-global-footer .seiyu-global-footer_toindex .seiyu-global-footer_toindex_a {
+  padding: 16px 0 16px 0;
+  display: block;
+  background: #c90e12 url(../img/ink_icon.png) 10px center no-repeat;
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  -webkit-transition: background-color .2s linear;
+     -moz-transition: background-color .2s linear;
+       -o-transition: background-color .2s linear;
+          transition: background-color .2s linear;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+}
+#seiyu-global-footer .seiyu-global-footer_toindex .seiyu-global-footer_toindex_a:hover {
+  background-color: #af0004;
+}
+#seiyu-global-footer .seiyu-global-footer_toindex .seiyu-global-footer_toindex_span {
+  height: 12px;
+}
+#seiyu-global-footer .seiyu-global-footer_copy_ul {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  list-style: none;
+  font-size: 0;
+  line-height: 0;
+}
+#seiyu-global-footer .seiyu-global-footer_copy_li {
+  margin: 0 0 0 7px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 59px;
+  height: 37px;
+  text-indent: -9999px;
+}
+#seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_seiyu {
+  background: url(../img/copy_seiyu.png) 0 0 no-repeat;
+}
+#seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_livin {
+  background: url(../img/copy_livin.png) 0 0 no-repeat;
+}
+#seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_sunny {
+  background: url(../img/copy_sunny.png) 0 0 no-repeat;
+}
+#seiyu-global-footer .seiyu-global-footer_address {
+  position: absolute;
+  bottom: 0;
+  right: 200px;
+  color: #dfdfdf;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 1;
+}
+#seiyu-global-footer .seiyu-global-footer_pagetop {
+  position: fixed;
+  bottom: 55px;
+  right: 38px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-transition: opacity 0.2s linear;
+     -moz-transition: opacity 0.2s linear;
+       -o-transition: opacity 0.2s linear;
+          transition: opacity 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  z-index: 100;
+}
+#seiyu-global-footer .seiyu-global-footer_pagetop.on {
+  visibility: visible;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "alpha(opacity=100)";
+}
+#seiyu-global-footer .seiyu-global-footer_pagetop_a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url(../img/sc-btn.png) 0 0 no-repeat;
+}
+#seiyu-global-footer .seiyu-global-footer_pagetop_a:hover {
+  background-position: 0 bottom;
+}
+
+@media only screen and (max-width: 640px) {
+  #seiyu-global-header {
+    min-width: 0;
+    height: 50px;
+    background-image: none;
+    background-color: #999;
+  }
+  #seiyu-global-header .seiyu-global-header_inner {
+    width: auto;
+    height: 50px;
+  }
+  #seiyu-global-header .seiyu-global-header_logo {
+    width: 105px;
+    height: 50px;
+    background: url(../img/sp_header_logo.png) 0 0 no-repeat;
+    -moz-background-size: 105px 50px;
+      -o-background-size: 105px 50px;
+         background-size: 105px 50px;
+  }
+  #seiyu-global-header .seiyu-global-header_logo_span {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+  }
+  #seiyu-global-header .seiyu-global-header_inputblock {
+    display: none;
+  }
+  #seiyu-global-header #seiyu-global-header_sp_search {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 52px;
+    height: 50px;
+    background: #fcf8f0 url(../img/sp_header_search.png) 0 0 no-repeat;
+    -moz-background-size: 52px 50px;
+      -o-background-size: 52px 50px;
+         background-size: 52px 50px;
+    border-left: 1px solid #494949;
+  }
+
+  #seiyu-global-footer {
+    padding: 0 0 20px 0;
+    min-width: 0px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_inner {
+    width: auto;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_ul {
+    margin: 0 0 15px 0;
+    display: block;
+    border: none;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_li {
+    display: block;
+    border-bottom: 1px solid #727272;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_li:first-child {
+    border-right: none;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_a {
+    position: relative;
+    padding: 20px 10px 20px 10px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_a:hover .seiyu-global-footer_reduction_btn {
+    background: #ffd811;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_a .seiyu-global-footer_reduction_title {
+    font-size: 13px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_reduction_a .seiyu-global-footer_reduction_btn {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_toindex {
+    margin: 0 30px 15px 30px;
+    width: auto;
+  }
+  #seiyu-global-footer .seiyu-global-footer_toindex .seiyu-global-footer_toindex_a {
+    padding: 12px 0 12px 0;
+  }
+  #seiyu-global-footer .seiyu-global-footer_toindex .seiyu-global-footer_toindex_a:hover {
+    background-color: #c90e12;
+  }
+  #seiyu-global-footer .seiyu-global-footer_copy_ul {
+    margin: 0 0 10px 0;
+    position: static;
+    text-align: center;
+  }
+  #seiyu-global-footer .seiyu-global-footer_copy_li {
+    margin: 0 3px 0 3px;
+    width: 90px;
+    height: 40px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_seiyu {
+    background: url(../img/sp_copy_seiyu.jpg) 0 0 no-repeat;
+    -moz-background-size: 90px 40px;
+      -o-background-size: 90px 40px;
+         background-size: 90px 40px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_livin {
+    background: url(../img/sp_copy_livin.jpg) 0 0 no-repeat;
+    -moz-background-size: 90px 40px;
+      -o-background-size: 90px 40px;
+         background-size: 90px 40px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_copy_li.seiyu-global-footer_copy_sunny {
+    background: url(../img/sp_copy_sunny.jpg) 0 0 no-repeat;
+    -moz-background-size: 90px 40px;
+      -o-background-size: 90px 40px;
+         background-size: 90px 40px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_address {
+    position: static;
+    text-align: center;
+  }
+  #seiyu-global-footer .seiyu-global-footer_pagetop {
+    position: static;
+    width: auto;
+    height: 45px;
+    -webkit-transition: opacity 0.2s linear;
+       -moz-transition: opacity 0.2s linear;
+         -o-transition: opacity 0.2s linear;
+            transition: opacity 0.2s linear;
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+    background: #626262;
+  }
+  #seiyu-global-footer .seiyu-global-footer_pagetop.on {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+  }
+  #seiyu-global-footer .seiyu-global-footer_pagetop_a {
+    width: auto;
+    height: 45px;
+    background: url(../img/sp_sc-btn.gif) center center no-repeat;
+    -moz-background-size: 61px 45px;
+      -o-background-size: 61px 45px;
+         background-size: 61px 45px;
+  }
+  #seiyu-global-footer .seiyu-global-footer_pagetop_a:hover {
+    background-position: center center;
+  }
+}
+.shingo_m {
+  font-family: 'UD Shin Go Medium','Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  font-weight: normal !important;
+}
+
+.shingo_b {
+  font-family: 'UD Shin Go DemiBold','Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+  font-weight: normal !important;
+}

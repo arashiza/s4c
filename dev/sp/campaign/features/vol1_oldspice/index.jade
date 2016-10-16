@@ -1,0 +1,122 @@
+extends ../../../../_jade/template/osusume_temp
+block project
+	-var project = "osusume"
+block vars
+	-var title = "西友 – Old Spiceボディウォッシュが全品698円でオススメ！ | SEIYU"
+	-var og_url = "http://www.seiyu.co.jp/sp/campaign/features/vol1_oldspice/"
+	-var og_description = "アメリカで大人気のメンズ用ボディケアブランド Old SpiceボディウォッシュをSEIYUのバイヤーがおすすめポイントとともにご紹介します。"
+	-var og_image = "http://www.seiyu.co.jp/sp/campaign/features/vol1_oldspice/img/sns.jpg"
+	-var description = "アメリカで大人気のメンズ用ボディケアブランド Old SpiceボディウォッシュをSEIYUのバイヤーがおすすめポイントとともにご紹介します。"
+	-var keyword = "Old Spice,オールドスパイス,ボディウォッシュ,ボディソープ,メンズケア,ボディケア,デオドラント,ティンバー,シトロン,ディナリ,ホークリッジ,ベアグローブ,フレッシュコレクション,ワイルドコレクション,アメリカブランド,海外ブランド,インポート,輸入商品,SEIYUドットコム,通販,SEIYU,西友,LIVIN,リヴィン,SUNNY,サニー,Walmart,ウォルマート"
+	-var dir_root = "./"
+	-var current = ""
+	-var sp = true
+block osusume_content
+	#contents(class="#{current}")
+		header#content-header
+			p.label
+				img(src='img/header_label.png', alt='SEIYUのオススメ商品発掘し隊！ Vol.1')
+			h1
+				img(src='img/header_title.png', alt='Old Spice（オールドスパイス）ボディウォッシュがSEIYUなら全品各698円（税抜）でオススメ！')
+			figure.item
+				img(src='img/header_img.png', alt='')
+			p.comment
+				img(src='img/header_comment.png', alt='バイヤー / 寺内 アメリカで大人気のボディケアブランド、「Old spice」をバイヤー・寺内がご紹介します。')
+			figure
+				img(src='img/header_bg.png', alt='')
+		#content-body
+			section#about
+				h2 Old Spiceって？
+				p.shingo_m
+					| Old Spice は、男性的な香りでアメリカで大人気のメンズボディケアブランドです。ベタつきや汗のにおいをさっぱり洗い流し、保湿効果もあります。SEIYUでは、2015年3月から取扱いを開始。フレッシュコレクション1アイテム、ワイルドコレクション2アイテムの計3アイテムに加え、2016年3月からは新たにフレッシュコレクション2アイテムが仲間入りしました！
+					br
+					|            特徴的なCMも話題となったので、ご存知の方もいらっしゃるのではないでしょうか。
+					br
+					|            香水やコロン類は基本的に苦手って方は是非お試しください！
+				p.shingo_m.t-center
+					a(href='http://oldspice.com/en', target='_blank')
+						| Old Spiceについて詳しくはこちら
+						br
+						| 【Old Spice公式サイト（英語）】
+				figure
+					img(src='img/about_img.jpg', alt='')
+			section#recommend
+				h2 バイヤーのおすすめポイント「いい香りでテンションがあがります！！」
+				figure
+					img(src='img/recommend_img.png', alt='SEIYU店舗に陳列されたOld Spice')
+					figcaption.shingo_m SEIYU店舗に陳列されたOld Spice
+				p.shingo_m
+					| 海外の商品は匂いがキツイ！と思われがちですが、使用後はフンワリ軽く香水を付けたような仕上がりです。また、ボディタオルを使えば少量でもよく泡立ちます。コスパも良いので、日常使いにはかなり使いやすいアイテムです。Instagramなどでは、SEIYUで購入した写真をアップされている方も。みなさん好きな香りで楽しまれているようです♪
+					br
+					|            実はこの商品、お店では人気のあまり売り切れになっていることもあるようです…！店舗で見つけたらすぐにゲットしたいですね！
+			section#products
+				h2 商品情報
+				p.name オールドスパイス ボディウォッシュ 各¥698（税抜）
+				.item
+					figure
+						img(src='img/products_item1_img.jpg', alt='ティンバー')
+					.item-detail
+						p.category.flesh.shingo_m フレッシュコレクション
+						h3.shingo_b
+							| ティンバー
+							i NEW
+						p.lead.shingo_m
+							| ティンバーミントの香り。
+							br
+							| 神秘的なティンバーミントの香りは
+							br
+							| あなたの体にパワーを呼び込みます。
+				.item
+					figure
+						img(src='img/products_item2_img.jpg', alt='シトロン')
+					.item-detail
+						p.category.flesh.shingo_m フレッシュコレクション
+						h3.shingo_b
+							| シトロン
+							i NEW
+						p.lead.shingo_m
+							| シトラス系の香り。
+							br
+							| 夏や汗のかくときに是非。
+				.item
+					figure
+						img(src='img/products_item3_img.jpg', alt='ディナリ')
+					.item-detail
+						p.category.flesh.shingo_m フレッシュコレクション
+						h3.shingo_b ディナリ
+						p.lead.shingo_m 雄大な山々をイメージしたフレッシュな香り。デナリ（先住民の名称）は北米最高峰のマッキンリー山の別名。
+				.item
+					figure
+						img(src='img/products_item4_img.jpg', alt='ホークリッジ')
+					.item-detail
+						p.category.wild.shingo_m ワイルドコレクション
+						h3.shingo_b ホークリッジ
+						p.lead.shingo_m スパイシー＆エキゾチックな香りが、貴男を決断力のある男性に。
+				.item
+					figure
+						img(src='img/products_item5_img.jpg', alt='ベアグローブ')
+					.item-detail
+						p.category.wild.shingo_m ワイルドコレクション
+						h3.shingo_b ベアグローブ
+						p.lead.shingo_m 森林にいるような清涼感ある爽やかな香りが、貴男を風格のある男性に。
+				ul.btn-block
+					li
+						a(href='https://www.the-seiyu.com/front/app/catalog/list?searchCornerCode=E20647&aff_id=syotot0003', target='_blank')
+							img(src='../common/img/btn1.png', alt='ネットで買う')
+					li
+						a(href='/shoplist/473', target='_blank')
+							img(src='../common/img/btn2.png', alt='お近くの取扱店舗を探す')
+				ul.note-block.shingo_m
+					li ※このページに記載の内容は、2016年3月21日現在の情報です。
+					li ※店舗により、お取扱いがない場合がございます。
+		#sns-block
+			ul.sns
+				li
+					a.facebook(href='http://www.facebook.com/share.php?u=http://www.seiyu.co.jp/sp/campaign/features/vol1_oldspice/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnFb', 'vol1_oldspice');", target='_blank')
+						span facebook
+				li
+					a.twitter(href='http://twitter.com/share?url=http://www.seiyu.co.jp/sp/campaign/features/vol1_oldspice/&related=Seiyu_Japan&hashtags=OldSpice,SEIYU', onclick="ga('send', 'event', 'Campaign', 'SNSbtnTw', 'vol1_oldspice');", target='_blank')
+						span twitter
+				li
+					a.line(href='http://line.me/R/msg/text/?Old Spiceボディウォッシュが全品648円でオススメ！SEIYU http://www.seiyu.co.jp/sp/campaign/features/vol1_oldspice/', onclick="ga('send', 'event', 'Campaign', 'SNSbtnLine', 'vol1_oldspice');", target='_blank')
+						span LINE

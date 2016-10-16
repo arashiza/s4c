@@ -1,0 +1,4 @@
+    Options +Includes
+    AddOutputFilter INCLUDES .htm .html
+
+    Redirect permanent /sp/campaign/open/toyocho /shop/38
