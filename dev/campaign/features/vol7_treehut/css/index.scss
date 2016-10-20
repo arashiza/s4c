@@ -129,12 +129,9 @@ body {
 //---------------------------
 //         Main
 //---------------------------
+
 $path:"vol7_treehut";
 $themeColor:#499750;
-//---- 変数の使い方
-//- #{$path} と記述できるところに記述することで使えます。
-//- 他の記述参考にしてね
-//-
 
 #content-header {
 	background: $themeColor url("/campaign/features/"+"#{$path}"+"/img/header_bg.png") 50% 0 no-repeat;
@@ -183,9 +180,7 @@ $themeColor:#499750;
 	#sec1 {
 		padding: 28px 0;
 		.txt-block {
-			//-----------
-			//- float で調べてみよう！
-			//-----------
+			float: right;
 			width: 480px;
 			h2 {
 				display: block;
@@ -205,9 +200,7 @@ $themeColor:#499750;
 			}
 		}
 		figure {
-			//-----------
-			//- float で調べてみよう！
-			//-----------
+			float: left;
 			width: 420px;
 		}
 		.banner{
@@ -215,9 +208,7 @@ $themeColor:#499750;
 			margin-bottom: 20px;
 			a{
 				display: block;
-				//---------------------------
-				//- 背景画像のしきかたを調べよう！
-				//---------------------------
+				background-image: url("/campaign/features/"+"#{$path}"+"/img/sec2_baner.jpg");
 				background-repeat: no-repeat;
 				background-position: 0 0;
 				width: 940px;
@@ -230,9 +221,7 @@ $themeColor:#499750;
 		padding: 40px 0 26px 0;
 		background-color: $themeColor;
 		.txt-block {
-			//-----------
-			//- float で調べてみよう！
-			//-----------
+			float: left;
 			width: 480px;
 			h2 {
 				display: block;
@@ -251,9 +240,7 @@ $themeColor:#499750;
 			}
 		}
 		figure {
-			//-----------
-			//- float で調べてみよう！
-			//-----------
+			float: right;
 			width: 420px;
 			margin-top: -10px;
 			figcaption {
